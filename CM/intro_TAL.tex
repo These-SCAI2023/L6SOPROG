@@ -1,0 +1,278 @@
+%\subsection{Terminologie}
+%\frame{
+% \tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/show/hide]
+%}
+
+\begin{frame}
+\frametitle{Terminologie}
+\begin{itemize}
+\item Traitement Automatique des Langues
+\item Traitement Automatique du Langage Naturel
+\pause
+\item \textit{Natural Language Processing} 
+\item Technologies du Langage (Humain)
+\item Sciences de l'information
+\item Linguistique Computationnelle
+\end{itemize}
+\end{frame}
+
+\subsection{Le TAL en 2 minutes}
+\begin{frame}
+%\frametitle{\foreignlanguage{russian}{Что это?}}
+\frametitle{La langue vue par la machine}
+
+\only<1>{
+\vspace{5cm}
+\begin{center}
+   \includegraphics[width=10cm]{images/Picture7.png}
+   Langue inconnue
+\end{center}
+}
+\only<2>{
+\vspace{5cm}
+\begin{center}
+   \includegraphics[width=10cm]{images/phrase_tokenized.jpg}
+   Découper
+\end{center}
+}
+\only<3>{
+\vspace{3.5cm}
+\hspace{0.5cm}
+\includegraphics[width=6cm]{images/Picture3.png}
+\vspace{0.5cm}
+\begin{center}
+   \includegraphics[width=11cm]{images/phrase_tokenized.jpg}
+   Etiqueter
+\end{center}
+}
+
+\only<4>{
+\vspace{1cm}
+\hspace{0.5cm}
+\includegraphics[width=6cm]{images/Picture2.png}
+\vspace{0.5cm}
+\begin{center}
+    \includegraphics[width=10cm]{images/phrase_tokenized.jpg}
+    Reconnaître la structure
+\end{center}
+}
+
+\only<5>{
+\vspace{0.6cm}
+\begin{center}
+\includegraphics[width=10cm]{images/Picture1.png}
+\end{center}
+\vspace{0.5cm}
+\begin{center}
+   \includegraphics[width=10cm]{images/phrase_tokenized.jpg}
+   Évaluer le sens et mettre en contexte
+\end{center}
+Nécessité d'explicitation (réductionnisme)
+}
+
+\end{frame}
+
+\subsection{Le TAL vu par ses applications}
+
+%\begin{frame}
+%\frametitle{Applications}
+%\only<2>{
+%\begin{center}
+%   \includegraphics[width=9cm]{images/Picture8.png}
+%\end{center}
+%}
+%\end{frame}
+
+\begin{frame}
+\frametitle{Pour quoi faire ?}
+
+\begin{itemize}
+\item Traduction automatique
+\item Recherche d'information
+\item Indexation
+\item Traitement d'Emails
+\item Veille
+\item E-reputation
+\item Big Data
+\item \ldots
+\end{itemize}
+
+\end{frame}
+
+%%\begin{frame}
+%%%\frametitle{Marché}
+%%
+%%\begin{figure}
+%%  \begin{center}
+%%   \includegraphics[width=9cm]{images/new/Picture9.png}
+%%  \caption{Une estimation du poids du marché des industries de la langue (milliards de \$), source \url{http:www.statista.com}}
+%%  \end{center}
+%%\end{figure}
+%%\only<2>{
+%%\small{CA Google T1-2013 : \$14 Milliards 
+%%\\PIB France 2012 : \$2 800 Milliards}
+%%}
+%%\end{frame}
+
+%%\begin{frame}
+%%\frametitle{Marché par application}
+%%
+%%\begin{figure}
+%%\begin{center}
+%%   \includegraphics[width=9cm]{images/new/Picture10.png}
+%%\end{center}
+%%\caption{Estimation de la demande par sous domaines, source \url{altaplana.com}}
+%%\end{figure}
+%%\end{frame}
+
+\subsection{Le TAL : définitions}
+
+\begin{frame}
+\frametitle{TAL: Modéliser l'activité langagière}
+
+Pour les \textcolor{blue}{chercheurs} :
+\begin{itemize}
+   \item comprendre comment fonctionne la langue
+   \item exemplifier/vérifier des théories
+\end{itemize}
+
+\medskip
+Pour les \textcolor{blue}{industriels} :
+\begin{itemize}
+   \item reproduire l'activité langagière
+   \item optimiser les performances des systèmes
+   \item offrir de nouveaux services
+\end{itemize}
+
+\end{frame}
+
+\subsection{Ambiguïté à tous les étages}
+\frame{
+ \tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/show/hide]
+}
+
+\begin{frame}
+\frametitle{Le TAL : pas si simple\ldots}
+%\begin{block}
+\begin{itemize}[<+->]
+   \item \textit{La mousse aux fraises est sur la table de l’avocat.} -- polysémie
+   \item \textit{L'omelette au lard est parti sans payer !} -- métonymie
+   \item \textit{Le bus a renversé un passant}\ldots -- métonymie
+   \begin{itemize}
+      \item \ldots \textit{je l’ai entendu freiner}. --Contexte
+      \item \ldots \textit{je l’ai entendu crier}.
+   \end{itemize}
+   \item \textit{Le professeur a envoyé l'élève chez le proviseur}\ldots
+  \begin{itemize}
+      \item \ldots \textit{il faisait trop de bruit}.
+     \item \ldots \textit{il était excédé}.
+     \item \ldots \textit{il l’avait convoqué}.
+\end{itemize}
+\end{itemize}
+
+%\end{block}
+\bigskip
+\only<10>{
+$\rightarrow$ \textcolor{blue}{ambiguïtés} pour les systèmes et/ou pour les humains\\
+$\rightarrow$ \textcolor{blue}{inférences} difficiles à recenser exhaustivement
+}
+\end{frame}
+\subsection{\'Etapes de traitement}
+
+\begin{frame}
+\frametitle{Le découpage en "mots" ou \textit{tokenization}}
+\begin{itemize}[<+->]
+\item \textit{l’arbre} 
+\item \textit{aujourd’hui} 
+\end{itemize}
+\begin{itemize}[<+->]
+\item \textit{plateforme} 
+\item \textit{plate-forme} 
+\item \textit{dit-il} 
+\item \textit{cé-\\sure} 
+\pause
+\item Va\'blahei\'barvegavinnuverkfærageymsluskúraútidyralyklakippuhringur ("Porte-clés de la chaîne de clé pour la porte extérieure du hangar à outils des agents de la route sur le plateau Va\'blahei\'bi") %ði
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{L'analyse morphologique}
+la \textit{porte}
+
+\begin{itemize}[<+->]
+\item \textit{porte} +Nom +Fem + Sg
+\item \textit{porte} +VT + 1/3P + Sg
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{L'analyse syntaxique}
+\textit{ Jean regarde un homme sur la colline avec un télescope.}
+\begin{itemize}
+\item \textbf{Qui} est sur la colline ?
+\item \textbf{Qui} a un télescope ?
+\end{itemize}
+\begin{itemize}[<+->]
+\item Jean regarde [un homme sur la colline avec un télescope]
+\item Jean regarde [un homme sur la colline] avec un télescope
+\item Jean regarde un homme [sur la colline avec un télescope]
+\end{itemize}
+
+\metroset{block=fill}
+\pause
+\begin{block}{Un défi à l'intuition}
+Moi "... Vous avez oublié la pièce jointe..."
+
+Le client mail :
+\includegraphics[width=.9\textwidth]{images/PJ_error.png}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{L'analyse sémantique}
+ \textit{Tous les hommes aiment une femme.}
+ \medskip
+
+$\rightarrow$ \textbf{Chaque} homme aime une femme ou 
+\\$\rightarrow$  \textbf{tous} les hommes aiment la même femme ?\\
+\pause
+ \medskip
+\textit{The Wayward Pines Trilogy (2012–2014) is a mystery/thriller/science fiction novel series by American author Blake Crouch.}\\
+ \medskip
+$\rightarrow$ \textbf{Book} = "The Wayward Pines Trilogy", \textbf{Date} ="2012-2014", \textbf{Author}="Blake Crouch"\\
+\pause
+\medskip
+\textit{Jean-Marie Roughol, 47 ans, sort un livre écrit à quatre mains avec le président du Conseil constitutionnel, Jean-Louis Debré}\\
+\medskip
+$\rightarrow$ \textbf{Book }= "un livre écrit à quatre mains", \textbf{Date }="Today", \textbf{Author}="Jean-Marie Roughol, Président du Conseil Constitutionnel"
+\end{frame}
+
+\begin{frame}
+  \frametitle{Idiosyncrasie \& compositionnalité}
+ Idiosyncrasie : Ox-Beef VS Bœuf
+ \pause
+  \begin{block}{Différences de représentation et de combinaison}
+%% idiosyncrasie_ru-fr.png 
+    \begin{table}
+  \begin{tabular}{ll}
+    {\foreignlanguage{russian}{Русский язык}}& Fran\c cais\\
+    \hline
+    {\foreignlanguage{russian}{первый}}   &Premier\\
+    {\foreignlanguage{russian}{второй}}   &Deuxième\\
+    {\foreignlanguage{russian}{этаж}}       &Etage\\
+                  ??                      &Premier étage \\
+                  \pause
+    {\foreignlanguage{russian}{второй этаж}}       &Premier étage\\
+    {\foreignlanguage{russian}{первый этаж}} & Rez-de-chaussée\\
+{\foreignlanguage{russian}{резь-де-Chaussee}}& Rez-de-chaussée\\
+  \end{tabular}
+    \end{table}
+
+  \end{block}
+\end{frame}
