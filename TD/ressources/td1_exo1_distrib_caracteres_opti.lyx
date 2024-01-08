@@ -1,0 +1,1045 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /home/luis/MEGA/MEGAsync/Sorbonne/Semestre 2/ProgrammationPython/L6SOPROG/TD/ressources/
+\textclass article
+\use_default_options false
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 0
+\pdf_backref section
+\pdf_pdfusetitle 0
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Pour améliorer nous allons construire des 
+\series bold
+fonctions
+\series default
+ pour 
+\series bold
+factoriser
+\series default
+ les traitements et constituer une 
+\series bold
+chaîne de traitement
+\series default
+ fiable.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Etape 1: lire
+\series default
+
+\end_layout
+
+\begin_layout Standard
+Ce qui va changer ici c'est qu'on veut traiter plusieurs textes facilement. Bien sûr on pourrait faire :
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{python}
+\end_layout
+
+\end_inset
+
+ with open(
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+13846-0.txt
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+) as f:#Discours de la Methode chaine1 = f.read() with open(
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+4300-0.txt
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+) as f:#Ulysses chaine2 = f.read() 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{python}
+\end_layout
+
+\end_inset
+
+ La première chose que l'on remarque c'est que sur Windows (le problème ne se pose pas avec Mac ou Linux) on arrive à ouvrir le texte en anglais mais pas celui en français. C'est un problème d'encodage des caractères (
+\family typewriter
+charmap
+\family default
+ error). L'encodage c'est la manière dont on stocke les caractères en les changeant en 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+0
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+ et en 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+. Pour faire simple, quand on a des caractères accentués on a besoin d'un encodage (
+\shape italic
+encoding
+\shape default
+) adapté. Ici c'est 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+utf-8
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+, on va faire la modification suivante : 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{python}
+\end_layout
+
+\end_inset
+
+ with open(
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+13846-0.txt
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+, encoding='utf-8') as f:#Discours de la Methode chaine1 = f.read()
+\end_layout
+
+\begin_layout Standard
+with open(
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+4300-0.txt
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+) as f:#Ulysses chaine2 = f.read() 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{python}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On voit que l'on a répété deux fois le même code et aussi que si l'on a des correctiosn à faire, il faudra le faire deux fois.
+\end_layout
+
+\begin_layout Standard
+Si on a 100 textes à traiter il faut 300 lignes de code, pas très pratique.Nous allons voir avec une fonction ça marche mieux. Pour la fabriquer il faut décomposer notre problème, voir 
+\series bold
+ce qui est constant
+\series default
+ (factorisable, les opérations) et 
+\series bold
+ce qui est variable
+\series default
+ (non factorisable, paramètre ou sortie de la fonction). On se rend vite compte que ce que l'on veut c'est à partir d'un chemin de fichier (
+\series bold
+input
+\series default
+ ou entrant) avoir son contenu sous forme de chaîne de caractères (
+\series bold
+output
+\series default
+ ou sortant). Ce qui nous donne :
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{python}
+\end_layout
+
+\end_inset
+
+ def lirefichier(chemin): with open(chemin, encoding = 'utf-8') as f: chaine = f.read() return chaine
+\end_layout
+
+\begin_layout Standard
+chaine1 = lirefichier(
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+13846-0.txt
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+)#Discours de la Methode chaine2 = lirefichier(
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+4300-0.txt
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+)#Ulysses
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{python}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Etape 2 : découper
+\series default
+
+\end_layout
+
+\begin_layout Standard
+Toujours réfléchir en terme d'entrant/sortant : Quel est l'entrant et le sortant qu'il faut ajouter dans le squelette ci-contre à la place des XXX, YYY et ZZZ?
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{python}
+\end_layout
+
+\end_inset
+
+ def decouperenmots(XXX): #on decoupe listemots = YYY return ZZZ
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{python}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(à vous de réfléchir, réponse page suivante) 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{python}
+\end_layout
+
+\end_inset
+
+ def decouperenmots(chaine): #on decoupe listemots = chaine.split() return listemots
+\end_layout
+
+\begin_layout Standard
+listemots1 = decouperenmots(chaine1) listemots2 = decouperenmots(chaine2) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{python}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Etape 3 : compter
+\series default
+
+\end_layout
+
+\begin_layout Standard
+En entrée : la liste de mots
+\end_layout
+
+\begin_layout Standard
+En sortie : les effectifs
+\end_layout
+
+\begin_layout Standard
+NB: vous pouvez mettre des 
+\shape italic
+print
+\shape default
+ quand vous testez pour bien voir ce qu'il se passe.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{python}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+def geteffectifs(listemots): diclongueurs = 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+ for mot in listemots: longueur = len(mot)#la longueur du mot if longueur not in diclongueurs: #on a jamais vu cette longueur de mot diclongueurs[longueur]=1 # else: #on a vu cette longueur de mot diclongueurs[longueur]+=1 return diclongueurs
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{python}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Et cette fonction on va l'utiliser directement dans l'étape 5
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Etape 4 : observer (obsolète)
+\series default
+
+\end_layout
+
+\begin_layout Standard
+C'était une étape de vérification devenue inutile puisqu'on n'a pas changé les opérations effectuées.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Etape 5 : représenter
+\series default
+
+\end_layout
+
+\begin_layout Standard
+Ici on va pouvoir afficher les deux courbes sur la même figure et cerise sur le gâteau on va la sauvegarder.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{python}
+\end_layout
+
+\end_inset
+
+ import matplotlib.pyplot as pyplot #import avec alias
+\end_layout
+
+\begin_layout Standard
+for liste in [listemots1, listemots2]: #on a une liste de liste pour factoriser diclongueurs = geteffectifs(liste) listeeffectifs = [] for toto in range(30): if toto in diclongueurs:#on a donc vu des mots de cette longueur listeeffectifs.append(diclongueurs[toto]) else:#on en n'a pas vu de cette longueur, on ajoute donc un 0 listeeffectifs.append(0) pyplot.plot(listeeffectifs)#on 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+dessine
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+ mais dans la boucle
+\end_layout
+
+\begin_layout Standard
+pyplot.show()#
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+on affiche
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+ mais hors de la boucle (pour avoir tout)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{python}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Graphics 
+	filename TD/images/TD1_effectifs_total.png
+	width 50text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+Discours de la Méthode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+ et 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+Ulysses
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+ : nombre de mots par longueur (en abscisse), en ordonnée l'effectif
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On se rend compte que la figure est difficile à interpréter, en effet on travaille en valeur absolue alors que les textes sont de taille différente. On va donc utiliser la taille de chaque texte en mots (avec la fonction 
+\family typewriter
+len
+\family default
+) pour avoir cette fois une figure avec la proportion de mots de chaque longueur :
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{python}
+\end_layout
+
+\end_inset
+
+ #On remplace la ligne : listeeffectifs.append(diclongueurs[toto]) #Par: listeeffectifs.append(diclongueurs[toto]/len(liste)) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{python}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Graphics 
+	filename TD/images/TD1_frequences_total.png
+	width 50text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+Discours de la Méthode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+ et 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+Ulysses
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+ : nombre de mots par longueur (en abscisse), en ordonnée la fréquence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Voir page suivante pour un bilan
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\series bold
+Après une dernière étape de factorisation voici où nous en sommes :
+\series default
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{python}
+\end_layout
+
+\end_inset
+
+ def lirefichier(chemin): with open(chemin, encoding = 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+utf-8
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+) as f: chaine = f.read() return chaine
+\end_layout
+
+\begin_layout Standard
+def decouperenmots(chaine): listemots = chaine.split() return listemots
+\end_layout
+
+\begin_layout Standard
+def geteffectifs(listemots): diclongueurs = 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+ for mot in listemots: longueur = len(mot) if longueur not in diclongueurs: diclongueurs[longueur]=1 else: diclongueurs[longueur]+=1 return diclongueurs
+\end_layout
+
+\begin_layout Standard
+def vecteurlongueurs(diclongueurs, listemots): listeeffectifs = [] for toto in range(30): if toto in diclongueurs: listeeffectifs.append(diclongueurs[toto]/len(listemots)) else: listeeffectifs.append(0) return listeeffectifs
+\end_layout
+
+\begin_layout Standard
+import matplotlib.pyplot as pyplot
+\end_layout
+
+\begin_layout Standard
+for chemin in [
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+13846-0.txt
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+4300-0.txt
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+]: chaine = lirefichier(chemin) listemots = decouperenmots(chaine) diclongueurs = geteffectifs(listemots) listeeffectifs = vecteurlongueurs(diclongueurs, listemots) pyplot.plot(listeeffectifs)
+\end_layout
+
+\begin_layout Standard
+pyplot.savefig(
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+frequences.png
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+)#le bonus: on sauvegarde pyplot.show()
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{python}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+C'est pas mal, au prochain TD on améliorera le rendu de la figure (légende, échelle) et on travaillera sur plus de langues. 
+\end_layout
+
+\end_body
+\end_document
