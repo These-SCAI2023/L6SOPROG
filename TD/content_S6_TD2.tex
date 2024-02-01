@@ -1,0 +1,114 @@
+\newcommand{\numTD}{TD1}
+\newcommand{\themeTD}{Analyse en caractères}
+\newcommand{\file}{toto.tex}
+
+\input{./entete_TD_L6SOPROG}
+
+\hrule
+%%%%%%%%%%%%%%%%%%%%%%%%%EN-TETE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\contentsname}{Sommaire du TD}
+%\tableofcontents
+%\newpage
+
+\noindent\fcolorbox{red}{lightgray}{
+\begin{minipage}{12cm}
+\section*{Objectifs}
+
+\begin{itemize}
+ \item Rappels de manipulations simples sur un texte avec l'environnement de travail spyder 
+ \item Identifier les propriétés morphologiques d'une langue
+ \item Les comparer à d'autres
+\end{itemize}
+\end{minipage}
+}
+\newline
+
+\section{Reconnaissance d'entités nommées améliorée}
+\textbf{Données :}
+\begin{enumerate}
+  \item Un jeu de données déjà annoté, au format CSV : \textit{CSV\_annote} sur Moodle
+ \item des textes a annoter automatiquement 
+\end{enumerate}
+
+\textbf{Résultat attendu :}
+
+\begin{enumerate}
+  \item Annoter les textes au format IOB avec spaCy
+  \item Récupérer les Annotations dans les csv et les mettre au format IOB
+  \item Aligner les entités pour calculer la précision, le rappel et le f-score
+\end{enumerate}   
+  
+
+
+\textbf{Principaux outils nécessaires :}
+\begin{itemize}
+  \item csv 
+  \item Spacy
+  \item Json
+  
+\end{itemize}
+
+
+
+\vspace{0.5cm}
+\subsection{Annoter les entités nommées automatiquement avec le format IOB}
+\vspace{0.5cm}
+
+\vspace{0.5cm}
+
+\begin{python}
+import spacy
+
+nlp = spacy.load(model_langue)
+doc = nlp(text)
+
+for ent in doc.ents:
+    print(ent.text, ent.start_char, ent.end_char, ent.label_)
+\end{python}
+
+Le programme doit permettre de :
+
+\begin{itemize}
+    \item  récupérer les entités nommées dans le texte et leur label (PER : personne ; LOC : localisation ; MISC : Divers ; ....)   en utilisant \textit{spaCy }
+    \item sauvegarder un dictionnaire en json, en utuilisant le code du TD4. 
+ \item d' utiliser deux modèles de langue de \textit{spaCy}. Par exemple : 
+
+    \begin{itemize}
+    \item \textit{fr\_core\_news\_sm} 
+    \item \textit {fr\_core\_news\_lg} 
+\end{itemize}
+\item indiquer le temps de travail de l'outil en l'affichant
+\end{itemize}
+
+On attend un fichier de sortie pour chaque modèle de langue, structuré ainsi :
+%Le dictionnaire attendu est structuré comme suit :
+
+ \begin{python}   
+  
+ \end{python}
+    
+   
+
+\begin{center}
+
+\noindent\fcolorbox{blue}{lightgray}{
+	\begin{minipage}{15cm}
+\section*{Devoir}
+
+\begin{itemize}
+ \item 1 script python .py
+ \item quelques phrases de conclusion sur les résultats (qu’est-ce qui était attendu, qu’est-ce qui est inattendu ?)
+	\item quelques phrases sur l'environnement de développement Spyder comparé à Jupyter notebook, point fort, faible ...
+
+Vous déposerez sur Moodle une archive zip nommée NUMETU.zip (où NUMETU est votre numéro d’étudiant) et contenant :
+
+
+\item Votre code exporté au format Python .py (et pas ipynb)
+\item le PDF du document que vous avez produit
+ 
+ 
+ Date limite : indiquée sur le Moodle !
+\end{itemize}
+\end{minipage}
+}
+	\end{center}

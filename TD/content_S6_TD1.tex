@@ -34,9 +34,10 @@
 \textbf{Énoncé}
 
 \begin{enumerate}
-  \item En vous appuyant sur la \textit{baseline} en mots, vue dans le TD4 du semestre 5, travailler avec des tri-grammes de caractères
+  \item En vous appuyant sur la \textit{baseline} en mots vue dans le TD4 du semestre 5, travailler avec des tri-grammes de caractères
   \item ré-évaluer ce nouveau modèle
   \item Donner le diagnostic de langue avec un score de confiance en pourcentage
+  \item Évaluer le taux de réussite du programme en calculant les VP, FP, FN,VN.
   \item Donner les autres langue possibles du document
 \end{enumerate}
 
@@ -44,6 +45,7 @@
 \begin{enumerate}
   \item Le programme doit être présenté selon \textit{les bonnes pratiques de programmation}
   \item Le programme doit être factorisé
+  \item Vous devez choisir des structures de données pertinente pour stocker vos données
   \item Le programme doit être développé sous l'environnement spyder 
 \end{enumerate}
 
@@ -55,71 +57,7 @@
 
 
 
-\section{Reconnaissance d'entités nommées améliorée}
-\textbf{Données :}
-\begin{enumerate}
-  \item Un jeu de données déjà annoté, au format CSV : \textit{CSV\_annote} sur Moodle
- \item des textes a annoter automatiquement 
-\end{enumerate}
 
-\textbf{Résultat attendu :}
-
-\begin{enumerate}
-  \item Annoter les textes au format IOB avec spaCy
-  \item Récupérer les Annotations dans les csv et les mettre au format IOB
-  \item Aligner les entités pour calculer la précision, le rappel et le f-score
-\end{enumerate}   
-  
-
-
-\textbf{Principaux outils nécessaires :}
-\begin{itemize}
-  \item csv 
-  \item Spacy
-  \item Json
-  
-\end{itemize}
-
-
-
-\vspace{0.5cm}
-\subsection{Annoter les entités nommées automatiquement avec le format IOB}
-\vspace{0.5cm}
-
-\vspace{0.5cm}
-
-\begin{python}
-import spacy
-
-nlp = spacy.load(model_langue)
-doc = nlp(text)
-
-for ent in doc.ents:
-    print(ent.text, ent.start_char, ent.end_char, ent.label_)
-\end{python}
-
-Le programme doit permettre de :
-
-\begin{itemize}
-    \item  récupérer les entités nommées dans le texte et leur label (PER : personne ; LOC : localisation ; MISC : Divers ; ....)   en utilisant \textit{spaCy }
-    \item sauvegarder un dictionnaire en json, en utuilisant le code du TD4. 
- \item d' utiliser deux modèles de langue de \textit{spaCy}. Par exemple : 
-
-    \begin{itemize}
-    \item \textit{fr\_core\_news\_sm} 
-    \item \textit {fr\_core\_news\_lg} 
-\end{itemize}
-\item indiquer le temps de travail de l'outil en l'affichant
-\end{itemize}
-
-On attend un fichier de sortie pour chaque modèle de langue, structuré ainsi :
-%Le dictionnaire attendu est structuré comme suit :
-
- \begin{python}   
-  
- \end{python}
-    
-   
 
 \begin{center}
 

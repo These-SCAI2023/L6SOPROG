@@ -22,8 +22,50 @@
 %%\setmainfont[Ligatures=TeX]{Times New Roman}
 %%\newfontfamily{\cyrillicfonttt}{Times New Roman}[Script=Cyrillic]
 
+\usetheme{metropolis}
+\usepackage{appendixnumberbeamer}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,francais]{babel}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+%\usepackage{xcolor}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usepackage{graphicx}
+\usepackage{xspace}
+\usepackage{hyperref}
+\usepackage{arydshln}
+\usepackage{pifont}
+\usepackage{enumitem}
+\usepackage{xcolor}
+%\usepackage{minted}
+%%\usepackage{polyglossia}
+%%    \setdefaultlanguage{french} % main language
+%%    \setotherlanguages{russian, hindi, greek, hebrew} % other languages 
+%%\graphicspath{{images/}}	% Put all images in this directory. Avoids clutter.
+%%\setmainfont{Latin Modern Roman}
+%%\setsansfont{Latin Modern Sans}
+%%\setmonofont{Latin Modern Mono}
+%%\setmainfont[Ligatures=TeX]{Times New Roman}
+%%\newfontfamily{\cyrillicfonttt}{Times New Roman}[Script=Cyrillic]
+
+
+
+
+
+
+
+
+
+\definecolor{greenperso}{RGB}{68,117,104}
+\definecolor{greenblue}{RGB}{95,179,176}
+
+
+
 \title{Programmation de Modèles Linguistiques 1, \\ L6SOPRG L3}
-\subtitle{Crédits : Hugo Chevroton}
+\subtitle{Crédits : Hugo Chevroton, CESR \& Angélique Allaire, ObTIC}
 %\subtitle{A modern beamer theme}
 \date{}
 \author{Caroline Koudoro-Parfait\\ \quad {caroline.parfait@sorbonne-universite.fr\\}}
@@ -32,10 +74,11 @@
 \begin{document}
 \maketitle
 
-\begin{frame}{Plan de la présentation}
-  \setbeamertemplate{section in toc}[sections numbered]
-  \tableofcontents[hideallsubsections]
-\end{frame}
+%\begin{frame}{Plan de la présentation}
+%  \setbeamertemplate{section in toc}[sections numbered]
+%  \tableofcontents[hideallsubsections]
+%\end{frame}
 \input{content_CM1.tex}
+\input{fonction.tex}
 
 \end{document}

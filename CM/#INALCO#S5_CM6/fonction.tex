@@ -1,0 +1,145 @@
+\documentclass[xcolor=table]{beamer}
+
+\usetheme{metropolis}
+\usepackage{appendixnumberbeamer}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,francais]{babel}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+%\usepackage{xcolor}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usepackage{graphicx}
+\usepackage{xspace}
+\usepackage{hyperref}
+\usepackage{arydshln}
+\usepackage{pifont}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{minted}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+%%\usepackage{polyglossia}
+%%    \setdefaultlanguage{french} % main language
+%%    \setotherlanguages{russian, hindi, greek, hebrew} % other languages 
+%%\graphicspath{{images/}}	% Put all images in this directory. Avoids clutter.
+%%\setmainfont{Latin Modern Roman}
+%%\setsansfont{Latin Modern Sans}
+%%\setmonofont{Latin Modern Mono}
+%%\setmainfont[Ligatures=TeX]{Times New Roman}
+%%\newfontfamily{\cyrillicfonttt}{Times New Roman}[Script=Cyrillic]
+
+\title{Algorithmique et Programmation (TALA330A L3 INALCO)}
+\subtitle{Crédits : Angélique Allaire, ObTIC}
+%\subtitle{A modern beamer theme}
+\date{17 octobre 2022}
+\author{Caroline Koudoro-Parfait\\ \quad {caroline.parfait@sorbonne-universite.fr\\} \quad {}}
+\institute{Observatoire des Textes des Idées et des Corpus - Obtic,\\ Sorbonne Center for Artificial Intelligence - SCAI,\\ Sens Textes Informatiques Histoire - STIH EA 4509, Sorbonne Université}
+ \titlegraphic{\hfill\includegraphics[height=.7cm]{images/inalco_logo.png}}
+
+
+
+
+\begin{document}
+\maketitle
+\definecolor{greenperso}{RGB}{68,117,104}
+\definecolor{greenblue}{RGB}{95,179,176}
+
+\begin{frame}{Plan de la présentation}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Les Fonctions - Principe et généralités}
+
+\begin{frame}{Les Fonctions - Principe et généralités}
+
+\begin{itemize}[label=\textbullet, font= \color{greenperso}]
+    \item Utiles pour réaliser plusieurs fois la même opération au sein d'un programme. 
+    \item Elles rendent également le code plus lisible et plus clair en le fractionnant en blocs logiques.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Les Fonctions natives Python}
+    
+
+Vous connaissez déjà certaines fonctions Python. Par exemple des fonctions internes à Python comme :
+
+\begin{itemize}[label=\textbullet, font= \color{greenperso}]
+    \item range() : indication pour effectuer une action un certain nombre de fois dans une boucle for
+    \item len() : donner la taille d'une liste, d'une chaîne de caractères
+    \item print() : affichage
+    \item type() : type de la valeur 
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Les Fonctions}
+Pour l'instant, une fonction est à vos yeux une sorte de « boîte noire » (voir figure 1) :
+\begin{itemize}[label=\textbullet, font= \color{greenperso}]
+    \item À laquelle vous indiquez aucune, une ou plusieurs variable(s) entre parenthèses. Ces variables sont appelées \textbf{arguments}. Il peut s'agir de n'importe quel type d'objet Python.
+
+ \item Qui effectue une action.
+\item Et qui renvoie un objet Python ou rien du tout.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Les Fonctions}
+
+\includegraphics[scale=0.5]{images/fonctions.png}
+    
+\end{frame}
+
+\section{Déclarer et appeler une fonction}
+
+\begin{frame}{Les Fonctions}
+
+\includegraphics[scale=0.5]{images/fonction_2.png}
+    
+\end{frame}
+
+\begin{frame}{Les Fonctions}
+
+\includegraphics[scale=0.5]{images/fonctions_3.png}
+\vspace{-0.3cm}
+\footnotesize{$*$ \textit{pycharm} est un IDE, au même titre que \textit{Spyder ou Jupyter notebook}...}
+    
+\end{frame}
+
+\begin{frame}{Les Fonctions}
+
+\includegraphics[scale=0.5]{images/fonction_3.png}
+\vspace{-0.3cm}
+\footnotesize{$*$ \textit{pycharm} est un IDE, au même titre que \textit{Spyder ou Jupyter notebook}...}
+    
+\end{frame}
+
+\begin{frame}{Les Fonctions}
+
+\includegraphics[scale=0.5]{images/fonction-4.png}
+    
+\end{frame}
+
+\begin{frame}{Les Fonctions}
+
+Exercice :
+Écrire une fonction qui retourne l’endroit où nous sommes actuellement et ce que nous faisons en utilisant des paramètres
+    
+\end{frame}
+
+
+\begin{frame}{Les Fonctions}
+Ecrire la fonction 
+\includegraphics[scale=0.3]{images/fonction_1.png}
+\pause
+
+\vspace{1cm}
+Quand on fait tourner le programme on obtient : 
+\includegraphics[scale=0.3]{images/fonction2.png}
+
+\end{frame}
+\end{document}
