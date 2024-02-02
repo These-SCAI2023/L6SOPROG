@@ -28,11 +28,11 @@
  \frametitle{Étapes importantes}
 \begin{itemize}
 
-\item Commenter le code non essentiel 
+\item \textcolor{green}{\ding{51}} Commenter le code non essentiel 
 
-\item Refactoriser le code Jupyter Notebook en fonctions
+\item \textcolor{green}{\ding{51}} Factoriser le code Jupyter Notebook en fonctions
 
-\item Créer des scripts Python pour des tâches associées
+\item \textcolor{green}{\ding{51}} Créer des scripts Python pour chaque tâches associées
 
 \end{itemize} 
 \end{frame}
@@ -40,18 +40,18 @@
 \begin{frame}
  \frametitle{Étapes importantes}
 \begin{itemize}
-\item Commenter le code non essentiel : \# \\
+\item \textcolor{green}{\ding{51}} Commenter le code non essentiel : \# \\
 \ding{220} les parties de programme qui ne \textbf{fonctionnent pas} ou \textbf{expérimentatoires}.
 
 \pause
 
-\item Refactoriser le code Jupyter Notebook en fonctions. Observer votre notebook, n'y a t il pas :\\
+\item \textcolor{green}{\ding{51}} Factoriser le code Jupyter Notebook en fonctions. Observer votre notebook, n'y a t il pas :\\
 \ding{220} des parties de code que vous répétez ?\\
 \ding{220} des fonctions que vous répétez inutilement.
 
 \pause
 
-\item Créer des scripts Python pour des tâches associées.\\
+\item \textcolor{green}{\ding{51}} Créer des scripts Python pour des tâches associées.\\
 \ding{220} Vous pouvez écrire un scripte initiale dans lequel vous appelez un autre script qui va contenir les fonctions que vous souhaitez utiliser
 \end{itemize} 
 \end{frame}
@@ -128,6 +128,15 @@
   \begin{figure}
   \includegraphics[width=10cm]{images/spyder_infos.png}
   \end{figure}
+  \ding{220} conda : base(3.11.5) \ding{219} Version de python utilisé dans l'environnement\\
+  \ding{220} Completions: conda(base) \ding{219} Complétion automatique proposée\\
+  \ding{220} LSP: Python \ding{219} Language Server Protocol (LSP) \\
+  \ding{220} Line 24, Col 1 \ding{219} situation du curseur sur l'éditeur\\
+  \ding{220}UTF-8 : Encodage\\
+  \ding{220} LF \ding{219} File EOL status, Linux : LF, Windows : CRLF. Problème de fin de ligne par exemple.\\
+  \ding{220} RW \ding{219} File permission \footnote{\url{https://www.warp.dev/terminus/linux-file-permissions-explained}}\\
+  \ding{220}Mem 17\% \ding{219} Mémoire globale utilisée
+  
 \end{frame}
 
 \begin{frame}  
@@ -135,27 +144,37 @@
 \begin{figure}
   \includegraphics[width=10cm]{images/spyder_explo_variable.png}
   \end{figure}
+  \ding{220} Accédez au nom de variable, type, longueur du contenu de la variable et valeurs
 \end{frame}
 
 \begin{frame}
   \frametitle{Sélectionner un fichier}
   \begin{figure}
-  \includegraphics[width=10cm]{images/spyder_Files.png}
+  \includegraphics[width=9cm]{images/spyder_Files.png}
   \end{figure}
+  \vspace{-0.3cm}
+  Pour ouvrir un fichier vous pouvez :
+  \begin{itemize}
+  \item \ding{220} Sélectionner votre script dans l'explo. de fichier de votre machine et le déposer dans l'éditeur
+  \item \ding{220} File \ding{219} Open \ding{219} Sélectionner votre script dans l'explo. de fichier affiché 
+  \item \ding{220} dans l'explorateur onglet \ding{219} file \ding{219} naviguer \ding{219} double cliquer
+  \end{itemize}
   \end{frame}
 
 \begin{frame}
   \frametitle{Historique}
   \begin{figure}
   \includegraphics[width=10cm]{images/spyder_hystory}
-	\end{figure}  
+	\end{figure} 
+	\ding{220} Consulter l'historique des commandes  
   \end{frame}
   
 \begin{frame}
   \frametitle{Débogage base}
   \begin{figure}
   \includegraphics[width=10cm]{images/spyder_signal_erreur.png}
-	\end{figure}  
+	\end{figure} 
+	\ding{220} affiche qu'il y a un problème, passer la souris / cliquer dessus pour avoir le détail. 
   \end{frame}
   
 \section{Listes, set et match !}
