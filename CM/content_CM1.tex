@@ -71,6 +71,26 @@
 \end{frame}
 
 
+\subsection{Bonnes pratiques d'écriture d'un programme}
+
+\begin{frame}
+  \frametitle{Bonne pratique d'écriture d'un programme}
+   \begin{figure}
+  \includegraphics[width=8cm]{images/spyder_bonnes_pratiques.png}
+  \end{figure}
+  
+\textcolor{green}{\ding{220}} import \\
+\textcolor{green}{\ding{220}} fonctions\\
+
+\textcolor{green}{\ding{220}} Main : 
+\vspace{-0.3cm}
+\begin{itemize}
+\item appel des fonctions
+\item boucles ...
+\end{itemize}
+
+  
+\end{frame}
 
 %\begin{frame}
 %%  \frametitle{}
@@ -215,31 +235,61 @@ les objets.\\
 \textbf{+sieurs clef}.
 Syntaxe :
 \begin{itemize}
-\item* dico\_age =$\left\{\right\}$
+\item* dico\_vide =$\left\{\right\}$
 \item* dico\_age =$\left\{ "Annie" : \textcolor{orange}{20} , "Paul" :18, "Antonia":  \textcolor{orange}{20} \right\}$
-\item* dico\_age [ "Annie" ] vaut 20 .
+\item* dico\_age [ "Annie" ] = 20 .
 \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Petit point sur les set - ensembles}
-  \ding{220} c'est un groupement non ordonné d’éléments uniques \ding{220} pas de doublon.\\
+  \ding{220} c'est un groupement non ordonné d’éléments uniques \ding{220} pas de doublon\footnote{+ d'infos sur les set \url{https://gayerie.dev/docs/python/python3/set.html}}.\\
   \ding{220} peut contenir des éléments de types différents.\\
+  \ding{220} pas possible d’accéder aux éléments d’un ensemble avec l’opérateur [] 
   
   Syntaxe :
   
   \begin{itemize}
-\item*  mon\_ensemble = set() != mon\_dico =$\left\{\right\}$
-\item* fd
-\item* gdfg
-\item* gfdgfd
+\item*  mon\_ensemble\_vide = set() !=  mon\_dico =$\left\{\right\}$
+\item* mon\_ensemble = $\left\{None, 10, "Bonjour",True \right\}$
+\item* 10 in mon\_ensemble \ding{220 } True
+\item* 12 in mon\_ensemble \ding{220 } False
+\item* 12 not in mon\_ensemble \ding{220 } True
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-%  \frametitle{}
+  \frametitle{Petit point sur n-uplet ou tuple}
   
+ \ding{220} Séquence non modifiable de données ordonnées\footnote{+ d'infos sur les tuple \url{https://gayerie.dev/docs/python/python3/tuple.html}}. \\
+ \ding{220} Chaque élément du tuple est associé à une position (un index).\\ 
+ \ding{220} Les tuples ne sont pas modifiables.\\ 
+ 
+ Syntaxe :
+ 
+   \begin{itemize}
+   
+\item*  tuple\_vide = ()
+\item* mon\_tuple = (10, 20, 30, 40)
+\item*  mon\_tuple = ("caroline",) != chaine=("caroline") 
+\item* tuple\_depareille = (None, 10, "Bonjour", True)
+ 
+\end{itemize}
 \end{frame}
+
+\begin{frame}
+  \frametitle{Rappels}
+  \ding{220} Les ensembles, listes et tuples sont des collections d’éléments\\ 
+  \ding{220} il est possible de passer de l’un à l’autre grâce aux \textbf{méthode} set(), list(), tuple().\\
+  
+   \ding{220} un ensemble/set n’est \textbf{pas ordonné} != liste, un tuple ordonnée\\
+
+\ding{220} parcourir un set avec une instruction for, pas de garantie sur l’ordre de parcours des éléments. \\
+\ding{220} un set n’est pas une structure de données pertinente quand il existe une relation d’ordre entre les éléments.
+\end{frame}
+
+
+
 
 
 
