@@ -101,6 +101,20 @@
 
 \section{Spyder un autre environnement }  
 
+\begin{frame}
+  \frametitle{Sélectionner et ouvrir un fichier}
+  \begin{figure}
+  \includegraphics[width=9cm]{images/spyder_Files.png}
+  \end{figure}
+  \vspace{-0.3cm}
+  Pour ouvrir un fichier vous pouvez :
+  \begin{itemize}
+  \item \ding{220} Sélectionner votre script dans l'explo. de fichier de votre machine et le déposer dans l'éditeur
+  \item \ding{220} File \ding{219} Open \ding{219} Sélectionner votre script dans l'explo. de fichier affiché 
+  \item \ding{220} dans l'explorateur onglet \ding{219} file \ding{219} naviguer \ding{219} double cliquer
+  \end{itemize}
+  \end{frame}
+
 \begin{frame} \frametitle{L'Éditeur 1}
   \begin{figure}
   \includegraphics[width=7cm]{images/spyder_editor.png}
@@ -125,19 +139,11 @@
   et sélectionner \textit{split horizontally} ou \textit{split vertically}
 \end{frame}
 
-\begin{frame}  \frametitle{La console}
-  \begin{figure}
-  \includegraphics[width=10cm]{images/spyder_console.png}
-  \end{figure}
-  \ding{220} des lignes de codes peuvent être lancées depuis la console\\
-  \ding{220} Les messages d'erreurs s'affichent dans la console \ding{219} Débogage\\
-  \ding{220} Carré rouge en haut à droite de la console  == ordinateur calcul
-\end{frame}
 
 \begin{frame}
   \frametitle{Situer son script sur sa machine}
   \begin{figure}
-  \includegraphics[width=15cm]{images/spyder_chemin.png}
+  \includegraphics[width=11cm]{images/spyder_chemin.png}
   \end{figure}
   \ding{220} Haut droite, fil d'Ariane : Indique où votre script est rangé sur la machine\\
   \ding{220} Haut gauche : permet de changer de dossier racine, d'explorer l'arborescence de votre machine
@@ -159,6 +165,31 @@
   
 \end{frame}
 
+\begin{frame}  \frametitle{La console}
+  \begin{figure}
+  \includegraphics[width=10cm]{images/spyder_console.png}
+  \end{figure}
+  \ding{220} des lignes de codes peuvent être lancées depuis la console\\
+  \ding{220} Les messages d'erreurs s'affichent dans la console \ding{219} Débogage\\
+  \ding{220} Carré rouge en haut à droite de la console  == ordinateur calcul
+\end{frame}
+
+\begin{frame}
+  \frametitle{Débogage base}
+  \begin{figure}
+  \includegraphics[width=10cm]{images/spyder_signal_erreur.png}
+	\end{figure} 
+	\ding{220} affiche qu'il y a un problème, passer la souris / cliquer dessus pour avoir le détail. 
+  \end{frame}
+  
+\begin{frame}
+  \frametitle{Historique}
+  \begin{figure}
+  \includegraphics[width=10cm]{images/spyder_hystory}
+	\end{figure} 
+	\ding{220} Consulter l'historique des commandes  
+  \end{frame}
+
 \begin{frame}  
 \frametitle{L'explorateur de variable}
 \begin{figure}
@@ -168,34 +199,21 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Sélectionner un fichier}
+  \frametitle{Affichage des graphiques - plots}
   \begin{figure}
-  \includegraphics[width=9cm]{images/spyder_Files.png}
-  \end{figure}
-  \vspace{-0.3cm}
-  Pour ouvrir un fichier vous pouvez :
-  \begin{itemize}
-  \item \ding{220} Sélectionner votre script dans l'explo. de fichier de votre machine et le déposer dans l'éditeur
-  \item \ding{220} File \ding{219} Open \ding{219} Sélectionner votre script dans l'explo. de fichier affiché 
-  \item \ding{220} dans l'explorateur onglet \ding{219} file \ding{219} naviguer \ding{219} double cliquer
-  \end{itemize}
-  \end{frame}
-
-\begin{frame}
-  \frametitle{Historique}
-  \begin{figure}
-  \includegraphics[width=10cm]{images/spyder_hystory}
+  \includegraphics[width=10cm]{images/spyder_plots.png}
 	\end{figure} 
-	\ding{220} Consulter l'historique des commandes  
-  \end{frame}
+	\ding{220} L'affichage des graphiques ce fait dans ce panneau.
+\end{frame}
   
 \begin{frame}
-  \frametitle{Débogage base}
+  \frametitle{Affichage des panneaux (explo. variable, console...)}
   \begin{figure}
-  \includegraphics[width=10cm]{images/spyder_signal_erreur.png}
+  \includegraphics[width=10cm]{images/spyder_view.png}
 	\end{figure} 
-	\ding{220} affiche qu'il y a un problème, passer la souris / cliquer dessus pour avoir le détail. 
-  \end{frame}
+	\vspace{-0.3cm}
+	\ding{220} Paramétrer l'affichage des panneaux que vous souhaitez voir affichés ou non.
+\end{frame}
   
 \section{Listes, dico, set (et match !)}
 
@@ -271,7 +289,7 @@ Syntaxe :
    
 \item*  tuple\_vide = ()
 \item* mon\_tuple = (10, 20, 30, 40)
-\item*  mon\_tuple = ("caroline",) != chaine=("caroline") 
+\item*  mon\_tuple = ("caroline"\textcolor{orange}{,}) != chaine=("caroline") 
 \item* tuple\_depareille = (None, 10, "Bonjour", True)
  
 \end{itemize}
