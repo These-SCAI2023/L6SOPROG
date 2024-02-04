@@ -1,0 +1,31 @@
+TD1 - Classificateur
+
+Slide 1
+ Question: 
+ 	input(poem) -> Classifier() -> Is the poem by Allan poe ?
+ 
+Slide 2
+ Autres examples:
+	Email : spam or not spam
+	Movie review : Positive or negative
+	
+	Any text can be used as input
+
+Slide 3
+	Text classification is supervised method, but Makov is not because there is just a text, not labels
+	So, how to do ? Using Bayes rules (building a Bayes classifier (eq 1))
+	
+Slide 4
+ General idea (img 1)
+	Giving to the model Pis and As, explain what is each concept
+	Then the model will calculate the probability of the input text to membership to a Poe Class or Fros Class
+	
+Slide 5
+ Appliying rules:
+ 	we have p(poem|author) but we need p(author|poem)
+ 	So, we can apply the next equiation (eq. 2)
+ 	And ... (eq. 3)
+ 	
+Slide 6
+ Simplifiying rules:
+ 	(img 2)

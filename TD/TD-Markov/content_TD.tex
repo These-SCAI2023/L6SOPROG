@@ -1,0 +1,41 @@
+\global\long\def\numTD{TD2}%
+ 
+\global\long\def\themeTD{Entraînement des modèles linguistiques}%
+ 
+\global\long\def\file{toto.tex}%
+
+\input{entete_TD_L5SOPROG.tex}
+
+\hrule %%%%%%%%%%%%%%%%%%%%%%%%%EN-TETE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\contentsname}{Sommaire du TD}
+%\tableofcontents
+%\newpage
+
+\noindent %
+\fcolorbox{red}{lightgray}{ %
+\begin{minipage}[c]{16.5cm}%
+ 
+
+\section*{Objectifs}
+\begin{itemize}
+\item Construire un modèle linguistique à partir d'une approche stochastique
+\item Identifier et extraire les caractéristiques statistiques d'un corpus linguistique. 
+\item Mettre en pratique les connaissances acquisse en Python pour l'analyse du corpus
+\item Concevoir un algorithme capable de recevoir un nouveau texte et calculer le niveau appartenance de chaque modèle (classe) entraîné.  
+\end{itemize}
+%
+\end{minipage}} \\
+
+\exer{Préparation des données}
+
+\input{ressources/td1_exo1_training.tex}
+
+\newpage\exer{Entraînement des classes}
+
+\input{ressources/td1_exo2_training .tex}
+
+%\exer{Bonus : améliorations}
+%%\begin{python}
+%%print("texte")
+%%\end{python}
+
