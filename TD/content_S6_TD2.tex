@@ -15,73 +15,55 @@
 \section*{Objectifs}
 
 \begin{itemize}
- \item Rappels de manipulations simples sur un texte avec l'environnement de travail spyder 
- \item Identifier les propriétés morphologiques d'une langue
- \item Les comparer à d'autres
+\item Analyses linguistiques appliquées à un texte: Lemmatisation, Tokenization, POS tagging.
+  \item Organiser son/ses scripts de manière lisible
+  \item 
+ \item 
+  \item représenter graphiquement des résultats
 \end{itemize}
 \end{minipage}
 }
 \newline
 
-\section{Reconnaissance d'entités nommées améliorée}
-\textbf{Données :}
-\begin{enumerate}
-  \item Un jeu de données déjà annoté, au format CSV : \textit{CSV\_annote} sur Moodle
- \item des textes a annoter automatiquement 
-\end{enumerate}
-
-\textbf{Résultat attendu :}
-
-\begin{enumerate}
-  \item Annoter les textes au format IOB avec spaCy
-  \item Récupérer les Annotations dans les csv et les mettre au format IOB
-  \item Aligner les entités pour calculer la précision, le rappel et le f-score
-\end{enumerate}   
-  
-
 
 \textbf{Principaux outils nécessaires :}
 \begin{itemize}
-  \item csv 
-  \item Spacy
+  \item spaCy
+  \item Matplotlib/ Seaborn
   \item Json
   
 \end{itemize}
 
-
+\section{Utiliser différents outils de spaCy pour l'analyse linguistique}
+Utiliser les outils proposés par spaCy pour effectuer les traitements suivants :
+\begin{enumerate}
+\item Lemmatisation
+\item POS tagging
+\end{enumerate}
+\ding{220} Vous stockerez les résultats dans la structure de données et dans un fichier dont l'extension vous semble les plus appropriées.\\
+ 
+\ding{220} Vous proposerez une représentation graphique qui vous semble pertinente
 
 \vspace{0.5cm}
-\subsection{Annoter les entités nommées automatiquement avec le format IOB}
+\section{Différentes tokenisations}
 \vspace{0.5cm}
+
+\begin{description}
+\item [étape 1] Tokeniser le texte en utilisant la fonction native python split()
+  \item [étape 2] Tokeniser les textes en utilisant spaCy
+ \item [étape 3] stocker les résultats dans une/des structures de données qui vous semblent appropriées
+ \item [étape 4] Exprimer les résultats sous forme d'un graphique représentant une loi de Zipf. Ce graphique permet de comparer la courbe de la loi de Zipf pour les résultats avec la tokenisation split() et la tokenisation de spaCy. Quelles observations pouvez-vous formuler ?
+\end{description}
+
+
 
 \vspace{0.5cm}
 
 \begin{python}
-import spacy
 
-nlp = spacy.load(model_langue)
-doc = nlp(text)
-
-for ent in doc.ents:
-    print(ent.text, ent.start_char, ent.end_char, ent.label_)
 \end{python}
 
-Le programme doit permettre de :
 
-\begin{itemize}
-    \item  récupérer les entités nommées dans le texte et leur label (PER : personne ; LOC : localisation ; MISC : Divers ; ....)   en utilisant \textit{spaCy }
-    \item sauvegarder un dictionnaire en json, en utuilisant le code du TD4. 
- \item d' utiliser deux modèles de langue de \textit{spaCy}. Par exemple : 
-
-    \begin{itemize}
-    \item \textit{fr\_core\_news\_sm} 
-    \item \textit {fr\_core\_news\_lg} 
-\end{itemize}
-\item indiquer le temps de travail de l'outil en l'affichant
-\end{itemize}
-
-On attend un fichier de sortie pour chaque modèle de langue, structuré ainsi :
-%Le dictionnaire attendu est structuré comme suit :
 
  \begin{python}   
   
@@ -98,7 +80,7 @@ On attend un fichier de sortie pour chaque modèle de langue, structuré ainsi :
 \begin{itemize}
  \item 1 script python .py
  \item quelques phrases de conclusion sur les résultats (qu’est-ce qui était attendu, qu’est-ce qui est inattendu ?)
-	\item quelques phrases sur l'environnement de développement Spyder comparé à Jupyter notebook, point fort, faible ...
+	
 
 Vous déposerez sur Moodle une archive zip nommée NUMETU.zip (où NUMETU est votre numéro d’étudiant) et contenant :
 

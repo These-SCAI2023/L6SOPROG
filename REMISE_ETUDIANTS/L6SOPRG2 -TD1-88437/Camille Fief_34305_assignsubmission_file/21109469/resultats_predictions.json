@@ -1,0 +1,4930 @@
+{
+  "2009-01-09_celex_IP-09-26.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.27188689505165853
+  },
+  "2009-01-13_celex_IP-09-45.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.18968133535660092
+  },
+  "2009-01-28_celex_IP-09-141.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.17448961786773687
+  },
+  "2009-01-28_celex_IP-09-142.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.10714668381013608
+  },
+  "2009-02-10_celex_IP-09-232.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.1601794009290405
+  },
+  "2009-02-10_celex_IP-09-238.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.3996802557953637
+  },
+  "2009-02-20_celex_IP-09-300.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.18426386585590565
+  },
+  "2009-02-23_celex_IP-09-303.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.2071251035625518
+  },
+  "2009-03-05_celex_IP-09-354.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.1961938395134393
+  },
+  "2009-03-06_celex_IP-09-362.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.39370078740157477
+  },
+  "2009-03-31_celex_IP-09-506.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.23781212841854932
+  },
+  "2009-03-31_celex_IP-09-510.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.20325203252032523
+  },
+  "2009-04-08_celex_IP-09-554.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.19837333862328904
+  },
+  "2009-04-08_celex_IP-09-560.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.3541076487252125
+  },
+  "2009-04-22_celex_IP-09-620.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.12679092177000129
+  },
+  "2009-04-23_celex_IP-09-625.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.09645992090286486
+  },
+  "2009-04-29_celex_IP-09-666.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.2728512960436562
+  },
+  "2009-04-29_celex_IP-09-673.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.24113817217265493
+  },
+  "2009-05-07_celex_IP-09-718.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.16299918500407498
+  },
+  "2009-05-08_celex_IP-09-723.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.2238638907544213
+  },
+  "2009-05-28_celex_IP-09-845.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.17271157167530224
+  },
+  "2009-05-29_celex_IP-09-851.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.17001020061203673
+  },
+  "2009-06-17_celex_IP-09-941.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.3505082369435682
+  },
+  "2009-06-18_celex_IP-09-948.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.2646903123345686
+  },
+  "2009-06-26_celex_IP-09-1044.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.17774617845716317
+  },
+  "2009-06-29_celex_IP-09-1049.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.2987750224081267
+  },
+  "2009-07-08_celex_IP-09-1096.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.2104820037886761
+  },
+  "2009-07-08_celex_IP-09-1098.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.14486455164421266
+  },
+  "2009-07-20_celex_IP-09-1165.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.40666937779585194
+  },
+  "2009-07-22_celex_IP-09-1166.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.14624159110851126
+  },
+  "2009-07-30_celex_IP-09-1204.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.218435998252512
+  },
+  "2009-07-31_celex_IP-09-1214.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.19047619047619047
+  },
+  "2009-09-09_celex_IP-09-1292.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.17190991920233797
+  },
+  "2009-09-11_celex_IP-09-1305.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.23872045834328004
+  },
+  "2009-09-23_celex_IP-09-1347.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.17500875043752187
+  },
+  "2009-09-23_celex_IP-09-1349.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.2900232018561485
+  },
+  "2009-10-02_celex_IP-09-1401.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.16744809109176156
+  },
+  "2009-10-05_celex_IP-09-1420.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.18234865061998543
+  },
+  "2009-10-14_celex_IP-09-1508.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.21177467174925876
+  },
+  "2009-10-14_celex_IP-09-1516.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.48192771084337355
+  },
+  "2009-10-19_celex_IP-09-1540.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.29568302779420463
+  },
+  "2009-10-19_celex_IP-09-1544.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.15467904098994587
+  },
+  "2009-10-22_celex_IP-09-1573.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.22878059940517045
+  },
+  "2009-10-23_celex_IP-09-1574.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.261437908496732
+  },
+  "2009-10-29_celex_IP-09-1626.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.22237046920169004
+  },
+  "2009-10-29_celex_IP-09-1646.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.011619800139437602
+  },
+  "2009-11-11_celex_IP-09-1696.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.5668934240362812
+  },
+  "2009-11-11_celex_IP-09-1697.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.3597122302158274
+  },
+  "2009-11-19_celex_IP-09-1740.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.24691358024691357
+  },
+  "2009-11-20_celex_IP-09-1779.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.22163120567375888
+  },
+  "2009-11-25_celex_IP-09-1816.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.1834862385321101
+  },
+  "2009-11-26_celex_IP-09-1824.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.10607828577490189
+  },
+  "2009-12-07_celex_IP-09-1883.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.601684717208183
+  },
+  "2009-12-07_celex_IP-09-1884.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.09348415443582313
+  },
+  "2009-12-21_celex_IP-09-1988.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.3620564808110065
+  },
+  "2009-12-31_celex_IP-09-2002.bg.html": {
+    "langue_predite": "bg",
+    "score_confiance": 0.1744287458573173
+  },
+  "2009-01-09_celex_IP-09-26.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.2999400119976005
+  },
+  "2009-01-13_celex_IP-09-45.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.2087246921310791
+  },
+  "2009-01-28_celex_IP-09-141.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.7658643326039387
+  },
+  "2009-01-28_celex_IP-09-142.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.11279043537108054
+  },
+  "2009-02-10_celex_IP-09-232.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.1761804087385483
+  },
+  "2009-02-10_celex_IP-09-238.cs.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.4789272030651341
+  },
+  "2009-02-20_celex_IP-09-300.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.2025931928687196
+  },
+  "2009-02-23_celex_IP-09-303.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.2230649118893598
+  },
+  "2009-03-05_celex_IP-09-354.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.20391517128874387
+  },
+  "2009-03-06_celex_IP-09-362.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.45330915684496825
+  },
+  "2009-03-31_celex_IP-09-506.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.2905287623474724
+  },
+  "2009-03-31_celex_IP-09-510.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.20742584526031943
+  },
+  "2009-04-08_celex_IP-09-554.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.2152389151958674
+  },
+  "2009-04-08_celex_IP-09-560.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.38358266206367475
+  },
+  "2009-04-22_celex_IP-09-620.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.1511030522816561
+  },
+  "2009-04-23_celex_IP-09-625.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.10316723408645415
+  },
+  "2009-04-29_celex_IP-09-666.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.2981514609421586
+  },
+  "2009-04-29_celex_IP-09-673.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.27731558513588467
+  },
+  "2009-05-07_celex_IP-09-718.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.1850481125092524
+  },
+  "2009-05-08_celex_IP-09-723.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.24563989191844757
+  },
+  "2009-05-28_celex_IP-09-845.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.21172983273343213
+  },
+  "2009-05-29_celex_IP-09-851.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.20358306188925082
+  },
+  "2009-06-17_celex_IP-09-941.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.38565368299267255
+  },
+  "2009-06-18_celex_IP-09-948.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.297029702970297
+  },
+  "2009-06-26_celex_IP-09-1044.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.19837333862328904
+  },
+  "2009-06-29_celex_IP-09-1049.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.35727045373347627
+  },
+  "2009-07-08_celex_IP-09-1096.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.2321262766945218
+  },
+  "2009-07-08_celex_IP-09-1098.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.1693480101608806
+  },
+  "2009-07-20_celex_IP-09-1165.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.3975265017667844
+  },
+  "2009-07-22_celex_IP-09-1166.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.17018379850238255
+  },
+  "2009-07-30_celex_IP-09-1204.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.25037556334501754
+  },
+  "2009-07-31_celex_IP-09-1214.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.22696323195642307
+  },
+  "2009-09-09_celex_IP-09-1292.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.19821605550049554
+  },
+  "2009-09-11_celex_IP-09-1305.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.26638252530633993
+  },
+  "2009-09-23_celex_IP-09-1347.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.19443904335990667
+  },
+  "2009-09-23_celex_IP-09-1349.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.3079765937788728
+  },
+  "2009-10-02_celex_IP-09-1401.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.18365472910927455
+  },
+  "2009-10-05_celex_IP-09-1420.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.20721094073767096
+  },
+  "2009-10-14_celex_IP-09-1508.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.25510204081632654
+  },
+  "2009-10-14_celex_IP-09-1516.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.5617977528089888
+  },
+  "2009-10-19_celex_IP-09-1540.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.3238341968911917
+  },
+  "2009-10-19_celex_IP-09-1544.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.16761649346295676
+  },
+  "2009-10-22_celex_IP-09-1573.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.23618327822390173
+  },
+  "2009-10-23_celex_IP-09-1574.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.28785261945883706
+  },
+  "2009-10-29_celex_IP-09-1626.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.2557544757033248
+  },
+  "2009-10-29_celex_IP-09-1646.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.011649716329407379
+  },
+  "2009-11-11_celex_IP-09-1696.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.6958942240779402
+  },
+  "2009-11-11_celex_IP-09-1697.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.3700657894736842
+  },
+  "2009-11-19_celex_IP-09-1740.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.2403846153846154
+  },
+  "2009-11-20_celex_IP-09-1779.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.23164234422052352
+  },
+  "2009-11-25_celex_IP-09-1816.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.21079258010118043
+  },
+  "2009-11-26_celex_IP-09-1824.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.11135857461024498
+  },
+  "2009-12-07_celex_IP-09-1883.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.6632277081798084
+  },
+  "2009-12-07_celex_IP-09-1884.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.09839614287119945
+  },
+  "2009-12-21_celex_IP-09-1988.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.3987240829346092
+  },
+  "2009-12-31_celex_IP-09-2002.cs.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.1820830298616169
+  },
+  "2009-01-09_celex_IP-09-26.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.3031221582297666
+  },
+  "2009-01-13_celex_IP-09-45.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.20842017507294708
+  },
+  "2009-01-28_celex_IP-09-141.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2037905033625433
+  },
+  "2009-01-28_celex_IP-09-142.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.11316057485572027
+  },
+  "2009-02-10_celex_IP-09-232.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16711229946524064
+  },
+  "2009-02-10_celex_IP-09-238.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.4608294930875576
+  },
+  "2009-02-20_celex_IP-09-300.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.191131498470948
+  },
+  "2009-02-23_celex_IP-09-303.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.22133687472332889
+  },
+  "2009-03-05_celex_IP-09-354.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.20828993959591752
+  },
+  "2009-03-06_celex_IP-09-362.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.4144218814753419
+  },
+  "2009-03-31_celex_IP-09-506.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2523977788995457
+  },
+  "2009-03-31_celex_IP-09-510.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.21155066638459913
+  },
+  "2009-04-08_celex_IP-09-554.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2054231717337716
+  },
+  "2009-04-08_celex_IP-09-560.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.3780718336483932
+  },
+  "2009-04-22_celex_IP-09-620.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1397624039133473
+  },
+  "2009-04-23_celex_IP-09-625.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.10424267695194411
+  },
+  "2009-04-29_celex_IP-09-666.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2789400278940028
+  },
+  "2009-04-29_celex_IP-09-673.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.25201612903225806
+  },
+  "2009-05-07_celex_IP-09-718.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18716077110237694
+  },
+  "2009-05-08_celex_IP-09-723.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.23239600278875203
+  },
+  "2009-05-28_celex_IP-09-845.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.185459940652819
+  },
+  "2009-05-29_celex_IP-09-851.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2027163997567403
+  },
+  "2009-06-17_celex_IP-09-941.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.3785011355034065
+  },
+  "2009-06-18_celex_IP-09-948.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.30553009471432935
+  },
+  "2009-06-26_celex_IP-09-1044.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.19402405898331393
+  },
+  "2009-06-29_celex_IP-09-1049.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.35323207347227126
+  },
+  "2009-07-08_celex_IP-09-1096.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2319647413593134
+  },
+  "2009-07-08_celex_IP-09-1098.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.15114873035066506
+  },
+  "2009-07-20_celex_IP-09-1165.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.42753313381787095
+  },
+  "2009-07-22_celex_IP-09-1166.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.14048890137679124
+  },
+  "2009-07-30_celex_IP-09-1204.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.24283632831471588
+  },
+  "2009-07-31_celex_IP-09-1214.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2082032063293775
+  },
+  "2009-09-09_celex_IP-09-1292.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.19011406844106463
+  },
+  "2009-09-11_celex_IP-09-1305.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.255885363357216
+  },
+  "2009-09-23_celex_IP-09-1347.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18660197798096662
+  },
+  "2009-09-23_celex_IP-09-1349.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.3060912151821243
+  },
+  "2009-10-02_celex_IP-09-1401.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18590816136828406
+  },
+  "2009-10-05_celex_IP-09-1420.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.195160031225605
+  },
+  "2009-10-14_celex_IP-09-1508.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.23105360443622922
+  },
+  "2009-10-14_celex_IP-09-1516.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.4935834155972359
+  },
+  "2009-10-19_celex_IP-09-1540.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2967359050445104
+  },
+  "2009-10-19_celex_IP-09-1544.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16496205872649292
+  },
+  "2009-10-22_celex_IP-09-1573.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.22893772893772896
+  },
+  "2009-10-23_celex_IP-09-1574.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2770850651149903
+  },
+  "2009-10-29_celex_IP-09-1626.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.24594195769798327
+  },
+  "2009-10-29_celex_IP-09-1646.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011673923956059349
+  },
+  "2009-11-11_celex_IP-09-1696.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.5995203836930456
+  },
+  "2009-11-11_celex_IP-09-1697.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.3731343283582089
+  },
+  "2009-11-19_celex_IP-09-1740.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2498126405196103
+  },
+  "2009-11-20_celex_IP-09-1779.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2353494939985879
+  },
+  "2009-11-25_celex_IP-09-1816.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18832391713747645
+  },
+  "2009-11-26_celex_IP-09-1824.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.11691804045364199
+  },
+  "2009-12-07_celex_IP-09-1883.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.7215007215007215
+  },
+  "2009-12-07_celex_IP-09-1884.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.11106175033318524
+  },
+  "2009-12-21_celex_IP-09-1988.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.4123711340206186
+  },
+  "2009-12-31_celex_IP-09-2002.da.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18556318426424198
+  },
+  "2009-01-09_celex_IP-09-26.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.2521432173474533
+  },
+  "2009-01-13_celex_IP-09-45.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.19234468166955185
+  },
+  "2009-01-28_celex_IP-09-141.de.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18185124568103292
+  },
+  "2009-01-28_celex_IP-09-142.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.10955302366345311
+  },
+  "2009-02-10_celex_IP-09-232.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.15997440409534475
+  },
+  "2009-02-10_celex_IP-09-238.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.37778617302606726
+  },
+  "2009-02-20_celex_IP-09-300.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.1673080140538732
+  },
+  "2009-02-23_celex_IP-09-303.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.18964536317087047
+  },
+  "2009-03-05_celex_IP-09-354.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.18587360594795538
+  },
+  "2009-03-06_celex_IP-09-362.de.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.3892565200467108
+  },
+  "2009-03-31_celex_IP-09-506.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.25342118601115055
+  },
+  "2009-03-31_celex_IP-09-510.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.1841620626151013
+  },
+  "2009-04-08_celex_IP-09-554.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.18234865061998543
+  },
+  "2009-04-08_celex_IP-09-560.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.35001750087504374
+  },
+  "2009-04-22_celex_IP-09-620.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.1300221037576388
+  },
+  "2009-04-23_celex_IP-09-625.de.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.08840951286358412
+  },
+  "2009-04-29_celex_IP-09-666.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.3003003003003003
+  },
+  "2009-04-29_celex_IP-09-673.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.2120890774125133
+  },
+  "2009-05-07_celex_IP-09-718.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.16891891891891891
+  },
+  "2009-05-08_celex_IP-09-723.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.21598272138228944
+  },
+  "2009-05-28_celex_IP-09-845.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.16223231667748217
+  },
+  "2009-05-29_celex_IP-09-851.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.17464198393293748
+  },
+  "2009-06-17_celex_IP-09-941.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.35676061362825545
+  },
+  "2009-06-18_celex_IP-09-948.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.2839295854628052
+  },
+  "2009-06-26_celex_IP-09-1044.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.17482517482517482
+  },
+  "2009-06-29_celex_IP-09-1049.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.3053435114503817
+  },
+  "2009-07-08_celex_IP-09-1096.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.20868113522537562
+  },
+  "2009-07-08_celex_IP-09-1098.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.1420051121840386
+  },
+  "2009-07-20_celex_IP-09-1165.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.4110152075626798
+  },
+  "2009-07-22_celex_IP-09-1166.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.13063357282821686
+  },
+  "2009-07-30_celex_IP-09-1204.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.22346368715083798
+  },
+  "2009-07-31_celex_IP-09-1214.de.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.19342359767891684
+  },
+  "2009-09-09_celex_IP-09-1292.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.15554518587649713
+  },
+  "2009-09-11_celex_IP-09-1305.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.21905805038335158
+  },
+  "2009-09-23_celex_IP-09-1347.de.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1721466689619556
+  },
+  "2009-09-23_celex_IP-09-1349.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.2801905295601009
+  },
+  "2009-10-02_celex_IP-09-1401.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.16753224995811694
+  },
+  "2009-10-05_celex_IP-09-1420.de.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1869508319312021
+  },
+  "2009-10-14_celex_IP-09-1508.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.20673971469919372
+  },
+  "2009-10-14_celex_IP-09-1516.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.45207956600361665
+  },
+  "2009-10-19_celex_IP-09-1540.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.26983270372369134
+  },
+  "2009-10-19_celex_IP-09-1544.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.14703720041170415
+  },
+  "2009-10-22_celex_IP-09-1573.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.21561017680034494
+  },
+  "2009-10-23_celex_IP-09-1574.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.25786487880350695
+  },
+  "2009-10-29_celex_IP-09-1626.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.21598272138228944
+  },
+  "2009-10-29_celex_IP-09-1646.de.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011584263935869515
+  },
+  "2009-11-11_celex_IP-09-1696.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.573394495412844
+  },
+  "2009-11-11_celex_IP-09-1697.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.35536602700781805
+  },
+  "2009-11-19_celex_IP-09-1740.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.22753128555176336
+  },
+  "2009-11-20_celex_IP-09-1779.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.21217907914279655
+  },
+  "2009-11-25_celex_IP-09-1816.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.18611576400521124
+  },
+  "2009-11-26_celex_IP-09-1824.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.10498687664041995
+  },
+  "2009-12-07_celex_IP-09-1883.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.649772579597141
+  },
+  "2009-12-07_celex_IP-09-1884.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.09828009828009827
+  },
+  "2009-12-21_celex_IP-09-1988.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.36710719530102787
+  },
+  "2009-12-31_celex_IP-09-2002.de.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.1584534938995405
+  },
+  "2009-01-09_celex_IP-09-26.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.25753283543651817
+  },
+  "2009-01-13_celex_IP-09-45.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.18099547511312217
+  },
+  "2009-01-28_celex_IP-09-141.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.16466326362588507
+  },
+  "2009-01-28_celex_IP-09-142.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.10469011725293131
+  },
+  "2009-02-10_celex_IP-09-232.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.14912019087384432
+  },
+  "2009-02-10_celex_IP-09-238.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.38211692777990064
+  },
+  "2009-02-20_celex_IP-09-300.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.18044027426921688
+  },
+  "2009-02-23_celex_IP-09-303.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.19627085377821393
+  },
+  "2009-03-05_celex_IP-09-354.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.1694053870913095
+  },
+  "2009-03-06_celex_IP-09-362.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.3844675124951942
+  },
+  "2009-03-31_celex_IP-09-506.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.21929824561403508
+  },
+  "2009-03-31_celex_IP-09-510.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.17857142857142858
+  },
+  "2009-04-08_celex_IP-09-554.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.1874062968515742
+  },
+  "2009-04-08_celex_IP-09-560.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.32808398950131235
+  },
+  "2009-04-22_celex_IP-09-620.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.11841326228537595
+  },
+  "2009-04-23_celex_IP-09-625.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.0929195316855603
+  },
+  "2009-04-29_celex_IP-09-666.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.25773195876288657
+  },
+  "2009-04-29_celex_IP-09-673.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.22768670309653918
+  },
+  "2009-05-07_celex_IP-09-718.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.15511090429657207
+  },
+  "2009-05-08_celex_IP-09-723.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.20942408376963353
+  },
+  "2009-05-28_celex_IP-09-845.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.16162922256343948
+  },
+  "2009-05-29_celex_IP-09-851.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.17467248908296942
+  },
+  "2009-06-17_celex_IP-09-941.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.327653997378768
+  },
+  "2009-06-18_celex_IP-09-948.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.2794857462269424
+  },
+  "2009-06-26_celex_IP-09-1044.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.17193947730398898
+  },
+  "2009-06-29_celex_IP-09-1049.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.333555703802535
+  },
+  "2009-07-08_celex_IP-09-1096.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.2103049421661409
+  },
+  "2009-07-08_celex_IP-09-1098.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.13273161667109104
+  },
+  "2009-07-20_celex_IP-09-1165.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.3543586109142452
+  },
+  "2009-07-22_celex_IP-09-1166.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.11705489874751257
+  },
+  "2009-07-30_celex_IP-09-1204.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.2012072434607646
+  },
+  "2009-07-31_celex_IP-09-1214.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.170328734457503
+  },
+  "2009-09-09_celex_IP-09-1292.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.16210082671421625
+  },
+  "2009-09-11_celex_IP-09-1305.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.228310502283105
+  },
+  "2009-09-23_celex_IP-09-1347.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.15842839036755385
+  },
+  "2009-09-23_celex_IP-09-1349.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.2547121752419766
+  },
+  "2009-10-02_celex_IP-09-1401.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.15028554253080853
+  },
+  "2009-10-05_celex_IP-09-1420.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.18005041411595246
+  },
+  "2009-10-14_celex_IP-09-1508.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.195160031225605
+  },
+  "2009-10-14_celex_IP-09-1516.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.4317789291882556
+  },
+  "2009-10-19_celex_IP-09-1540.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.2840909090909091
+  },
+  "2009-10-19_celex_IP-09-1544.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.14725371815638344
+  },
+  "2009-10-22_celex_IP-09-1573.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.21195421788893598
+  },
+  "2009-10-23_celex_IP-09-1574.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.24265954865323952
+  },
+  "2009-10-29_celex_IP-09-1626.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.21891418563922943
+  },
+  "2009-10-29_celex_IP-09-1646.el.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011596623063363948
+  },
+  "2009-11-11_celex_IP-09-1696.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.5595970900951315
+  },
+  "2009-11-11_celex_IP-09-1697.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.33101621979477
+  },
+  "2009-11-19_celex_IP-09-1740.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.22016732716864817
+  },
+  "2009-11-20_celex_IP-09-1779.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.2044989775051125
+  },
+  "2009-11-25_celex_IP-09-1816.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.17959770114942528
+  },
+  "2009-11-26_celex_IP-09-1824.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.1050309841403214
+  },
+  "2009-12-07_celex_IP-09-1883.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.5611672278338945
+  },
+  "2009-12-07_celex_IP-09-1884.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.08825346394845998
+  },
+  "2009-12-21_celex_IP-09-1988.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.33478406427854035
+  },
+  "2009-12-31_celex_IP-09-2002.el.html": {
+    "langue_predite": "el",
+    "score_confiance": 0.1579778830963665
+  },
+  "2009-01-09_celex_IP-09-26.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.327653997378768
+  },
+  "2009-01-13_celex_IP-09-45.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2203128442388191
+  },
+  "2009-01-28_celex_IP-09-141.en.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2204585537918871
+  },
+  "2009-01-28_celex_IP-09-142.en.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.11976047904191617
+  },
+  "2009-02-10_celex_IP-09-232.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.18642803877703207
+  },
+  "2009-02-10_celex_IP-09-238.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.45537340619307837
+  },
+  "2009-02-20_celex_IP-09-300.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2126754572522331
+  },
+  "2009-02-23_celex_IP-09-303.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.24968789013732834
+  },
+  "2009-03-05_celex_IP-09-354.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.21777003484320556
+  },
+  "2009-03-06_celex_IP-09-362.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.4253509145044662
+  },
+  "2009-03-31_celex_IP-09-506.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.26574541589157585
+  },
+  "2009-03-31_celex_IP-09-510.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2236636099306643
+  },
+  "2009-04-08_celex_IP-09-554.en.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.22182786157941436
+  },
+  "2009-04-08_celex_IP-09-560.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.4020908725371934
+  },
+  "2009-04-22_celex_IP-09-620.en.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.14808233377758032
+  },
+  "2009-04-23_celex_IP-09-625.en.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1076194575979337
+  },
+  "2009-04-29_celex_IP-09-666.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.3117206982543641
+  },
+  "2009-04-29_celex_IP-09-673.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2775464890369137
+  },
+  "2009-05-07_celex_IP-09-718.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.20828993959591752
+  },
+  "2009-05-08_celex_IP-09-723.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.249500998003992
+  },
+  "2009-05-28_celex_IP-09-845.en.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.19704433497536944
+  },
+  "2009-05-29_celex_IP-09-851.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.20593080724876442
+  },
+  "2009-06-17_celex_IP-09-941.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.38358266206367475
+  },
+  "2009-06-18_celex_IP-09-948.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.3189792663476874
+  },
+  "2009-06-26_celex_IP-09-1044.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.19996000799840033
+  },
+  "2009-06-29_celex_IP-09-1049.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.36469730123997085
+  },
+  "2009-07-08_celex_IP-09-1096.en.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.24189646831156267
+  },
+  "2009-07-08_celex_IP-09-1098.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.17485574401119075
+  },
+  "2009-07-20_celex_IP-09-1165.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.45599635202918376
+  },
+  "2009-07-22_celex_IP-09-1166.en.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.15603058199407083
+  },
+  "2009-07-30_celex_IP-09-1204.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2552322613578356
+  },
+  "2009-07-31_celex_IP-09-1214.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.21753317380900586
+  },
+  "2009-09-09_celex_IP-09-1292.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2101723413198823
+  },
+  "2009-09-11_celex_IP-09-1305.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.261437908496732
+  },
+  "2009-09-23_celex_IP-09-1347.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.19550342130987292
+  },
+  "2009-09-23_celex_IP-09-1349.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.31201248049922
+  },
+  "2009-10-02_celex_IP-09-1401.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.198294665873488
+  },
+  "2009-10-05_celex_IP-09-1420.en.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2238638907544213
+  },
+  "2009-10-14_celex_IP-09-1508.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2443195699975568
+  },
+  "2009-10-14_celex_IP-09-1516.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.5555555555555556
+  },
+  "2009-10-19_celex_IP-09-1540.en.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.3512469265893923
+  },
+  "2009-10-19_celex_IP-09-1544.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.17686593562079944
+  },
+  "2009-10-22_celex_IP-09-1573.en.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.24354603019970775
+  },
+  "2009-10-23_celex_IP-09-1574.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.285143997718848
+  },
+  "2009-10-29_celex_IP-09-1626.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2658867322520606
+  },
+  "2009-10-29_celex_IP-09-1646.en.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011693718134618085
+  },
+  "2009-11-11_celex_IP-09-1696.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.6422607578676942
+  },
+  "2009-11-11_celex_IP-09-1697.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.3952569169960474
+  },
+  "2009-11-19_celex_IP-09-1740.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2748763056624519
+  },
+  "2009-11-20_celex_IP-09-1779.en.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.24527839097375523
+  },
+  "2009-11-25_celex_IP-09-1816.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.21910604732690622
+  },
+  "2009-11-26_celex_IP-09-1824.en.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.13218770654329146
+  },
+  "2009-12-07_celex_IP-09-1883.en.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.7153075822603719
+  },
+  "2009-12-07_celex_IP-09-1884.en.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.12113870381586916
+  },
+  "2009-12-21_celex_IP-09-1988.en.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.41946308724832215
+  },
+  "2009-12-31_celex_IP-09-2002.en.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18782870022539444
+  },
+  "2009-01-09_celex_IP-09-26.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.27100271002710025
+  },
+  "2009-01-13_celex_IP-09-45.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.2175805047867711
+  },
+  "2009-01-28_celex_IP-09-141.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.16711229946524064
+  },
+  "2009-01-28_celex_IP-09-142.es.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.11044842058758561
+  },
+  "2009-02-10_celex_IP-09-232.es.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16129032258064516
+  },
+  "2009-02-10_celex_IP-09-238.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.3976143141153081
+  },
+  "2009-02-20_celex_IP-09-300.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.17683465959328026
+  },
+  "2009-02-23_celex_IP-09-303.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.19642506383814573
+  },
+  "2009-03-05_celex_IP-09-354.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.18241517694272164
+  },
+  "2009-03-06_celex_IP-09-362.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.3812428516965307
+  },
+  "2009-03-31_celex_IP-09-506.es.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.24113817217265493
+  },
+  "2009-03-31_celex_IP-09-510.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.1873711823121604
+  },
+  "2009-04-08_celex_IP-09-554.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.1859773107680863
+  },
+  "2009-04-08_celex_IP-09-560.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.3700962250185048
+  },
+  "2009-04-22_celex_IP-09-620.es.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1277791975466394
+  },
+  "2009-04-23_celex_IP-09-625.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.09527439024390244
+  },
+  "2009-04-29_celex_IP-09-666.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.2555583950932788
+  },
+  "2009-04-29_celex_IP-09-673.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.21440823327615782
+  },
+  "2009-05-07_celex_IP-09-718.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.17146776406035666
+  },
+  "2009-05-08_celex_IP-09-723.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.22660321776569228
+  },
+  "2009-05-28_celex_IP-09-845.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.17485574401119075
+  },
+  "2009-05-29_celex_IP-09-851.es.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16496205872649292
+  },
+  "2009-06-17_celex_IP-09-941.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.35778175313059035
+  },
+  "2009-06-18_celex_IP-09-948.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.3000300030003
+  },
+  "2009-06-26_celex_IP-09-1044.es.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1811922449719152
+  },
+  "2009-06-29_celex_IP-09-1049.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.30156815440289503
+  },
+  "2009-07-08_celex_IP-09-1096.es.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2077706212341575
+  },
+  "2009-07-08_celex_IP-09-1098.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.1339764201500536
+  },
+  "2009-07-20_celex_IP-09-1165.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.4122011541632316
+  },
+  "2009-07-22_celex_IP-09-1166.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.13156163662675965
+  },
+  "2009-07-30_celex_IP-09-1204.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.21440823327615782
+  },
+  "2009-07-31_celex_IP-09-1214.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.18889308651303363
+  },
+  "2009-09-09_celex_IP-09-1292.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.16260162601626016
+  },
+  "2009-09-11_celex_IP-09-1305.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.2270663033605813
+  },
+  "2009-09-23_celex_IP-09-1347.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.17129153819801302
+  },
+  "2009-09-23_celex_IP-09-1349.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.27586206896551724
+  },
+  "2009-10-02_celex_IP-09-1401.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.17777777777777778
+  },
+  "2009-10-05_celex_IP-09-1420.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.189897455374098
+  },
+  "2009-10-14_celex_IP-09-1508.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.22675736961451248
+  },
+  "2009-10-14_celex_IP-09-1516.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.4528985507246377
+  },
+  "2009-10-19_celex_IP-09-1540.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.2833663927458203
+  },
+  "2009-10-19_celex_IP-09-1544.es.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1528584530724549
+  },
+  "2009-10-22_celex_IP-09-1573.es.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.22446689113355783
+  },
+  "2009-10-23_celex_IP-09-1574.es.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2570033410434336
+  },
+  "2009-10-29_celex_IP-09-1626.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.20876826722338201
+  },
+  "2009-10-29_celex_IP-09-1646.es.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011603754975109947
+  },
+  "2009-11-11_celex_IP-09-1696.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.6064281382656156
+  },
+  "2009-11-11_celex_IP-09-1697.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.35958288385472853
+  },
+  "2009-11-19_celex_IP-09-1740.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.2311604253351826
+  },
+  "2009-11-20_celex_IP-09-1779.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.20300446609825418
+  },
+  "2009-11-25_celex_IP-09-1816.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.18674136321195145
+  },
+  "2009-11-26_celex_IP-09-1824.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.11104941699056081
+  },
+  "2009-12-07_celex_IP-09-1883.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.599880023995201
+  },
+  "2009-12-07_celex_IP-09-1884.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.09523809523809523
+  },
+  "2009-12-21_celex_IP-09-1988.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.3604902667627974
+  },
+  "2009-12-31_celex_IP-09-2002.es.html": {
+    "langue_predite": "es",
+    "score_confiance": 0.16458196181698487
+  },
+  "2009-01-09_celex_IP-09-26.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.3077870113881194
+  },
+  "2009-01-13_celex_IP-09-45.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.22177866489243736
+  },
+  "2009-01-28_celex_IP-09-141.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.1976284584980237
+  },
+  "2009-01-28_celex_IP-09-142.et.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.11396011396011395
+  },
+  "2009-02-10_celex_IP-09-232.et.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.17059024223814398
+  },
+  "2009-02-10_celex_IP-09-238.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.4574565416285453
+  },
+  "2009-02-20_celex_IP-09-300.et.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.199203187250996
+  },
+  "2009-02-23_celex_IP-09-303.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.22624434389140274
+  },
+  "2009-03-05_celex_IP-09-354.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2087246921310791
+  },
+  "2009-03-06_celex_IP-09-362.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.4306632213608958
+  },
+  "2009-03-31_celex_IP-09-506.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.273972602739726
+  },
+  "2009-03-31_celex_IP-09-510.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.22286605749944283
+  },
+  "2009-04-08_celex_IP-09-554.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.21222410865874364
+  },
+  "2009-04-08_celex_IP-09-560.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.39308176100628933
+  },
+  "2009-04-22_celex_IP-09-620.et.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.14400921658986177
+  },
+  "2009-04-23_celex_IP-09-625.et.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.10194719135487816
+  },
+  "2009-04-29_celex_IP-09-666.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2889338341519792
+  },
+  "2009-04-29_celex_IP-09-673.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2743484224965706
+  },
+  "2009-05-07_celex_IP-09-718.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.1913143294432753
+  },
+  "2009-05-08_celex_IP-09-723.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2385496183206107
+  },
+  "2009-05-28_celex_IP-09-845.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.19094901661256444
+  },
+  "2009-05-29_celex_IP-09-851.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.1869158878504673
+  },
+  "2009-06-17_celex_IP-09-941.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.41946308724832215
+  },
+  "2009-06-18_celex_IP-09-948.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.30959752321981426
+  },
+  "2009-06-26_celex_IP-09-1044.et.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1889287738522577
+  },
+  "2009-06-29_celex_IP-09-1049.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.36683785766691124
+  },
+  "2009-07-08_celex_IP-09-1096.et.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.25131942699170645
+  },
+  "2009-07-08_celex_IP-09-1098.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.155448468832582
+  },
+  "2009-07-20_celex_IP-09-1165.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.4868549172346641
+  },
+  "2009-07-22_celex_IP-09-1166.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.14671361502347416
+  },
+  "2009-07-30_celex_IP-09-1204.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.25056376847907796
+  },
+  "2009-07-31_celex_IP-09-1214.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.19790223629527012
+  },
+  "2009-09-09_celex_IP-09-1292.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.20554984583761562
+  },
+  "2009-09-11_celex_IP-09-1305.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.26191723415400736
+  },
+  "2009-09-23_celex_IP-09-1347.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.185459940652819
+  },
+  "2009-09-23_celex_IP-09-1349.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2670940170940171
+  },
+  "2009-10-02_celex_IP-09-1401.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.18751171948246764
+  },
+  "2009-10-05_celex_IP-09-1420.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.21235931195582924
+  },
+  "2009-10-14_celex_IP-09-1508.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.23923444976076555
+  },
+  "2009-10-14_celex_IP-09-1516.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.5747126436781609
+  },
+  "2009-10-19_celex_IP-09-1540.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.32310177705977383
+  },
+  "2009-10-19_celex_IP-09-1544.et.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.16697278343629987
+  },
+  "2009-10-22_celex_IP-09-1573.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.24248302618816686
+  },
+  "2009-10-23_celex_IP-09-1574.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2858776443682104
+  },
+  "2009-10-29_celex_IP-09-1626.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2547121752419766
+  },
+  "2009-10-29_celex_IP-09-1646.et.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011678968513500887
+  },
+  "2009-11-11_celex_IP-09-1696.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.6476683937823834
+  },
+  "2009-11-11_celex_IP-09-1697.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.3878975950349108
+  },
+  "2009-11-19_celex_IP-09-1740.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.22779043280182232
+  },
+  "2009-11-20_celex_IP-09-1779.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.23148148148148145
+  },
+  "2009-11-25_celex_IP-09-1816.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.22507314877335136
+  },
+  "2009-11-26_celex_IP-09-1824.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.1218769043266301
+  },
+  "2009-12-07_celex_IP-09-1883.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.774593338497289
+  },
+  "2009-12-07_celex_IP-09-1884.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.116795141322121
+  },
+  "2009-12-21_celex_IP-09-1988.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.3698224852071006
+  },
+  "2009-12-31_celex_IP-09-2002.et.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.17247326664367024
+  },
+  "2009-01-09_celex_IP-09-26.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.2833663927458203
+  },
+  "2009-01-13_celex_IP-09-45.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.19519812609798945
+  },
+  "2009-01-28_celex_IP-09-141.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.17316017316017315
+  },
+  "2009-01-28_celex_IP-09-142.fi.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.10854227721697601
+  },
+  "2009-02-10_celex_IP-09-232.fi.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.16278691193228065
+  },
+  "2009-02-10_celex_IP-09-238.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.4357298474945534
+  },
+  "2009-02-20_celex_IP-09-300.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.18646280067126608
+  },
+  "2009-02-23_celex_IP-09-303.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.19538882375928096
+  },
+  "2009-03-05_celex_IP-09-354.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.20695364238410596
+  },
+  "2009-03-06_celex_IP-09-362.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.3995205753096284
+  },
+  "2009-03-31_celex_IP-09-506.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2554278416347382
+  },
+  "2009-03-31_celex_IP-09-510.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.20136931131695532
+  },
+  "2009-04-08_celex_IP-09-554.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.19282684149633628
+  },
+  "2009-04-08_celex_IP-09-560.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.3766478342749529
+  },
+  "2009-04-22_celex_IP-09-620.fi.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1330671989354624
+  },
+  "2009-04-23_celex_IP-09-625.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.0952471663967997
+  },
+  "2009-04-29_celex_IP-09-666.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2608922515001304
+  },
+  "2009-04-29_celex_IP-09-673.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.22747952684258416
+  },
+  "2009-05-07_celex_IP-09-718.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.16616816218012628
+  },
+  "2009-05-08_celex_IP-09-723.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2187705097352877
+  },
+  "2009-05-28_celex_IP-09-845.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.1798561151079137
+  },
+  "2009-05-29_celex_IP-09-851.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.18480872297172427
+  },
+  "2009-06-17_celex_IP-09-941.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.36376864314296103
+  },
+  "2009-06-18_celex_IP-09-948.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.30093289196509176
+  },
+  "2009-06-26_celex_IP-09-1044.fi.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.17244352474564578
+  },
+  "2009-06-29_celex_IP-09-1049.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.3738317757009346
+  },
+  "2009-07-08_celex_IP-09-1096.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.22138587558113793
+  },
+  "2009-07-08_celex_IP-09-1098.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.14914243102162564
+  },
+  "2009-07-20_celex_IP-09-1165.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.425531914893617
+  },
+  "2009-07-22_celex_IP-09-1166.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.13848497438027974
+  },
+  "2009-07-30_celex_IP-09-1204.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.22276676319893074
+  },
+  "2009-07-31_celex_IP-09-1214.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.19083969465648853
+  },
+  "2009-09-09_celex_IP-09-1292.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.1846040243677312
+  },
+  "2009-09-11_celex_IP-09-1305.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.24354603019970775
+  },
+  "2009-09-23_celex_IP-09-1347.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.17334026694401108
+  },
+  "2009-09-23_celex_IP-09-1349.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.2748007694421544
+  },
+  "2009-10-02_celex_IP-09-1401.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.1794365691727974
+  },
+  "2009-10-05_celex_IP-09-1420.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.20412329046744235
+  },
+  "2009-10-14_celex_IP-09-1508.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.23579344494223062
+  },
+  "2009-10-14_celex_IP-09-1516.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.49382716049382713
+  },
+  "2009-10-19_celex_IP-09-1540.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.3181673560292714
+  },
+  "2009-10-19_celex_IP-09-1544.fi.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.16452780519907864
+  },
+  "2009-10-22_celex_IP-09-1573.fi.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2230649118893598
+  },
+  "2009-10-23_celex_IP-09-1574.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.274649821477616
+  },
+  "2009-10-29_celex_IP-09-1626.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.22356360384529397
+  },
+  "2009-10-29_celex_IP-09-1646.fi.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011641308017368832
+  },
+  "2009-11-11_celex_IP-09-1696.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.6337135614702154
+  },
+  "2009-11-11_celex_IP-09-1697.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.37467216185837393
+  },
+  "2009-11-19_celex_IP-09-1740.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.19758940920766646
+  },
+  "2009-11-20_celex_IP-09-1779.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.21404109589041095
+  },
+  "2009-11-25_celex_IP-09-1816.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2027163997567403
+  },
+  "2009-11-26_celex_IP-09-1824.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.11773016246762422
+  },
+  "2009-12-07_celex_IP-09-1883.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.646830530401035
+  },
+  "2009-12-07_celex_IP-09-1884.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.10407993338884262
+  },
+  "2009-12-21_celex_IP-09-1988.fi.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.37425149700598803
+  },
+  "2009-12-31_celex_IP-09-2002.fi.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.16345210853220007
+  },
+  "2009-01-09_celex_IP-09-26.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2871912693854107
+  },
+  "2009-01-13_celex_IP-09-45.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18281535648994515
+  },
+  "2009-01-28_celex_IP-09-141.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.165508109897385
+  },
+  "2009-01-28_celex_IP-09-142.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.10456969570218551
+  },
+  "2009-02-10_celex_IP-09-232.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16059097478721696
+  },
+  "2009-02-10_celex_IP-09-238.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.40683482506102525
+  },
+  "2009-02-20_celex_IP-09-300.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.17208742040956806
+  },
+  "2009-02-23_celex_IP-09-303.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.17995321216483715
+  },
+  "2009-03-05_celex_IP-09-354.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.17476406850751486
+  },
+  "2009-03-06_celex_IP-09-362.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.3675119441381845
+  },
+  "2009-03-31_celex_IP-09-506.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.24931438544003987
+  },
+  "2009-03-31_celex_IP-09-510.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.1794365691727974
+  },
+  "2009-04-08_celex_IP-09-554.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.18978933383943822
+  },
+  "2009-04-08_celex_IP-09-560.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.34387895460797796
+  },
+  "2009-04-22_celex_IP-09-620.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.12301636117603643
+  },
+  "2009-04-23_celex_IP-09-625.fr.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.08882572392965003
+  },
+  "2009-04-29_celex_IP-09-666.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.26752273943285176
+  },
+  "2009-04-29_celex_IP-09-673.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.2293052052281587
+  },
+  "2009-05-07_celex_IP-09-718.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.15987210231814547
+  },
+  "2009-05-08_celex_IP-09-723.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.21070375052675938
+  },
+  "2009-05-28_celex_IP-09-845.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.15408320493066258
+  },
+  "2009-05-29_celex_IP-09-851.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.16069419893941828
+  },
+  "2009-06-17_celex_IP-09-941.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.3526093088857546
+  },
+  "2009-06-18_celex_IP-09-948.fr.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.3002101471029721
+  },
+  "2009-06-26_celex_IP-09-1044.fr.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1720282126268708
+  },
+  "2009-06-29_celex_IP-09-1049.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.3077870113881194
+  },
+  "2009-07-08_celex_IP-09-1096.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1993620414673046
+  },
+  "2009-07-08_celex_IP-09-1098.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.136986301369863
+  },
+  "2009-07-20_celex_IP-09-1165.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.39154267815191857
+  },
+  "2009-07-22_celex_IP-09-1166.fr.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.13000520020800832
+  },
+  "2009-07-30_celex_IP-09-1204.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.20300446609825418
+  },
+  "2009-07-31_celex_IP-09-1214.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.18070112034694613
+  },
+  "2009-09-09_celex_IP-09-1292.fr.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.17400382808421785
+  },
+  "2009-09-11_celex_IP-09-1305.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.21551724137931033
+  },
+  "2009-09-23_celex_IP-09-1347.fr.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.16393442622950818
+  },
+  "2009-09-23_celex_IP-09-1349.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.26055237102657636
+  },
+  "2009-10-02_celex_IP-09-1401.fr.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.16244314489928524
+  },
+  "2009-10-05_celex_IP-09-1420.fr.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.17895490336435219
+  },
+  "2009-10-14_celex_IP-09-1508.fr.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2233139794551139
+  },
+  "2009-10-14_celex_IP-09-1516.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.4191114836546521
+  },
+  "2009-10-19_celex_IP-09-1540.fr.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.26983270372369134
+  },
+  "2009-10-19_celex_IP-09-1544.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.14076576576576577
+  },
+  "2009-10-22_celex_IP-09-1573.fr.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.23062730627306272
+  },
+  "2009-10-23_celex_IP-09-1574.fr.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.25660764690787785
+  },
+  "2009-10-29_celex_IP-09-1626.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.21240441801189466
+  },
+  "2009-10-29_celex_IP-09-1646.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.01157635182848477
+  },
+  "2009-11-11_celex_IP-09-1696.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.5408328826392644
+  },
+  "2009-11-11_celex_IP-09-1697.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.3518648838845883
+  },
+  "2009-11-19_celex_IP-09-1740.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.22909507445589922
+  },
+  "2009-11-20_celex_IP-09-1779.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.20584602717167558
+  },
+  "2009-11-25_celex_IP-09-1816.fr.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.18086453246518358
+  },
+  "2009-11-26_celex_IP-09-1824.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.10028078620136383
+  },
+  "2009-12-07_celex_IP-09-1883.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.6389776357827476
+  },
+  "2009-12-07_celex_IP-09-1884.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.09125752874612156
+  },
+  "2009-12-21_celex_IP-09-1988.fr.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.33444816053511706
+  },
+  "2009-12-31_celex_IP-09-2002.fr.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16160310277957335
+  },
+  "2009-01-09_celex_IP-09-26.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.2871088142405972
+  },
+  "2009-01-13_celex_IP-09-45.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.201450443190975
+  },
+  "2009-01-28_celex_IP-09-141.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.17448961786773687
+  },
+  "2009-01-28_celex_IP-09-142.hu.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.10574177857671566
+  },
+  "2009-02-10_celex_IP-09-232.hu.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.14186409419775856
+  },
+  "2009-02-10_celex_IP-09-238.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.3721622627465575
+  },
+  "2009-02-20_celex_IP-09-300.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.1737619461337967
+  },
+  "2009-02-23_celex_IP-09-303.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.17427675148135238
+  },
+  "2009-03-05_celex_IP-09-354.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.1863932898415657
+  },
+  "2009-03-06_celex_IP-09-362.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.39556962025316456
+  },
+  "2009-03-31_celex_IP-09-506.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.24201355275895448
+  },
+  "2009-03-31_celex_IP-09-510.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.19116803670426305
+  },
+  "2009-04-08_celex_IP-09-554.hu.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1636958894143325
+  },
+  "2009-04-08_celex_IP-09-560.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.3505082369435682
+  },
+  "2009-04-22_celex_IP-09-620.hu.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.13131976362442546
+  },
+  "2009-04-23_celex_IP-09-625.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.09308386856557758
+  },
+  "2009-04-29_celex_IP-09-666.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.2696871628910464
+  },
+  "2009-04-29_celex_IP-09-673.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.2295684113865932
+  },
+  "2009-05-07_celex_IP-09-718.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.16082341588935348
+  },
+  "2009-05-08_celex_IP-09-723.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.21181952976064394
+  },
+  "2009-05-28_celex_IP-09-845.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.16860563142808968
+  },
+  "2009-05-29_celex_IP-09-851.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.16644474034620504
+  },
+  "2009-06-17_celex_IP-09-941.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.33875338753387535
+  },
+  "2009-06-18_celex_IP-09-948.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.2593360995850622
+  },
+  "2009-06-26_celex_IP-09-1044.hu.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.18044027426921688
+  },
+  "2009-06-29_celex_IP-09-1049.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.3194888178913738
+  },
+  "2009-07-08_celex_IP-09-1096.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.22207417277370642
+  },
+  "2009-07-08_celex_IP-09-1098.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.1388888888888889
+  },
+  "2009-07-20_celex_IP-09-1165.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.38595137012736397
+  },
+  "2009-07-22_celex_IP-09-1166.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.1348254011055683
+  },
+  "2009-07-30_celex_IP-09-1204.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.19612115929396384
+  },
+  "2009-07-31_celex_IP-09-1214.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.18628912071535023
+  },
+  "2009-09-09_celex_IP-09-1292.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.17667844522968199
+  },
+  "2009-09-11_celex_IP-09-1305.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.22007042253521128
+  },
+  "2009-09-23_celex_IP-09-1347.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.17313019390581716
+  },
+  "2009-09-23_celex_IP-09-1349.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.2632964718272775
+  },
+  "2009-10-02_celex_IP-09-1401.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.1659475605708596
+  },
+  "2009-10-05_celex_IP-09-1420.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.18857250612860646
+  },
+  "2009-10-14_celex_IP-09-1508.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.21258503401360546
+  },
+  "2009-10-14_celex_IP-09-1516.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.4024144869215292
+  },
+  "2009-10-19_celex_IP-09-1540.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.2755580049600441
+  },
+  "2009-10-19_celex_IP-09-1544.hu.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.149678191887442
+  },
+  "2009-10-22_celex_IP-09-1573.hu.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.22696323195642307
+  },
+  "2009-10-23_celex_IP-09-1574.hu.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.22079929344226099
+  },
+  "2009-10-29_celex_IP-09-1626.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.21258503401360546
+  },
+  "2009-10-29_celex_IP-09-1646.hu.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011566443434308385
+  },
+  "2009-11-11_celex_IP-09-1696.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.5672149744753261
+  },
+  "2009-11-11_celex_IP-09-1697.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.33932813030200204
+  },
+  "2009-11-19_celex_IP-09-1740.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.21454623471358078
+  },
+  "2009-11-20_celex_IP-09-1779.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.20903010033444816
+  },
+  "2009-11-25_celex_IP-09-1816.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.19186492709132769
+  },
+  "2009-11-26_celex_IP-09-1824.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.10607828577490189
+  },
+  "2009-12-07_celex_IP-09-1883.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.5303476723629935
+  },
+  "2009-12-07_celex_IP-09-1884.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.09736150326161036
+  },
+  "2009-12-21_celex_IP-09-1988.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.3246753246753247
+  },
+  "2009-12-31_celex_IP-09-2002.hu.html": {
+    "langue_predite": "hu",
+    "score_confiance": 0.15830299192654743
+  },
+  "2009-01-09_celex_IP-09-26.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.2840102243680772
+  },
+  "2009-01-13_celex_IP-09-45.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1816860465116279
+  },
+  "2009-01-28_celex_IP-09-141.it.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.16736401673640167
+  },
+  "2009-01-28_celex_IP-09-142.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.10624734381640458
+  },
+  "2009-02-10_celex_IP-09-232.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16439256945586062
+  },
+  "2009-02-10_celex_IP-09-238.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.41186161449752884
+  },
+  "2009-02-20_celex_IP-09-300.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.18050541516245489
+  },
+  "2009-02-23_celex_IP-09-303.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.19634792852935404
+  },
+  "2009-03-05_celex_IP-09-354.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.17510068289266328
+  },
+  "2009-03-06_celex_IP-09-362.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.3812428516965307
+  },
+  "2009-03-31_celex_IP-09-506.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.24271844660194172
+  },
+  "2009-03-31_celex_IP-09-510.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.18709073900841908
+  },
+  "2009-04-08_celex_IP-09-554.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.19577133907595928
+  },
+  "2009-04-08_celex_IP-09-560.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.34674063800277394
+  },
+  "2009-04-22_celex_IP-09-620.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.13089005235602094
+  },
+  "2009-04-23_celex_IP-09-625.it.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.09671179883945842
+  },
+  "2009-04-29_celex_IP-09-666.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2635046113306983
+  },
+  "2009-04-29_celex_IP-09-673.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.21944261575597984
+  },
+  "2009-05-07_celex_IP-09-718.it.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.17975912277548087
+  },
+  "2009-05-08_celex_IP-09-723.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.22820629849383844
+  },
+  "2009-05-28_celex_IP-09-845.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.17027073046143368
+  },
+  "2009-05-29_celex_IP-09-851.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16986580601324955
+  },
+  "2009-06-17_celex_IP-09-941.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.33932813030200204
+  },
+  "2009-06-18_celex_IP-09-948.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.28876696505919724
+  },
+  "2009-06-26_celex_IP-09-1044.it.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.18060321473722232
+  },
+  "2009-06-29_celex_IP-09-1049.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.3022974607013301
+  },
+  "2009-07-08_celex_IP-09-1096.it.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.21141649048625794
+  },
+  "2009-07-08_celex_IP-09-1098.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.14009526478005044
+  },
+  "2009-07-20_celex_IP-09-1165.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.4046944556859571
+  },
+  "2009-07-22_celex_IP-09-1166.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.13898540653231412
+  },
+  "2009-07-30_celex_IP-09-1204.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.22356360384529397
+  },
+  "2009-07-31_celex_IP-09-1214.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.19065776930409914
+  },
+  "2009-09-09_celex_IP-09-1292.it.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.16786973308712438
+  },
+  "2009-09-11_celex_IP-09-1305.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.23441162681669012
+  },
+  "2009-09-23_celex_IP-09-1347.it.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.16501650165016502
+  },
+  "2009-09-23_celex_IP-09-1349.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.2692514808831448
+  },
+  "2009-10-02_celex_IP-09-1401.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16361256544502617
+  },
+  "2009-10-05_celex_IP-09-1420.it.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.18429782528566163
+  },
+  "2009-10-14_celex_IP-09-1508.it.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.2271694684234439
+  },
+  "2009-10-14_celex_IP-09-1516.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.4777830864787387
+  },
+  "2009-10-19_celex_IP-09-1540.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.292654375182909
+  },
+  "2009-10-19_celex_IP-09-1544.it.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.14076576576576577
+  },
+  "2009-10-22_celex_IP-09-1573.it.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2236636099306643
+  },
+  "2009-10-23_celex_IP-09-1574.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.25900025900025897
+  },
+  "2009-10-29_celex_IP-09-1626.it.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.2221235006663705
+  },
+  "2009-10-29_celex_IP-09-1646.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.01160833478437518
+  },
+  "2009-11-11_celex_IP-09-1696.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.554016620498615
+  },
+  "2009-11-11_celex_IP-09-1697.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.38372985418265537
+  },
+  "2009-11-19_celex_IP-09-1740.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.2305741295826608
+  },
+  "2009-11-20_celex_IP-09-1779.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.21353833013025839
+  },
+  "2009-11-25_celex_IP-09-1816.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.17445917655268667
+  },
+  "2009-11-26_celex_IP-09-1824.it.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.10450412791305255
+  },
+  "2009-12-07_celex_IP-09-1883.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.6548788474132285
+  },
+  "2009-12-07_celex_IP-09-1884.it.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.09414422895876483
+  },
+  "2009-12-21_celex_IP-09-1988.it.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.3593244699964067
+  },
+  "2009-12-31_celex_IP-09-2002.it.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.1632386549134835
+  },
+  "2009-01-09_celex_IP-09-26.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.3023888720895071
+  },
+  "2009-01-13_celex_IP-09-45.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.2061005770816158
+  },
+  "2009-01-28_celex_IP-09-141.lt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.17605633802816903
+  },
+  "2009-01-28_celex_IP-09-142.lt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.11903344839900012
+  },
+  "2009-02-10_celex_IP-09-232.lt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1597444089456869
+  },
+  "2009-02-10_celex_IP-09-238.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.4450378282153983
+  },
+  "2009-02-20_celex_IP-09-300.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.20267531414673692
+  },
+  "2009-02-23_celex_IP-09-303.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.22639800769753224
+  },
+  "2009-03-05_celex_IP-09-354.lt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.20387359836901123
+  },
+  "2009-03-06_celex_IP-09-362.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.4363001745200698
+  },
+  "2009-03-31_celex_IP-09-506.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.2608242044861763
+  },
+  "2009-03-31_celex_IP-09-510.lt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.20635575732562939
+  },
+  "2009-04-08_celex_IP-09-554.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.20990764063811923
+  },
+  "2009-04-08_celex_IP-09-560.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.36710719530102787
+  },
+  "2009-04-22_celex_IP-09-620.lt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.13197835554968984
+  },
+  "2009-04-23_celex_IP-09-625.lt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.10564124234100994
+  },
+  "2009-04-29_celex_IP-09-666.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.285143997718848
+  },
+  "2009-04-29_celex_IP-09-673.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.24894199651481203
+  },
+  "2009-05-07_celex_IP-09-718.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.17642907551164433
+  },
+  "2009-05-08_celex_IP-09-723.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.25
+  },
+  "2009-05-28_celex_IP-09-845.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.19157088122605362
+  },
+  "2009-05-29_celex_IP-09-851.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.18063583815028902
+  },
+  "2009-06-17_celex_IP-09-941.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.3968253968253968
+  },
+  "2009-06-18_celex_IP-09-948.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.2907822041291073
+  },
+  "2009-06-26_celex_IP-09-1044.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.19102196752626552
+  },
+  "2009-06-29_celex_IP-09-1049.lt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.3419972640218878
+  },
+  "2009-07-08_celex_IP-09-1096.lt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.254323499491353
+  },
+  "2009-07-08_celex_IP-09-1098.lt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.16051364365971107
+  },
+  "2009-07-20_celex_IP-09-1165.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.4163197335553705
+  },
+  "2009-07-22_celex_IP-09-1166.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.1577784790154623
+  },
+  "2009-07-30_celex_IP-09-1204.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.24551927326295114
+  },
+  "2009-07-31_celex_IP-09-1214.lt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.21394950791613182
+  },
+  "2009-09-09_celex_IP-09-1292.lt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.19455252918287938
+  },
+  "2009-09-11_celex_IP-09-1305.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.25549310168625444
+  },
+  "2009-09-23_celex_IP-09-1347.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.1849796522382538
+  },
+  "2009-09-23_celex_IP-09-1349.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.2967359050445104
+  },
+  "2009-10-02_celex_IP-09-1401.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.18716077110237694
+  },
+  "2009-10-05_celex_IP-09-1420.lt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.20571898786257972
+  },
+  "2009-10-14_celex_IP-09-1508.lt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.24313153415998057
+  },
+  "2009-10-14_celex_IP-09-1516.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.5083884087442806
+  },
+  "2009-10-19_celex_IP-09-1540.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.332667997338656
+  },
+  "2009-10-19_celex_IP-09-1544.lt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.15842839036755385
+  },
+  "2009-10-22_celex_IP-09-1573.lt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.23142791020597087
+  },
+  "2009-10-23_celex_IP-09-1574.lt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.28368794326241137
+  },
+  "2009-10-29_celex_IP-09-1626.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.24096385542168677
+  },
+  "2009-10-29_celex_IP-09-1646.lt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.01165936013431583
+  },
+  "2009-11-11_celex_IP-09-1696.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.6313131313131313
+  },
+  "2009-11-11_celex_IP-09-1697.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.4046944556859571
+  },
+  "2009-11-19_celex_IP-09-1740.lt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2477700693756194
+  },
+  "2009-11-20_celex_IP-09-1779.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.22461814914645103
+  },
+  "2009-11-25_celex_IP-09-1816.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.2181976871045167
+  },
+  "2009-11-26_celex_IP-09-1824.lt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.11155734047300313
+  },
+  "2009-12-07_celex_IP-09-1883.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.7067137809187279
+  },
+  "2009-12-07_celex_IP-09-1884.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.1126887536623845
+  },
+  "2009-12-21_celex_IP-09-1988.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.3843197540353574
+  },
+  "2009-12-31_celex_IP-09-2002.lt.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.17041581458759372
+  },
+  "2009-01-09_celex_IP-09-26.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.2868617326448652
+  },
+  "2009-01-13_celex_IP-09-45.lv.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.21910604732690622
+  },
+  "2009-01-28_celex_IP-09-141.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.17702248185519562
+  },
+  "2009-01-28_celex_IP-09-142.lv.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.11411617026132602
+  },
+  "2009-02-10_celex_IP-09-232.lv.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1567398119122257
+  },
+  "2009-02-10_celex_IP-09-238.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.39717563989408644
+  },
+  "2009-02-20_celex_IP-09-300.lv.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.19286403085824494
+  },
+  "2009-02-23_celex_IP-09-303.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.222667557336896
+  },
+  "2009-03-05_celex_IP-09-354.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.21101498206372651
+  },
+  "2009-03-06_celex_IP-09-362.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.45392646391284613
+  },
+  "2009-03-31_celex_IP-09-506.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.255885363357216
+  },
+  "2009-03-31_celex_IP-09-510.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.20824656393169513
+  },
+  "2009-04-08_celex_IP-09-554.lv.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2144542140253056
+  },
+  "2009-04-08_celex_IP-09-560.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.37821482602118006
+  },
+  "2009-04-22_celex_IP-09-620.lv.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.13192612137203166
+  },
+  "2009-04-23_celex_IP-09-625.lv.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.10259567046270648
+  },
+  "2009-04-29_celex_IP-09-666.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.2840909090909091
+  },
+  "2009-04-29_celex_IP-09-673.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.2721829069134458
+  },
+  "2009-05-07_celex_IP-09-718.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.1889287738522577
+  },
+  "2009-05-08_celex_IP-09-723.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.2560163850486431
+  },
+  "2009-05-28_celex_IP-09-845.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.17834849295523453
+  },
+  "2009-05-29_celex_IP-09-851.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.17988846914912754
+  },
+  "2009-06-17_celex_IP-09-941.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.4140786749482402
+  },
+  "2009-06-18_celex_IP-09-948.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.3093102381688834
+  },
+  "2009-06-26_celex_IP-09-1044.lv.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.19504583577140627
+  },
+  "2009-06-29_celex_IP-09-1049.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.37023324694557574
+  },
+  "2009-07-08_celex_IP-09-1096.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.24594195769798327
+  },
+  "2009-07-08_celex_IP-09-1098.lv.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.1669449081803005
+  },
+  "2009-07-20_celex_IP-09-1165.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.40797824116047143
+  },
+  "2009-07-22_celex_IP-09-1166.lv.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.1483459427384661
+  },
+  "2009-07-30_celex_IP-09-1204.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.2385496183206107
+  },
+  "2009-07-31_celex_IP-09-1214.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.2101723413198823
+  },
+  "2009-09-09_celex_IP-09-1292.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.1841959845275373
+  },
+  "2009-09-11_celex_IP-09-1305.lv.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.24067388688327318
+  },
+  "2009-09-23_celex_IP-09-1347.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.19051247856734616
+  },
+  "2009-09-23_celex_IP-09-1349.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.3232062055591467
+  },
+  "2009-10-02_celex_IP-09-1401.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.19443904335990667
+  },
+  "2009-10-05_celex_IP-09-1420.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.2113718030014796
+  },
+  "2009-10-14_celex_IP-09-1508.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.24691358024691357
+  },
+  "2009-10-14_celex_IP-09-1516.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.5293806246691372
+  },
+  "2009-10-19_celex_IP-09-1540.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.3243593902043464
+  },
+  "2009-10-19_celex_IP-09-1544.lv.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.16463615409944024
+  },
+  "2009-10-22_celex_IP-09-1573.lv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.23277467411545624
+  },
+  "2009-10-23_celex_IP-09-1574.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.27442371020856204
+  },
+  "2009-10-29_celex_IP-09-1626.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.24863252113376427
+  },
+  "2009-10-29_celex_IP-09-1646.lv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011659088259298123
+  },
+  "2009-11-11_celex_IP-09-1696.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.6779661016949152
+  },
+  "2009-11-11_celex_IP-09-1697.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.4008016032064128
+  },
+  "2009-11-19_celex_IP-09-1740.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.24770869457517958
+  },
+  "2009-11-20_celex_IP-09-1779.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.22227161591464767
+  },
+  "2009-11-25_celex_IP-09-1816.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.21743857360295715
+  },
+  "2009-11-26_celex_IP-09-1824.lv.html": {
+    "langue_predite": "lt",
+    "score_confiance": 0.10980564401010212
+  },
+  "2009-12-07_celex_IP-09-1883.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.6345177664974619
+  },
+  "2009-12-07_celex_IP-09-1884.lv.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.10721561059290233
+  },
+  "2009-12-21_celex_IP-09-1988.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.37174721189591076
+  },
+  "2009-12-31_celex_IP-09-2002.lv.html": {
+    "langue_predite": "lv",
+    "score_confiance": 0.1759014951627089
+  },
+  "2009-01-09_celex_IP-09-26.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.2857142857142857
+  },
+  "2009-01-13_celex_IP-09-45.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.18747656542932134
+  },
+  "2009-01-28_celex_IP-09-141.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.17436791630340018
+  },
+  "2009-01-28_celex_IP-09-142.mt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.10777023386140748
+  },
+  "2009-02-10_celex_IP-09-232.mt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.15915963711602737
+  },
+  "2009-02-10_celex_IP-09-238.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.45004500450045004
+  },
+  "2009-02-20_celex_IP-09-300.mt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.17972681524083392
+  },
+  "2009-02-23_celex_IP-09-303.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.1939111886755866
+  },
+  "2009-03-05_celex_IP-09-354.mt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.1899696048632219
+  },
+  "2009-03-06_celex_IP-09-362.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.3965107057890563
+  },
+  "2009-03-31_celex_IP-09-506.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.2317497103128621
+  },
+  "2009-03-31_celex_IP-09-510.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.19171779141104295
+  },
+  "2009-04-08_celex_IP-09-554.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.18501387604070307
+  },
+  "2009-04-08_celex_IP-09-560.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.34094783498124787
+  },
+  "2009-04-22_celex_IP-09-620.mt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1365001365001365
+  },
+  "2009-04-23_celex_IP-09-625.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.09544716999140976
+  },
+  "2009-04-29_celex_IP-09-666.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.26441036488630354
+  },
+  "2009-04-29_celex_IP-09-673.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.23820867079561697
+  },
+  "2009-05-07_celex_IP-09-718.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.16911889058007779
+  },
+  "2009-05-08_celex_IP-09-723.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.2221728504776716
+  },
+  "2009-05-28_celex_IP-09-845.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.17445917655268667
+  },
+  "2009-05-29_celex_IP-09-851.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.17117425539198905
+  },
+  "2009-06-17_celex_IP-09-941.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.3324468085106383
+  },
+  "2009-06-18_celex_IP-09-948.mt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.28768699654775604
+  },
+  "2009-06-26_celex_IP-09-1044.mt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.17082336863682954
+  },
+  "2009-06-29_celex_IP-09-1049.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.3364737550471063
+  },
+  "2009-07-08_celex_IP-09-1096.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.21258503401360546
+  },
+  "2009-07-08_celex_IP-09-1098.mt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.14954389113204727
+  },
+  "2009-07-20_celex_IP-09-1165.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.3941663381947182
+  },
+  "2009-07-22_celex_IP-09-1166.mt.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.135080372821829
+  },
+  "2009-07-30_celex_IP-09-1204.mt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2257336343115124
+  },
+  "2009-07-31_celex_IP-09-1214.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.18705574261129815
+  },
+  "2009-09-09_celex_IP-09-1292.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.17674089784376104
+  },
+  "2009-09-11_celex_IP-09-1305.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.2319647413593134
+  },
+  "2009-09-23_celex_IP-09-1347.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.17038677798602828
+  },
+  "2009-09-23_celex_IP-09-1349.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.26399155227032733
+  },
+  "2009-10-02_celex_IP-09-1401.mt.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.17686593562079944
+  },
+  "2009-10-05_celex_IP-09-1420.mt.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.17921146953405018
+  },
+  "2009-10-14_celex_IP-09-1508.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.2152852529601722
+  },
+  "2009-10-14_celex_IP-09-1516.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.4510599909788002
+  },
+  "2009-10-19_celex_IP-09-1540.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.28851702250432776
+  },
+  "2009-10-19_celex_IP-09-1544.mt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.15167602002123465
+  },
+  "2009-10-22_celex_IP-09-1573.mt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2168726957276079
+  },
+  "2009-10-23_celex_IP-09-1574.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.2457606291472106
+  },
+  "2009-10-29_celex_IP-09-1626.mt.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.21057064645188464
+  },
+  "2009-10-29_celex_IP-09-1646.mt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011603216411589293
+  },
+  "2009-11-11_celex_IP-09-1696.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.5633802816901409
+  },
+  "2009-11-11_celex_IP-09-1697.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.34989503149055284
+  },
+  "2009-11-19_celex_IP-09-1740.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.23590469450342064
+  },
+  "2009-11-20_celex_IP-09-1779.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.2114611968703743
+  },
+  "2009-11-25_celex_IP-09-1816.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.19227071716977504
+  },
+  "2009-11-26_celex_IP-09-1824.mt.html": {
+    "langue_predite": "fi",
+    "score_confiance": 0.10282776349614395
+  },
+  "2009-12-07_celex_IP-09-1883.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.5973715651135006
+  },
+  "2009-12-07_celex_IP-09-1884.mt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.10294420424130121
+  },
+  "2009-12-21_celex_IP-09-1988.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.3343363423604146
+  },
+  "2009-12-31_celex_IP-09-2002.mt.html": {
+    "langue_predite": "mt",
+    "score_confiance": 0.1636929120969062
+  },
+  "2009-01-09_celex_IP-09-26.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.28595939376608526
+  },
+  "2009-01-13_celex_IP-09-45.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.19932230416583618
+  },
+  "2009-01-28_celex_IP-09-141.nl.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1932740626207963
+  },
+  "2009-01-28_celex_IP-09-142.nl.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.11012003083360863
+  },
+  "2009-02-10_celex_IP-09-232.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1654533421575116
+  },
+  "2009-02-10_celex_IP-09-238.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.3892565200467108
+  },
+  "2009-02-20_celex_IP-09-300.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.18765246762994933
+  },
+  "2009-02-23_celex_IP-09-303.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.21285653469561516
+  },
+  "2009-03-05_celex_IP-09-354.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1851851851851852
+  },
+  "2009-03-06_celex_IP-09-362.nl.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.4004805766920304
+  },
+  "2009-03-31_celex_IP-09-506.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.21119324181626187
+  },
+  "2009-03-31_celex_IP-09-510.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.18975332068311196
+  },
+  "2009-04-08_celex_IP-09-554.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1875468867216804
+  },
+  "2009-04-08_celex_IP-09-560.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.3537318712415989
+  },
+  "2009-04-22_celex_IP-09-620.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.12600806451612903
+  },
+  "2009-04-23_celex_IP-09-625.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.0907605736068252
+  },
+  "2009-04-29_celex_IP-09-666.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.2785515320334262
+  },
+  "2009-04-29_celex_IP-09-673.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.24319066147859922
+  },
+  "2009-05-07_celex_IP-09-718.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1684636118598383
+  },
+  "2009-05-08_celex_IP-09-723.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.211864406779661
+  },
+  "2009-05-28_celex_IP-09-845.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.16786973308712438
+  },
+  "2009-05-29_celex_IP-09-851.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.18001800180018002
+  },
+  "2009-06-17_celex_IP-09-941.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.355998576005696
+  },
+  "2009-06-18_celex_IP-09-948.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.27739251040221913
+  },
+  "2009-06-26_celex_IP-09-1044.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.17898693395382137
+  },
+  "2009-06-29_celex_IP-09-1049.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.3288391976323578
+  },
+  "2009-07-08_celex_IP-09-1096.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.22391401701746527
+  },
+  "2009-07-08_celex_IP-09-1098.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.14465499783017502
+  },
+  "2009-07-20_celex_IP-09-1165.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.4319654427645789
+  },
+  "2009-07-22_celex_IP-09-1166.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.13239772275916853
+  },
+  "2009-07-30_celex_IP-09-1204.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.24894199651481203
+  },
+  "2009-07-31_celex_IP-09-1214.nl.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18031013342949875
+  },
+  "2009-09-09_celex_IP-09-1292.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.17280110592707792
+  },
+  "2009-09-11_celex_IP-09-1305.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.22346368715083798
+  },
+  "2009-09-23_celex_IP-09-1347.nl.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.15603058199407083
+  },
+  "2009-09-23_celex_IP-09-1349.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.3111387678904792
+  },
+  "2009-10-02_celex_IP-09-1401.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.175377060680463
+  },
+  "2009-10-05_celex_IP-09-1420.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.18800526414739613
+  },
+  "2009-10-14_celex_IP-09-1508.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.21635655560363476
+  },
+  "2009-10-14_celex_IP-09-1516.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.49382716049382713
+  },
+  "2009-10-19_celex_IP-09-1540.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.2869440459110474
+  },
+  "2009-10-19_celex_IP-09-1544.nl.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1467351430667645
+  },
+  "2009-10-22_celex_IP-09-1573.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.22311468094600626
+  },
+  "2009-10-23_celex_IP-09-1574.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2686727565824825
+  },
+  "2009-10-29_celex_IP-09-1626.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.233590282644242
+  },
+  "2009-10-29_celex_IP-09-1646.nl.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011618180128264708
+  },
+  "2009-11-11_celex_IP-09-1696.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.5844535359438925
+  },
+  "2009-11-11_celex_IP-09-1697.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.36443148688046645
+  },
+  "2009-11-19_celex_IP-09-1740.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.22563176895306858
+  },
+  "2009-11-20_celex_IP-09-1779.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.2037074760643716
+  },
+  "2009-11-25_celex_IP-09-1816.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.19896538002387587
+  },
+  "2009-11-26_celex_IP-09-1824.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.11070519207350825
+  },
+  "2009-12-07_celex_IP-09-1883.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.6493506493506493
+  },
+  "2009-12-07_celex_IP-09-1884.nl.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.10464629552113855
+  },
+  "2009-12-21_celex_IP-09-1988.nl.html": {
+    "langue_predite": "nl",
+    "score_confiance": 0.38910505836575876
+  },
+  "2009-12-31_celex_IP-09-2002.nl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.15335071308081583
+  },
+  "2009-01-09_celex_IP-09-26.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.2852253280091272
+  },
+  "2009-01-13_celex_IP-09-45.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.19149751053236308
+  },
+  "2009-01-28_celex_IP-09-141.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.17292062943109113
+  },
+  "2009-01-28_celex_IP-09-142.pl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.10573059843518715
+  },
+  "2009-02-10_celex_IP-09-232.pl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.15644555694618273
+  },
+  "2009-02-10_celex_IP-09-238.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.38476337052712584
+  },
+  "2009-02-20_celex_IP-09-300.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.17953321364452424
+  },
+  "2009-02-23_celex_IP-09-303.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.1938360147315371
+  },
+  "2009-03-05_celex_IP-09-354.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.19256691700365877
+  },
+  "2009-03-06_celex_IP-09-362.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.39698292973402144
+  },
+  "2009-03-31_celex_IP-09-506.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.2421893921046258
+  },
+  "2009-03-31_celex_IP-09-510.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.18882175226586104
+  },
+  "2009-04-08_celex_IP-09-554.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.18248175182481752
+  },
+  "2009-04-08_celex_IP-09-560.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.34447123665173957
+  },
+  "2009-04-22_celex_IP-09-620.pl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.12823800974608873
+  },
+  "2009-04-23_celex_IP-09-625.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.09355412105903266
+  },
+  "2009-04-29_celex_IP-09-666.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.2722570106180234
+  },
+  "2009-04-29_celex_IP-09-673.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.2515090543259557
+  },
+  "2009-05-07_celex_IP-09-718.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.16113438607798905
+  },
+  "2009-05-08_celex_IP-09-723.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.22311468094600626
+  },
+  "2009-05-28_celex_IP-09-845.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.1688333614722269
+  },
+  "2009-05-29_celex_IP-09-851.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.18456995201181248
+  },
+  "2009-06-17_celex_IP-09-941.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.3546099290780142
+  },
+  "2009-06-18_celex_IP-09-948.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.2809778027535825
+  },
+  "2009-06-26_celex_IP-09-1044.pl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.18580453363062058
+  },
+  "2009-06-29_celex_IP-09-1049.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.3082614056720099
+  },
+  "2009-07-08_celex_IP-09-1096.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.21753317380900586
+  },
+  "2009-07-08_celex_IP-09-1098.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.13964530093562352
+  },
+  "2009-07-20_celex_IP-09-1165.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.3938558487593541
+  },
+  "2009-07-22_celex_IP-09-1166.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.1381788033715628
+  },
+  "2009-07-30_celex_IP-09-1204.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.2153316106804479
+  },
+  "2009-07-31_celex_IP-09-1214.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.2092487968194183
+  },
+  "2009-09-09_celex_IP-09-1292.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.17727353306151392
+  },
+  "2009-09-11_celex_IP-09-1305.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.22578460149017837
+  },
+  "2009-09-23_celex_IP-09-1347.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.17173278378842521
+  },
+  "2009-09-23_celex_IP-09-1349.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.2762430939226519
+  },
+  "2009-10-02_celex_IP-09-1401.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.16084928422068523
+  },
+  "2009-10-05_celex_IP-09-1420.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.18318373328448434
+  },
+  "2009-10-14_celex_IP-09-1508.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.2086375964948884
+  },
+  "2009-10-14_celex_IP-09-1516.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.4642525533890436
+  },
+  "2009-10-19_celex_IP-09-1540.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.3117206982543641
+  },
+  "2009-10-19_celex_IP-09-1544.pl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1502178158329578
+  },
+  "2009-10-22_celex_IP-09-1573.pl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.21973192704900021
+  },
+  "2009-10-23_celex_IP-09-1574.pl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2616431187859759
+  },
+  "2009-10-29_celex_IP-09-1626.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.21413276231263384
+  },
+  "2009-10-29_celex_IP-09-1646.pl.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011599851521900519
+  },
+  "2009-11-11_celex_IP-09-1696.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.5614823133071308
+  },
+  "2009-11-11_celex_IP-09-1697.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.34806822137138876
+  },
+  "2009-11-19_celex_IP-09-1740.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.2182453077258839
+  },
+  "2009-11-20_celex_IP-09-1779.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.21123785382340513
+  },
+  "2009-11-25_celex_IP-09-1816.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.20177562550443903
+  },
+  "2009-11-26_celex_IP-09-1824.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.10686044026501389
+  },
+  "2009-12-07_celex_IP-09-1883.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.6451612903225806
+  },
+  "2009-12-07_celex_IP-09-1884.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.10290183165260341
+  },
+  "2009-12-21_celex_IP-09-1988.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.33101621979477
+  },
+  "2009-12-31_celex_IP-09-2002.pl.html": {
+    "langue_predite": "pl",
+    "score_confiance": 0.16608536787908987
+  },
+  "2009-01-09_celex_IP-09-26.pt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.27616680475006905
+  },
+  "2009-01-13_celex_IP-09-45.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.1924557351809084
+  },
+  "2009-01-28_celex_IP-09-141.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.17702248185519562
+  },
+  "2009-01-28_celex_IP-09-142.pt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1087429317094389
+  },
+  "2009-02-10_celex_IP-09-232.pt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16249593760155995
+  },
+  "2009-02-10_celex_IP-09-238.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.4302925989672977
+  },
+  "2009-02-20_celex_IP-09-300.pt.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.1893939393939394
+  },
+  "2009-02-23_celex_IP-09-303.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.20437359493153487
+  },
+  "2009-03-05_celex_IP-09-354.pt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18155410312273057
+  },
+  "2009-03-06_celex_IP-09-362.pt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.3760969494358546
+  },
+  "2009-03-31_celex_IP-09-506.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.23485204321277595
+  },
+  "2009-03-31_celex_IP-09-510.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.1991238550378335
+  },
+  "2009-04-08_celex_IP-09-554.pt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.1937984496124031
+  },
+  "2009-04-08_celex_IP-09-560.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.36140224069389226
+  },
+  "2009-04-22_celex_IP-09-620.pt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.12551776076314797
+  },
+  "2009-04-23_celex_IP-09-625.pt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.09662769349695623
+  },
+  "2009-04-29_celex_IP-09-666.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.27533039647577096
+  },
+  "2009-04-29_celex_IP-09-673.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.23121387283236997
+  },
+  "2009-05-07_celex_IP-09-718.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.18145527127563058
+  },
+  "2009-05-08_celex_IP-09-723.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.22867596615595698
+  },
+  "2009-05-28_celex_IP-09-845.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.17733640716439084
+  },
+  "2009-05-29_celex_IP-09-851.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.1774622892635315
+  },
+  "2009-06-17_celex_IP-09-941.pt.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.37425149700598803
+  },
+  "2009-06-18_celex_IP-09-948.pt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2841716396703609
+  },
+  "2009-06-26_celex_IP-09-1044.pt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1893939393939394
+  },
+  "2009-06-29_celex_IP-09-1049.pt.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.3215434083601286
+  },
+  "2009-07-08_celex_IP-09-1096.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.2254791431792559
+  },
+  "2009-07-08_celex_IP-09-1098.pt.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.13449899125756556
+  },
+  "2009-07-20_celex_IP-09-1165.pt.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.4142502071251036
+  },
+  "2009-07-22_celex_IP-09-1166.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.13753266400770184
+  },
+  "2009-07-30_celex_IP-09-1204.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.22799817601459188
+  },
+  "2009-07-31_celex_IP-09-1214.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.19681165124975397
+  },
+  "2009-09-09_celex_IP-09-1292.pt.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.1694053870913095
+  },
+  "2009-09-11_celex_IP-09-1305.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.23293733985557888
+  },
+  "2009-09-23_celex_IP-09-1347.pt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16869095816464239
+  },
+  "2009-09-23_celex_IP-09-1349.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.2898550724637681
+  },
+  "2009-10-02_celex_IP-09-1401.pt.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.17421602787456447
+  },
+  "2009-10-05_celex_IP-09-1420.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.19440124416796267
+  },
+  "2009-10-14_celex_IP-09-1508.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.2321262766945218
+  },
+  "2009-10-14_celex_IP-09-1516.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.501002004008016
+  },
+  "2009-10-19_celex_IP-09-1540.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.27107617240444565
+  },
+  "2009-10-19_celex_IP-09-1544.pt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.15530361857431277
+  },
+  "2009-10-22_celex_IP-09-1573.pt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2328830926874709
+  },
+  "2009-10-23_celex_IP-09-1574.pt.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2656748140276302
+  },
+  "2009-10-29_celex_IP-09-1626.pt.html": {
+    "langue_predite": "fr",
+    "score_confiance": 0.22351363433169422
+  },
+  "2009-10-29_celex_IP-09-1646.pt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.01162560889126568
+  },
+  "2009-11-11_celex_IP-09-1696.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.6153846153846154
+  },
+  "2009-11-11_celex_IP-09-1697.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.37078235076010385
+  },
+  "2009-11-19_celex_IP-09-1740.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.22497187851518563
+  },
+  "2009-11-20_celex_IP-09-1779.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.2071251035625518
+  },
+  "2009-11-25_celex_IP-09-1816.pt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.191131498470948
+  },
+  "2009-11-26_celex_IP-09-1824.pt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.11189437171310282
+  },
+  "2009-12-07_celex_IP-09-1883.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.6702412868632708
+  },
+  "2009-12-07_celex_IP-09-1884.pt.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.09881422924901186
+  },
+  "2009-12-21_celex_IP-09-1988.pt.html": {
+    "langue_predite": "pt",
+    "score_confiance": 0.3624501631025734
+  },
+  "2009-12-31_celex_IP-09-2002.pt.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.17445917655268667
+  },
+  "2009-01-09_celex_IP-09-26.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.27344818156959255
+  },
+  "2009-01-13_celex_IP-09-45.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.1807337791433219
+  },
+  "2009-01-28_celex_IP-09-141.ro.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.17608733932030288
+  },
+  "2009-01-28_celex_IP-09-142.ro.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.109217999126256
+  },
+  "2009-02-10_celex_IP-09-232.ro.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.15701051970482022
+  },
+  "2009-02-10_celex_IP-09-238.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.41893590280687054
+  },
+  "2009-02-20_celex_IP-09-300.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.1811922449719152
+  },
+  "2009-02-23_celex_IP-09-303.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.19825535289452814
+  },
+  "2009-03-05_celex_IP-09-354.ro.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16666666666666669
+  },
+  "2009-03-06_celex_IP-09-362.ro.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.34897246994959286
+  },
+  "2009-03-31_celex_IP-09-506.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.26399155227032733
+  },
+  "2009-03-31_celex_IP-09-510.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.19142419601837674
+  },
+  "2009-04-08_celex_IP-09-554.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.18406037180195106
+  },
+  "2009-04-08_celex_IP-09-560.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.3575259206292456
+  },
+  "2009-04-22_celex_IP-09-620.ro.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.12393109431156277
+  },
+  "2009-04-23_celex_IP-09-625.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.09547450830628222
+  },
+  "2009-04-29_celex_IP-09-666.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.2691790040376851
+  },
+  "2009-04-29_celex_IP-09-673.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.23234200743494424
+  },
+  "2009-05-07_celex_IP-09-718.ro.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.16342539630658603
+  },
+  "2009-05-08_celex_IP-09-723.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.22639800769753224
+  },
+  "2009-05-28_celex_IP-09-845.ro.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.16175994823681655
+  },
+  "2009-05-29_celex_IP-09-851.ro.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1729804532087874
+  },
+  "2009-06-17_celex_IP-09-941.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.36791758646063283
+  },
+  "2009-06-18_celex_IP-09-948.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.2663115845539281
+  },
+  "2009-06-26_celex_IP-09-1044.ro.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.17614937466971992
+  },
+  "2009-06-29_celex_IP-09-1049.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.303951367781155
+  },
+  "2009-07-08_celex_IP-09-1096.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.21303792074989347
+  },
+  "2009-07-08_celex_IP-09-1098.ro.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.13570362328674174
+  },
+  "2009-07-20_celex_IP-09-1165.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.3913894324853229
+  },
+  "2009-07-22_celex_IP-09-1166.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.13360053440213762
+  },
+  "2009-07-30_celex_IP-09-1204.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.21240441801189466
+  },
+  "2009-07-31_celex_IP-09-1214.ro.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.19466614755693984
+  },
+  "2009-09-09_celex_IP-09-1292.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.16189088554314393
+  },
+  "2009-09-11_celex_IP-09-1305.ro.html": {
+    "langue_predite": "it",
+    "score_confiance": 0.23223409196470043
+  },
+  "2009-09-23_celex_IP-09-1347.ro.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.16531658125309967
+  },
+  "2009-09-23_celex_IP-09-1349.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.27374760470845877
+  },
+  "2009-10-02_celex_IP-09-1401.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.16239038648911985
+  },
+  "2009-10-05_celex_IP-09-1420.ro.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.1869508319312021
+  },
+  "2009-10-14_celex_IP-09-1508.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.20725388601036268
+  },
+  "2009-10-14_celex_IP-09-1516.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.4282655246252677
+  },
+  "2009-10-19_celex_IP-09-1540.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.2809778027535825
+  },
+  "2009-10-19_celex_IP-09-1544.ro.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.15511090429657207
+  },
+  "2009-10-22_celex_IP-09-1573.ro.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.22758306781975418
+  },
+  "2009-10-23_celex_IP-09-1574.ro.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.2509410288582183
+  },
+  "2009-10-29_celex_IP-09-1626.ro.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.20695364238410596
+  },
+  "2009-10-29_celex_IP-09-1646.ro.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011612918210217047
+  },
+  "2009-11-11_celex_IP-09-1696.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.5636978579481398
+  },
+  "2009-11-11_celex_IP-09-1697.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.3519887363604365
+  },
+  "2009-11-19_celex_IP-09-1740.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.23479690068091102
+  },
+  "2009-11-20_celex_IP-09-1779.ro.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2044989775051125
+  },
+  "2009-11-25_celex_IP-09-1816.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.1771479185119575
+  },
+  "2009-11-26_celex_IP-09-1824.ro.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.10148163182463973
+  },
+  "2009-12-07_celex_IP-09-1883.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.6285355122564426
+  },
+  "2009-12-07_celex_IP-09-1884.ro.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.10725010725010724
+  },
+  "2009-12-21_celex_IP-09-1988.ro.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.34048348655090227
+  },
+  "2009-12-31_celex_IP-09-2002.ro.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.15552099533437014
+  },
+  "2009-01-09_celex_IP-09-26.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.29069767441860467
+  },
+  "2009-01-13_celex_IP-09-45.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.20855057351407716
+  },
+  "2009-01-28_celex_IP-09-141.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.18480872297172427
+  },
+  "2009-01-28_celex_IP-09-142.sk.html": {
+    "langue_predite": "de",
+    "score_confiance": 0.11037527593818984
+  },
+  "2009-02-10_celex_IP-09-232.sk.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1643655489809336
+  },
+  "2009-02-10_celex_IP-09-238.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.46641791044776115
+  },
+  "2009-02-20_celex_IP-09-300.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.19928258270227184
+  },
+  "2009-02-23_celex_IP-09-303.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.22070183182520414
+  },
+  "2009-03-05_celex_IP-09-354.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.19535065442469235
+  },
+  "2009-03-06_celex_IP-09-362.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.4302925989672977
+  },
+  "2009-03-31_celex_IP-09-506.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.2679528403001072
+  },
+  "2009-03-31_celex_IP-09-510.sk.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.21308331557639038
+  },
+  "2009-04-08_celex_IP-09-554.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.21114864864864866
+  },
+  "2009-04-08_celex_IP-09-560.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.37285607755406414
+  },
+  "2009-04-22_celex_IP-09-620.sk.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.13904338153503892
+  },
+  "2009-04-23_celex_IP-09-625.sk.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.10126582278481014
+  },
+  "2009-04-29_celex_IP-09-666.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.3000300030003
+  },
+  "2009-04-29_celex_IP-09-673.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.2486943546381497
+  },
+  "2009-05-07_celex_IP-09-718.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.18566654288897141
+  },
+  "2009-05-08_celex_IP-09-723.sk.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.24838549428713363
+  },
+  "2009-05-28_celex_IP-09-845.sk.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.18681113394358304
+  },
+  "2009-05-29_celex_IP-09-851.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.1873711823121604
+  },
+  "2009-06-17_celex_IP-09-941.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.39666798889329624
+  },
+  "2009-06-18_celex_IP-09-948.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.30303030303030304
+  },
+  "2009-06-26_celex_IP-09-1044.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.19455252918287938
+  },
+  "2009-06-29_celex_IP-09-1049.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.3479471120389701
+  },
+  "2009-07-08_celex_IP-09-1096.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.2455795677799607
+  },
+  "2009-07-08_celex_IP-09-1098.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.1538935056940597
+  },
+  "2009-07-20_celex_IP-09-1165.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.4537205081669692
+  },
+  "2009-07-22_celex_IP-09-1166.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.15304560759106214
+  },
+  "2009-07-30_celex_IP-09-1204.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.2513826043237808
+  },
+  "2009-07-31_celex_IP-09-1214.sk.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.20567667626491154
+  },
+  "2009-09-09_celex_IP-09-1292.sk.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.18821757952192736
+  },
+  "2009-09-11_celex_IP-09-1305.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.25119316754584275
+  },
+  "2009-09-23_celex_IP-09-1347.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.18758206715438006
+  },
+  "2009-09-23_celex_IP-09-1349.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.3206155819172812
+  },
+  "2009-10-02_celex_IP-09-1401.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.18907165815844207
+  },
+  "2009-10-05_celex_IP-09-1420.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.2039567611666327
+  },
+  "2009-10-14_celex_IP-09-1508.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.24301336573511542
+  },
+  "2009-10-14_celex_IP-09-1516.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.5390835579514826
+  },
+  "2009-10-19_celex_IP-09-1540.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.3148614609571789
+  },
+  "2009-10-19_celex_IP-09-1544.sk.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.163265306122449
+  },
+  "2009-10-22_celex_IP-09-1573.sk.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.23277467411545624
+  },
+  "2009-10-23_celex_IP-09-1574.sk.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.28702640642939153
+  },
+  "2009-10-29_celex_IP-09-1626.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.24330900243309003
+  },
+  "2009-10-29_celex_IP-09-1646.sk.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011642798928862498
+  },
+  "2009-11-11_celex_IP-09-1696.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.5886200130804448
+  },
+  "2009-11-11_celex_IP-09-1697.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.388651379712398
+  },
+  "2009-11-19_celex_IP-09-1740.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.2506265664160401
+  },
+  "2009-11-20_celex_IP-09-1779.sk.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.23153507756425099
+  },
+  "2009-11-25_celex_IP-09-1816.sk.html": {
+    "langue_predite": "cs",
+    "score_confiance": 0.1986491855383393
+  },
+  "2009-11-26_celex_IP-09-1824.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.11380448389666552
+  },
+  "2009-12-07_celex_IP-09-1883.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.615595075239398
+  },
+  "2009-12-07_celex_IP-09-1884.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.11350737797956867
+  },
+  "2009-12-21_celex_IP-09-1988.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.38461538461538464
+  },
+  "2009-12-31_celex_IP-09-2002.sk.html": {
+    "langue_predite": "sk",
+    "score_confiance": 0.1734304543877905
+  },
+  "2009-01-09_celex_IP-09-26.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.2958579881656805
+  },
+  "2009-01-13_celex_IP-09-45.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.22737608003638018
+  },
+  "2009-01-28_celex_IP-09-141.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.20597322348094746
+  },
+  "2009-01-28_celex_IP-09-142.sl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.11560693641618498
+  },
+  "2009-02-10_celex_IP-09-232.sl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.17337031900138697
+  },
+  "2009-02-10_celex_IP-09-238.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.4699248120300752
+  },
+  "2009-02-20_celex_IP-09-300.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.21294718909710392
+  },
+  "2009-02-23_celex_IP-09-303.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2397506593143131
+  },
+  "2009-03-05_celex_IP-09-354.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.21231422505307856
+  },
+  "2009-03-06_celex_IP-09-362.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.4327131112072695
+  },
+  "2009-03-31_celex_IP-09-506.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.28498147620404674
+  },
+  "2009-03-31_celex_IP-09-510.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.23906287353573988
+  },
+  "2009-04-08_celex_IP-09-554.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.21910604732690622
+  },
+  "2009-04-08_celex_IP-09-560.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.3795066413662239
+  },
+  "2009-04-22_celex_IP-09-620.sl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.1457301078402798
+  },
+  "2009-04-23_celex_IP-09-625.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.10582010582010583
+  },
+  "2009-04-29_celex_IP-09-666.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.3365870077415012
+  },
+  "2009-04-29_celex_IP-09-673.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.31735956839098695
+  },
+  "2009-05-07_celex_IP-09-718.sl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.19409937888198758
+  },
+  "2009-05-08_celex_IP-09-723.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.2620545073375262
+  },
+  "2009-05-28_celex_IP-09-845.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.19661816751867872
+  },
+  "2009-05-29_celex_IP-09-851.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.19219680953296175
+  },
+  "2009-06-17_celex_IP-09-941.sl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.38095238095238093
+  },
+  "2009-06-18_celex_IP-09-948.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.3328894806924101
+  },
+  "2009-06-26_celex_IP-09-1044.sl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.19880715705765406
+  },
+  "2009-06-29_celex_IP-09-1049.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.36576444769568395
+  },
+  "2009-07-08_celex_IP-09-1096.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2598752598752599
+  },
+  "2009-07-08_celex_IP-09-1098.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.15941335883947075
+  },
+  "2009-07-20_celex_IP-09-1165.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.4589261128958238
+  },
+  "2009-07-22_celex_IP-09-1166.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.1550147263990079
+  },
+  "2009-07-30_celex_IP-09-1204.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.24937655860349126
+  },
+  "2009-07-31_celex_IP-09-1214.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.22060445621001545
+  },
+  "2009-09-09_celex_IP-09-1292.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.20605810838656502
+  },
+  "2009-09-11_celex_IP-09-1305.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.25056376847907796
+  },
+  "2009-09-23_celex_IP-09-1347.sl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.20267531414673692
+  },
+  "2009-09-23_celex_IP-09-1349.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.32144005143040827
+  },
+  "2009-10-02_celex_IP-09-1401.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.19798059790140568
+  },
+  "2009-10-05_celex_IP-09-1420.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.22002200220022
+  },
+  "2009-10-14_celex_IP-09-1508.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.2684563758389262
+  },
+  "2009-10-14_celex_IP-09-1516.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.5263157894736842
+  },
+  "2009-10-19_celex_IP-09-1540.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.3561253561253561
+  },
+  "2009-10-19_celex_IP-09-1544.sl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.17349063150589866
+  },
+  "2009-10-22_celex_IP-09-1573.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.24271844660194172
+  },
+  "2009-10-23_celex_IP-09-1574.sl.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.29385836027034967
+  },
+  "2009-10-29_celex_IP-09-1626.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.25412960609911056
+  },
+  "2009-10-29_celex_IP-09-1646.sl.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011689617281930189
+  },
+  "2009-11-11_celex_IP-09-1696.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.6724949562878278
+  },
+  "2009-11-11_celex_IP-09-1697.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.45475216007276037
+  },
+  "2009-11-19_celex_IP-09-1740.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.254323499491353
+  },
+  "2009-11-20_celex_IP-09-1779.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.2410800385728062
+  },
+  "2009-11-25_celex_IP-09-1816.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.20755500207555005
+  },
+  "2009-11-26_celex_IP-09-1824.sl.html": {
+    "langue_predite": "et",
+    "score_confiance": 0.11916110581506197
+  },
+  "2009-12-07_celex_IP-09-1883.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.7246376811594203
+  },
+  "2009-12-07_celex_IP-09-1884.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.11530035743110803
+  },
+  "2009-12-21_celex_IP-09-1988.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.3843197540353574
+  },
+  "2009-12-31_celex_IP-09-2002.sl.html": {
+    "langue_predite": "sl",
+    "score_confiance": 0.18521948508983144
+  },
+  "2009-01-09_celex_IP-09-26.sv.html": {
+    "langue_predite": "sv",
+    "score_confiance": 0.2857142857142857
+  },
+  "2009-01-13_celex_IP-09-45.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.22466861379465286
+  },
+  "2009-01-28_celex_IP-09-141.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.19561815336463223
+  },
+  "2009-01-28_celex_IP-09-142.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.11386927806877704
+  },
+  "2009-02-10_celex_IP-09-232.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18096272167933405
+  },
+  "2009-02-10_celex_IP-09-238.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.4524886877828055
+  },
+  "2009-02-20_celex_IP-09-300.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2044989775051125
+  },
+  "2009-02-23_celex_IP-09-303.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.22768670309653918
+  },
+  "2009-03-05_celex_IP-09-354.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2391772303276728
+  },
+  "2009-03-06_celex_IP-09-362.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.4450378282153983
+  },
+  "2009-03-31_celex_IP-09-506.sv.html": {
+    "langue_predite": "sv",
+    "score_confiance": 0.25786487880350695
+  },
+  "2009-03-31_celex_IP-09-510.sv.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.22182786157941436
+  },
+  "2009-04-08_celex_IP-09-554.sv.html": {
+    "langue_predite": "sv",
+    "score_confiance": 0.20475020475020475
+  },
+  "2009-04-08_celex_IP-09-560.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.4137360364087712
+  },
+  "2009-04-22_celex_IP-09-620.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1416029453412631
+  },
+  "2009-04-23_celex_IP-09-625.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.09778038525471791
+  },
+  "2009-04-29_celex_IP-09-666.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2810567734682406
+  },
+  "2009-04-29_celex_IP-09-673.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.25252525252525254
+  },
+  "2009-05-07_celex_IP-09-718.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18580453363062058
+  },
+  "2009-05-08_celex_IP-09-723.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.26602819898909286
+  },
+  "2009-05-28_celex_IP-09-845.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.18298261665141813
+  },
+  "2009-05-29_celex_IP-09-851.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.20052135552436332
+  },
+  "2009-06-17_celex_IP-09-941.sv.html": {
+    "langue_predite": "en",
+    "score_confiance": 0.3800836183960471
+  },
+  "2009-06-18_celex_IP-09-948.sv.html": {
+    "langue_predite": "sv",
+    "score_confiance": 0.31338138514572234
+  },
+  "2009-06-26_celex_IP-09-1044.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.192789666473877
+  },
+  "2009-06-29_celex_IP-09-1049.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.38565368299267255
+  },
+  "2009-07-08_celex_IP-09-1096.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.23612750885478156
+  },
+  "2009-07-08_celex_IP-09-1098.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.15460729746444032
+  },
+  "2009-07-20_celex_IP-09-1165.sv.html": {
+    "langue_predite": "sv",
+    "score_confiance": 0.42716787697565145
+  },
+  "2009-07-22_celex_IP-09-1166.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1432870038687491
+  },
+  "2009-07-30_celex_IP-09-1204.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2694691457828079
+  },
+  "2009-07-31_celex_IP-09-1214.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2061855670103093
+  },
+  "2009-09-09_celex_IP-09-1292.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1861850679575498
+  },
+  "2009-09-11_celex_IP-09-1305.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2805049088359046
+  },
+  "2009-09-23_celex_IP-09-1347.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.19015021867275148
+  },
+  "2009-09-23_celex_IP-09-1349.sv.html": {
+    "langue_predite": "sv",
+    "score_confiance": 0.31269543464665417
+  },
+  "2009-10-02_celex_IP-09-1401.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1822489520685256
+  },
+  "2009-10-05_celex_IP-09-1420.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.20325203252032523
+  },
+  "2009-10-14_celex_IP-09-1508.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.22114108801415305
+  },
+  "2009-10-14_celex_IP-09-1516.sv.html": {
+    "langue_predite": "sv",
+    "score_confiance": 0.49776007964161273
+  },
+  "2009-10-19_celex_IP-09-1540.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.324254215304799
+  },
+  "2009-10-19_celex_IP-09-1544.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.16792611251049538
+  },
+  "2009-10-22_celex_IP-09-1573.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.23084025854108958
+  },
+  "2009-10-23_celex_IP-09-1574.sv.html": {
+    "langue_predite": "ro",
+    "score_confiance": 0.29533372711163614
+  },
+  "2009-10-29_celex_IP-09-1626.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2387774594078319
+  },
+  "2009-10-29_celex_IP-09-1646.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.011695359281437126
+  },
+  "2009-11-11_celex_IP-09-1696.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.5955926146515783
+  },
+  "2009-11-11_celex_IP-09-1697.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.37678975131876413
+  },
+  "2009-11-19_celex_IP-09-1740.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.23126734505087881
+  },
+  "2009-11-20_celex_IP-09-1779.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.2255299954894001
+  },
+  "2009-11-25_celex_IP-09-1816.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.22036139268400176
+  },
+  "2009-11-26_celex_IP-09-1824.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.12858428700012858
+  },
+  "2009-12-07_celex_IP-09-1883.sv.html": {
+    "langue_predite": "sv",
+    "score_confiance": 0.651890482398957
+  },
+  "2009-12-07_celex_IP-09-1884.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.11257458065968705
+  },
+  "2009-12-21_celex_IP-09-1988.sv.html": {
+    "langue_predite": "sv",
+    "score_confiance": 0.4327131112072695
+  },
+  "2009-12-31_celex_IP-09-2002.sv.html": {
+    "langue_predite": "da",
+    "score_confiance": 0.1807337791433219
+  }
+}
