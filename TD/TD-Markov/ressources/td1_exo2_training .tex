@@ -1,171 +1,120 @@
-\vspace{0.5cm}
 Une fois que nous avons les données prêtes, nous pouvons procéder à l'entraînement.
 
-\vspace{0.5cm}
-\textbf{Les étapes:}
+\subsection{Étape 1 : Création des représentations matricielles}
+Pour commencer l'entraînement nous devons déclarer les objets qui nous serviront pour traiter les données et effectuer les calculs nécessaires. Rappelez que une façon d’illustrer une chaîne de Markov peut être au moyen d'un graphe ou d'une matrice.
 
+Créez deux matrices $A0$ et $A1$ avec une dimensions égal a $V$ où $V = $ \textit{len(word2idx)}. La matrice $A0$ servira pour gérer les probabilités de passer d'un état $t$ étant donné l'état $t-1$ issues du corpus \textit{Poe} et la matrice $A1$ pour le corpus \textit{Frost}. Créez aussi deux listes $pi0$ et $pi1$ pour gérer les probabilités d'apparition en début de phrase des mots de chaque corpus.
+
+Toutes les liste doivent être initialisées en 1. Utilisez la fonction ones() de la bibliothèque \textit{Numpy} comme dans l'exemple.
+
+\begin{python}
+#Create a matrix of dimension 10 x 10 initialized by ones
+np.ones((10, 10))
+
+#Create a list or vector of 10 initialized by ones
+np.ones(10)
+\end{python}
+
+\subsection{Étape 2 : Extraction de caractéristiques stochastiques}
+
+Ensuite créez la fonction \textit{compute\_counts()}, cette fonction doit recevoir l'objet \textit{text\_as\_int} crée dans l'exercice précédent; la matrice $A$ et la la liste $pi$ qui seront affectées avec les caractéristiques issues de \textit{text\_as\_int}.
+\begin{python}
+# compute counts for A and pi
+def compute_counts(text_as_int, A, pi):
+\end{python}
+
+À l’intérieure de la fonction lisez \textit{compute\_counts()} pour extraire et comptabiliser les couples ou bigrammes de mots et les affecter dans la matrice $A$. Identifiez et comptabilisez aussi les mots qui apparaissent en début de phrases et gardez le résultat dans la liste $pi$. Pas besoin de \textit{return} dans cette fonction. 
+
+\textcolor{red}{Vous pouvez vous inspirer du code suivant, attention qu'il est pas fonctionnelle; réfléchissez et corrigez le avant de l'ajouter a la fonction.}
+
+\begin{python}
+for tokens in text_as_int:
+last_idx = None
+for idx in tokens:
+if last_idx is None:
+# it's the first word in a sentence
+pi[idx] += 1
+else:
+# the last word exists, so count a transition
+A[last_idx, idx] += 1
+
+# update last idx
+last_idx = idx
+\end{python}
+
+\textbf{Exercice :
+Analysez le code suivant et expliquez son fonctionnement.}
+\begin{python}
+compute_counts([t for t, y in zip(train_text_int, Ytrain) #cont
+ if y == 0], A0, pi0)
+compute_counts([t for t, y in zip(train_text_int, Ytrain) #cont
+ if y == 1], A1, pi1)
+\end{python}
+\vspace{5cm}
+
+
+\subsection{Étape 3 : Normalisation}
+Une fois que nous avons compté les occurrences des éléments étudier, nous allons normaliser les valeurs au moyen du calcul d'une moyenne simple.
+
+\begin{python}
+# normalize A and pi so they are valid probability matrices
+# convince yourself that this is equivalent to the formulas 
+#shown before
+A0 /= A0.sum(axis=1, keepdims=True)
+pi0 /= pi0.sum()
+
+A1 /= A1.sum(axis=1, keepdims=True)
+pi1 /= pi1.sum()
+\end{python}
+
+\subsection{Étape 4 : propriété \textit{log}}
+
+Pour calculer le logarithme de chaque valeur de nos matrices, nous utilisons la fonction \textit{log()} de la bibliothèque \textit{numpy}.
+\begin{python}
+# log A and pi since we don't need the actual probs
+logA0 = np.log(A0)
+logpi0 = np.log(pi0)
+
+logA1 = np.log(A1)
+logpi1 = np.log(pi1)
+\end{python}
+
+\subsection{Étape 5 : \textit{priors}}
+
+Afin de pouvoir utiliser les règles bayésiennes, nous devons aussi calculer les \textit{priors} de chaque classe. 
+
+\begin{python}
+# compute priors
+count0 = sum(y == 0 for y in Ytrain)
+count1 = sum(y == 1 for y in Ytrain)
+total = len(Ytrain)
+p0 = count0 / total
+p1 = count1 / total
+\end{python}
+\textbf{Exercice : Décrivez la fonctionnalité de chaque ligne du code ci-dessus}
+\vspace{5cm}
+
+Et pour être consistant, ne devons aussi calculer les logarithmes.
+
+\begin{python}
+logp0 = np.log(p0)
+logp1 = np.log(p1)
+\end{python}
+
+\subsection{Étape 5 : Classe \textit{classifier}}
+Maintenant, nous avons tous les éléments pour réaliser une prédiction en suivant l’équation REF, nous avons :
 \begin{enumerate}
-	\item Entraîner un modèle par classe : \textit{Poe} et \textit{Frost}
+	\item Créez la classe \textit{classifier} avec son constructeur, le constructeur doit recevoir les arguments : \textit{logAs, Logpis, logpriors}
 	\begin{itemize}
-		\item N'oubliez pas les équations !
+		\item le constructeur devra initialiser des variables locales en utilisant les valeur reçues en argument.
 	\end{itemize}
-	\item N'oubliez pas d'utiliser la propriété \textit{smoothing} (e.g. \textit{one-smoothin}). 
-	\item Considérer si c'est nécessaire d'utiliser $A$ et $\pi$ ou $log(A)$ et $log(\pi)$.
-	\item Afin d'appliquer les règles bayésiennes, calculez aussi les \textit{priors} \textbf{p(class=k)}
-	\item Maintenant vous avez tout pour faire une prédiction.
-	\item Écrire une fonction python pour calculer les \textit{posterior} (pour chaque classe) à partir d'un texte donnée comme \textit{input}.
-	\item Prenez l'\textit{argmax} parmi les \textit{posterior} calcules pour obtenir las classe prédite.
-	\item Faites des prédictions avec le corpus d'entraînement et le corpus de teste.
-	\item Calculez la précision 
+	\item Créez la fonction \textit{compute\_log\_likelihood()} avec deux arguments comme entrée : \textit{input\_, class\_} ET l'objet \textit{self} car on devra initialiser des variables locales.
 	\begin{itemize}
-		\item lFALTA
+		\item \textit{input\_} : Contiendra le texte à analyser déjà transformé en valeurs entières.
+		\item \textit{class\_} : Contiendra l'étiquette de la classe avec la quelle le texte sera comparé (0 = Poe, 1 = Frost)
 	\end{itemize}
-	\item F-Score et matrice de confusion.
-	
+	\item Créez la fonction \textit{predict()} avec un argument comme entrée : \textit{inputs} ET l'objet \textit{self} car on devra initialiser des variables locales.
+	\begin{itemize}
+		\item \textit{input} : Contiendra les textes à analyser déjà transformés en valeurs entières.
+	\end{itemize}
 \end{enumerate}
-
-\begin{figure}[h]
-\includegraphics[width=0.6\textwidth]{../images/distrib.png}
-\caption{Distribution des mots par rapport à leur taille en caractères dans
-différentes langues\label{distrib}}
-\end{figure}
-
-L'axe des abscisses représente la taille d'un mot en caractères et
-l'axe des ordonnées représente le nombre de mots uniques correspondant
-à cette taille.
-
-Pour préparer votre espace de travail sur votre notebook \textsc{Jupyter},
-créez un dossier TD1 dans lequel vous enregistrerez votre code et
-vos données.
-
-Pous constituer un corpus, vous utiliserez les fichiers textes suivants
-(choisissez plain text utf-8): 
-\begin{itemize}
-\item "Le discours de la méthode" (fr) \url{http://www.gutenberg.org/ebooks/13846}
-%. Pour que les résultats soient plus significatifs, pensez à supprimer les premières phrases du fichier écrites en anglais.
-\item "Ulysses" (en) \url{http://www.gutenberg.org/ebooks/4300} 
-\end{itemize}
-\newpage{}
-
-\textbf{Les étapes :}
-\begin{enumerate}
-\item \textbf{lire} les textes 
-\item \textbf{découper} en mots (ou tokeniser) 
-\item \textbf{compter} le nombre de mots par taille de caractères 
-\item \textbf{observer} les résultats chiffrés 
-\item \textbf{représenter} cela sur une courbe 
-\end{enumerate}
-\textbf{Etape 1 : lire}
-
-On ouvre le fichier en indiquant son chemin (\textit{path}), si vous
-avez bien enregistré votre fichier au même endroit que votre code,
-le nom du fichier suffit .
-
-\textbf{Si ça ne marche pas c'est que} : 
-\begin{itemize}
-\item Tout n'est pas au bon endroit (\texttt{File not Found}), regardez
-dans l'onglet \texttt{files} de \textsc{Jupyter} pour voir où vous
-êtes. 
-\item ou que on a un problème d'encoding (\texttt{charmap}), il faut ajouter
-ecoding ='utf-8' dans le open : open("13846-0.txt", encoding ="utf-8") 
-\end{itemize}
-Nous allons commencer par le "Discours de la Méthode", si vous avez
-conservé le nom d'origine il devrait s'appeler "13846-0.txt".
-
-\begin{python} with open("13846-0.txt") as f: chaine = f.read()
-\end{python}
-
-Et on affiche un bout du texte pour vérifier que ça marche :
-
-\begin{python} print(chaine{[}:100{]}) \end{python}
-
-\textbf{Etape 2 : découper}
-
-On va très simplement découper en mots avec la \textbf{méthode} \textit{split}
-\begin{python} listemots = chaine.split()\#approximation des occurrences
-print("Nombre de mots : %i" %len(liste_mots))
-\end{python}
-
-\textbf{Etape 3 : compter}
-
-On va utiliser un \textbf{dictionnaire} (ou tableau associatif) où
-l'on va stocker pour chaque longueur en caractères le nombre de mots
-qu'on a rencontré. Le fonctionnement est le suivant: 
-\begin{itemize}
-\item pour chaque mot de la liste de mots, on calcule sa longueur 
-\item on vérifie si on a déjà rencontré un mot de cette longueur: 
-\begin{itemize}
-\item Si c'est le premier mot pour cette longueur on crée une \textbf{clé}
-pour cette longueur à laquelle on affecte la \textbf{valeur} 1 
-\item Sinon, on \textbf{incrémente} de 1 la valeur existante 
-\end{itemize}
-\end{itemize}
-\begin{python} diclongueurs = {} \#un dictionnaire vide
-
-for mot in listemots: longueur = len(mot)\#la longueur du mot if longueur
-not in diclongueurs: \#on a jamais vu cette longueur de mot diclongueurs{[}longueur{]}=1
-\# else: \#on a vu cette longueur de mot diclongueurs{[}longueur{]}+=1
-
-print(diclongueurs)\#pour avoir une vue de ce qu'on a fait
-
-\end{python}
-
-NB: si le processus ne vous semble pas clair, ajoutez au début de
-la boucle \textit{for} deux lignes (avec l'indentation) pour suivre
-le processus pas à pas :
-
-\begin{python} print(diclongueurs) dd=input("Appuyez sur Enter pour
-passer a la suite") \end{python}
-
-\textbf{Etape 4: observer}
-
-Un dictionnaire n'est pas une structure de données ordonnée, pour
-vérifier que'on trouve des résultats proche de l'attendu, on va afficher
-le nombre d'occurences enregistré dans \texttt{dic\_longueurs} pour
-toutes les longueurs de 1 à 30 en utilisant \textbf{l'itérateur} \textit{range}.
-Dans le \textit{print} on utilise du \textbf{formatage de chaînes
-de caractères}\footnote{Voir par exemple \url{https://stackoverflow.com/questions/5082452/string-formatting-vs-format}}.
-
-\begin{python} for toto in range(1, 31):\#de 1 à 30 (31 est exclu)
-nbroccurences = diclongueurs{[}toto{]} print("%i : %i"%(toto, nbr_occurences))
-\end{python}
-
-Vous verrez que le code plante car on a des longueurs qui ne sont
-pas dans le dictionnaire, on va donc améliorer le code de la façon
-suivante:
-
-\begin{python} for toto in range(30): if toto in diclongueurs: nbroccurences
-= diclongueurs{[}toto{]} print("%i : %i"%(toto, nbr_occurences))
- else: nbroccurences = 0 print("%i : %i"%(toto, nbr_occurences))
-\end{python}
-
-\textbf{Etape 5 : représenter}
-
-Et maintenant c'est magique, on va créer une courbe grâce à la librairie
-\texttt{matplotlib}. On va importer cette librairie et la renommer
-pour que ça soit plus court à écrire. Puis pour avoir les valeurs
-à mettre sur la courbe on va lire les valeurs dans l'ordre croissant
-pour les ranger dans une liste nommée \textit{liste\_effectifs}. Pyplot
-prend entrée un \textbf{vecteur}, une liste de valeurs ordonées.
-
-\begin{python} import matplotlib.pyplot as pyplot \#import avec alias
-
-listeeffectifs = {[}{]} for toto in range(30): if toto in diclongueurs:\#on
-a donc vu des mots de cette longueur listeeffectifs.append(diclongueurs{[}toto{]})
-else:\#on en n'a pas vu de cette longueur, on ajoute donc un 0 listeeffectifs.append(0)
-pyplot.plot(listeeffectifs)\#on "dessine" pyplot.show()\#"on affiche"
-
-\end{python}
-
-\begin{figure}
-\centering{}
-\includegraphics[width=0.5\textwidth]{../images/TD1_effectifs1.png}
-\caption{"Discours de la Méthode" : nombre de mots par longueur (en abscisse),
-en ordonnée l'effectif}
-\end{figure}
-
-Maintenant si on veut faire le même calcul pour l'autre texte on a
-juste à changer le nom du fichier dans l'étape 1 et à relancer toutes
-les cellules. Mais si on avait 100 textes à faire ça ne serait pas
-très pratique. Nous allons donc voir dans l'exercice suivant comment
-améliorer le code.

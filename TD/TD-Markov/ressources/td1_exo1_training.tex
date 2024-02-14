@@ -3,159 +3,192 @@ Pour notre petit classificateur, nous allons procéder à l’entraînement de d
 
 \textbf{MAIS} avant de passer à l'entraînement, nous devons préparer les données afin qu'ils soient traitables pour la machine.
 
+\textbf{Ressources : }
+
+Pour cette implémentation, nous allons avoir besoin de quelques bibliothèques importantes. Considérez que ceci est juste un exemple, si vous avez une autre idée de comment aborder le problème, n’hésitez pas a le faire à votre manière.
+
+Nous allons donc charger les bibliothèques suivantes :
+
+\begin{python}
+import numpy as np
+import matplotlib.pyplot as plt
+import string
+from sklearn.model_selection import train_test_split
+\end{python}
+
+Si vous essayez de charger ces bibliothèques en local, il ne faut pas oublier de les avoir installées préalablement.
+
 \vspace{0.5cm}
 
-\textbf{Les étapes :}
-
-\begin{enumerate}
-	\item Télécharger les deux corpus
-	\item Lire chaque fichier, enregistrer chaque ligne comme un objet de type \textit{list}
-	\item Garder les étiquettes(1,2,...,N), une étiquette par classe.
-	\item Diviser les corpus (70\% entraînement, 30\% test).
-	\item Créer un \textit{mapping} (map == dict) pour associer a chaque mot unique un index numérique.
-	\item Créer une boucle pour lire les lignes enregistrées dans l'objet \textit{list}
-	\begin{itemize}
-		\item Tokenize chaque ligne en mots (utilisez la fonction split())
-	\end{itemize} 
-	\item Nourrir le dictionnaire (\textit{dict}) en associant chaque mot unique à un index unique numérique.
-	\item Créer un index spécial `pour les mots inconnus, des mots qui seront dans le corpus de teste mais pas dans celui d'entraînement.
-	\item Changez les mots des lignes du texte par des données numériques.
-	\begin{itemize}
-		\item employez les index de votre dictionnaire.
-		\item Créez des nouvelles listes alignées si nécessaire.
-	\end{itemize}
-	
-\end{enumerate}
-
-
-
-%\begin{figure}[h]
-%\includegraphics[width=0.6\textwidth]{../images/distrib.png}
-%\caption{Distribution des mots par rapport à leur taille en caractères dans
-%différentes langues\label{distrib}}
-%\end{figure}
-
-\textbf{Etape 1 : Téléchargement}
+\subsection{Étape 1 : Téléchargement}
 
 La première chose à faire consiste a télécharger les fichier qui contiennent les textes qui serviront pour entraîner et valider nos modèles. Vous pouvez trouver les fichiers aux l'adresses suivantes :
 
 \begin{itemize}
-	\item \url{https://raw.githubusercontent.com/lazyprogrammer/machine_learning_examples/master/hmm_class/edgar_allan_poe.txt}
-	\item \url{https://raw.githubusercontent.com/lazyprogrammer/machine_learning_examples/master/hmm_class/robert_frost.txt}
+\item \url{https://github.com/These-SCAI2023/L6SOPROG/blob/main/TD/TD-Markov/ressources/edgar_allan_poe.txt}
+\item \url{https://github.com/These-SCAI2023/L6SOPROG/blob/main/TD/TD-Markov/ressources/robert_frost.txt}
 \end{itemize}
 
-Si vous utilisez un notebook comme \textsc{Jupyter}ou \textsc{Google Collabs}, vous pouvez utiliser le code suivant :
+Si vous utilisez un notebook comme \textsc{Jupyter}ou \textsc{Google Collabs}, vous pouvez utiliser la commande :
 `
 \begin{python}
-	!wget -nc https://raw.githubusercontent.com/lazyprogrammer/machine_learning_examples/master/hmm_class/edgar_allan_poe.txt
-	!wget -nc https://raw.githubusercontent.com/lazyprogrammer/machine_learning_examples/master/hmm_class/robert_frost.txt
+!wget -nc \textit{URL}
 \end{python}
  
-\textbf{Si ça ne marche pas c'est que} : 
+La commande \textit{wget} va télécharger le fichier dans le répertoire de base de votre notebook. 
+
+\subsection{Étape 2 : Lecture de fichiers}
+
+Pour être certains que vous avez bien téléchargé les fichiers et qu'ils sont dans le répertoire principal testez la commande :
+
+\begin{python} 
+!head edgar_allan_poe.txt #Afficher les 10 premières lignes
+
+!head robert_frost.txt
+\end{python}
+
+Observez ce qui se passe...
+
+
+\subsubsection{Enregistrer titres des corpus}
+
+Créez une liste avec le nom \textit{input\_files} avec les noms des fichiers que vous venez de télécharger.% Ceci va être très utile plus tard, vous pouvez le faire avec la commande suivante :
+
+%\begin{python}
+%input_files = [
+%'edgar_allan_poe.txt',
+%'robert_frost.txt',
+%]
+%\end{python}
+
+\subsubsection{Lire les corpus}
+
 \begin{itemize}
-\item Tout n'est pas au bon endroit (\texttt{File not Found}), regardez
-dans l'onglet \texttt{files} de \textsc{Jupyter} pour voir où vous
-êtes. 
-\item ou que on a un problème d'encoding (\texttt{charmap}), il faut ajouter
-ecoding ='utf-8' dans le open : open("13846-0.txt", encoding ="utf-8") 
+	\item Créez deux listes : \textit{input\_texts} et \textit{labels}.
+	\item Créez une boucle avec le fonction \textit{enumerate()} en lui donnant comme argument la liste \textit{input\_files}, ceci va renvoyer son contenu ainsi que la position de chaque élément, affectez ces valeurs aux deux variables : \textit{label} et \textit{f}
+	\item Dans une deuxième bouclé imbriquée, parcourez le contenu des deux corpus téléchargés, utilisez la fonction \textit{open} en lui donnant la variable \textit{f} comme argument. Rappelez que \textit{f} contient le nom des éléments de la liste \textit{input\_files}.
+	\item Pour chaque itération de la boucle, la fonction \textit{open()} va renvoyer ligne par ligne le contenu du fichier indiqué en argument. Appliquez le prétraitement suivant :
+	\begin{itemize}
+		\item Convertissez toute la ligne en minuscule;
+		\item supprimez le dernier caractère a droit (normalement l'instruction de retour à la ligne) avec la fonction \textit{rstrip()};
+		\item supprimez toutes les signes de ponctuation
+	\end{itemize}
+	 et . Affectez le résultat dans une nouvelle variable appelée \textit{line}.
+	\item Avec la fonction \textit{append}, rajoutez la ligne pré-traitée à la liste \textit{input\_texts} en parallèle vous devez rajouter aussi l'étiquette associé à cette ligne (\textit{label}) à la liste \textit{labels}.
 \end{itemize}
-Nous allons commencer par le "Discours de la Méthode", si vous avez
-conservé le nom d'origine il devrait s'appeler "13846-0.txt".
 
-\begin{python} with open("13846-0.txt") as f: chaine = f.read()
+%La première boucle va juste nous montrer chaque élément dans la liste  \textit{input\_files}. On utilise la fonction \textit{enumerate()} car elle retourne les éléments de la liste et sa position. Étant donné que la liste contient les noms des fichiers et que chaque fichier va représenter une classe, on va associer chaque classe avec son index comme son identificateur numérique ou son étiquette.
+
+%La deuxième liste va lire toutes les lignes des fichiers, convertir tout en minuscules et supprimer les ponctuation avant de les enregistrer dans l'objet \textit{input\_texts}. Notez que l'enregistrement se fait ligne par ligne, et de façon parallele, on enregistre aussi l'étiquette correspondante à la ligne dans l'objet \textit{labels.}
+
+
+%\begin{python}
+
+%# collect data into lists
+%input_texts = []
+%labels = []
+
+%for label, f in enumerate(input_files):
+% print(f"{f} corresponds to label {label}")
+
+% for line in open(f):
+%  line = line.rstrip().lower()
+%  if line:
+%   # remove punctuation
+%   line = line.translate(str.maketrans('', '', #\_
+%   string.punctuation))
+
+%   input_texts.append(line)
+%   labels.append(label)
+
+%\end{python}
+
+\subsection{Étape 3 : Division de corpus}
+
+Nous allons réserver une partie de notre corpus pour l'évaluation. Par norme, on utilise le 70\% pour l'entraînement et le 30\% pour l'évaluation. Vous pouvez utiliser n'importe quelle technique pour effectuer cette séparation, soit directement sur python, ou bien avec des commandes \textit{bash} sur linux. Pour praticité, dans cet exemple nous allons utiliser la fonction \textit{train\_test\_split()} contenue dans la bibliothèque \textit{sklearn} que nous avons importé au début. 
+
+\begin{python}
+train_text, test_text, Ytrain, Ytest = 
+train_test_split(input_texts, labels)
 \end{python}
+Regardez que nous envoyons comme arguments les lignes du texte et ses étiquettes, comme ça nous allons garder la trace qui va nous indiquer à quelle classe appartient chaque ligne, même si elles ne sont plus dans le même ordre.
 
-Et on affiche un bout du texte pour vérifier que ça marche :
-
-\begin{python} print(chaine{[}:100{]}) \end{python}
-
-\textbf{Etape 2 : découper}
-
-On va très simplement découper en mots avec la \textbf{méthode} \textit{split}
-\begin{python} listemots = chaine.split()\#approximation des occurrences
-print("Nombre de mots : %i" %len(liste_mots))
-\end{python}
-
-\textbf{Etape 3 : compter}
-
-On va utiliser un \textbf{dictionnaire} (ou tableau associatif) où
-l'on va stocker pour chaque longueur en caractères le nombre de mots
-qu'on a rencontré. Le fonctionnement est le suivant: 
 \begin{itemize}
-\item pour chaque mot de la liste de mots, on calcule sa longueur 
-\item on vérifie si on a déjà rencontré un mot de cette longueur: 
-\begin{itemize}
-\item Si c'est le premier mot pour cette longueur on crée une \textbf{clé}
-pour cette longueur à laquelle on affecte la \textbf{valeur} 1 
-\item Sinon, on \textbf{incrémente} de 1 la valeur existante 
+	\item \textbf{train\_text} : contient le texte d’entraînement
+	\item \textbf{test\_text} : contient le texte d'évaluation
+	\item \textbf{Ytrain} : contient les étiquettes associées aux lignes du texte d'entraînement
+	\item \textbf{Ytrain} : contient les étiquettes associées aux lignes du texte d'évaluation
 \end{itemize}
-\end{itemize}
-\begin{python} diclongueurs = {} \#un dictionnaire vide
 
-for mot in listemots: longueur = len(mot)\#la longueur du mot if longueur
-not in diclongueurs: \#on a jamais vu cette longueur de mot diclongueurs{[}longueur{]}=1
-\# else: \#on a vu cette longueur de mot diclongueurs{[}longueur{]}+=1
+Nous allons tester si la fonction a bien effectué la tâche demandée.
+\begin{python}
+len(Ytrain), len(Ytest)
+train_text[:5]
+Ytrain[:5]
+\end{python}
+Qu'est-ce que les commandes précédentes montrent ?
 
-print(diclongueurs)\#pour avoir une vue de ce qu'on a fait
+\subsection{Étape 4 : \textit{mapping}}
+
+Pour associer à chaque mot du vocabulaire un mot unique, nous avons besoin d'une stratégie pour parcourir tout le vocabulaire, mot par mot, ainsi qu'un objet qui nos nous permet aussi de créer une association directe entre deux éléments, nous allons utiliser donc un dictionnaire.
+
+\begin{python}
+idx = 1
+word2idx = {'<unk>': 0}
+\end{python}
+
+\subsection{Étape 5 : Nourrir le dictionnaire}
+Notre dictionnaire s’appelle \textit{word2idx} qui contient déjà en élément destiné pour considérer les mots inconnus, par exemple, les mots qui sont dans le texte d'évaluation mais pas dans le texte d'entraînement, qui nous seront donc inconnu lors de l'étape d'évaluation. La variable \textit{idx} nous servira pour gérer l'index numérique que nous allons associer à chaque mot.
+
+\begin{enumerate}
+	\item Créez une boucle pour parcourir les éléments de \textit{train\_text} afin d'obtenir une ligne à la fois.
+	\item Pour chaque itération faite une découpage de la ligne en mots avec la fonction \textit{split()}, affectez la liste de mot renvoyées par \textit{split()} a une variable \textit{tokens}.
+	\item Dans une deuxième boucle imbriquée, parcourez mot a mot les mots dans \textit{tokens}, validez si le mot courant n'existe déjà dans \textit{word2idx}, s'il n'existe pas, rajoutez le au dictionnaire comme \textit{key} et comme \textit{value} indiquez la valeur actuelle de \textit{idx}.
+	\item Ensuite, incrémentez la valeur de \textit{idx} afin d'avoir une valeur unique associée a chaque nouveau mot.
+\end{enumerate}
+
+
+\begin{python}
+	if token not in word2idx:
+	 word2idx[token] = idx
+	 idx += 1
+\end{python}
+%\begin{python}
+%# populate word2idx
+% for text in train_text:
+%  tokens = text.split()
+%   for token in tokens:
+%    if token not in word2idx:
+%     word2idx[token] = idx
+%     idx += 1
+%\end{python}
+
+Affichez le contenu du dictionnaire \textit{word2idx} afin de vérifier si tout se bien passé. Affichez aussi la taille de notre vocabulaire.
+
+\subsection{Étape 6 : Remplacement des mots par leurs représentations numériques (index)}
+
+Pour faire cela, nous allons devoir parcourir ligne par ligne, et à chaque fois tokenizer les mots a l'aide de la fonction \textit{split()}. Cette fonction va nous renvoyer un objet de type \textit{list} avec un mot par position que nous allons devoir parcourir dans une deuxième boucle. Dans la deuxième boucle nous allons lire le mot, et le chercher dans notre dictionnaire, une fois que nous avons trouvé le mot, nous allons garder que son id numérique afin d’effectuer le remplacement.
+
+\begin{python}
+# convert data into integer format
+train_text_int = []
+test_text_int = []
+
+for text in train_text:
+ tokens = text.split()
+ line_as_int = [word2idx[token] for token in tokens]
+ train_text_int.append(line_as_int)
 
 \end{python}
 
-NB: si le processus ne vous semble pas clair, ajoutez au début de
-la boucle \textit{for} deux lignes (avec l'indentation) pour suivre
-le processus pas à pas :
+%for text in test_text:
+% tokens = text.split()
+% line_as_int = [word2idx.get(token, 0) for token in tokens]
+% test_text_int.append(line_as_int)
 
-\begin{python} print(diclongueurs) dd=input("Appuyez sur Enter pour
-passer a la suite") \end{python}
+Notez que dans notre implémentation, nous avons construit une nouvelle liste avec la même architecture que \textit{train\_text} (ligne $\times$ position), en remplaçant les mots par leurs idx.
 
-\textbf{Etape 4: observer}
+\textbf{
+Répétez la même procédure pour le corpus d'évaluation en affectant la liste \textit{test\_text\_int}}
 
-Un dictionnaire n'est pas une structure de données ordonnée, pour
-vérifier que'on trouve des résultats proche de l'attendu, on va afficher
-le nombre d'occurences enregistré dans \texttt{dic\_longueurs} pour
-toutes les longueurs de 1 à 30 en utilisant \textbf{l'itérateur} \textit{range}.
-Dans le \textit{print} on utilise du \textbf{formatage de chaînes
-de caractères}\footnote{Voir par exemple \url{https://stackoverflow.com/questions/5082452/string-formatting-vs-format}}.
-
-\begin{python} for toto in range(1, 31):\#de 1 à 30 (31 est exclu)
-nbroccurences = diclongueurs{[}toto{]} print("%i : %i"%(toto, nbr_occurences))
-\end{python}
-
-Vous verrez que le code plante car on a des longueurs qui ne sont
-pas dans le dictionnaire, on va donc améliorer le code de la façon
-suivante:
-
-\begin{python} for toto in range(30): if toto in diclongueurs: nbroccurences
-= diclongueurs{[}toto{]} print("%i : %i"%(toto, nbr_occurences))
- else: nbroccurences = 0 print("%i : %i"%(toto, nbr_occurences))
-\end{python}
-
-\textbf{Etape 5 : représenter}
-
-Et maintenant c'est magique, on va créer une courbe grâce à la librairie
-\texttt{matplotlib}. On va importer cette librairie et la renommer
-pour que ça soit plus court à écrire. Puis pour avoir les valeurs
-à mettre sur la courbe on va lire les valeurs dans l'ordre croissant
-pour les ranger dans une liste nommée \textit{liste\_effectifs}. Pyplot
-prend entrée un \textbf{vecteur}, une liste de valeurs ordonées.
-
-\begin{python} import matplotlib.pyplot as pyplot \#import avec alias
-
-listeeffectifs = {[}{]} for toto in range(30): if toto in diclongueurs:\#on
-a donc vu des mots de cette longueur listeeffectifs.append(diclongueurs{[}toto{]})
-else:\#on en n'a pas vu de cette longueur, on ajoute donc un 0 listeeffectifs.append(0)
-pyplot.plot(listeeffectifs)\#on "dessine" pyplot.show()\#"on affiche"
-
-\end{python}
-
-\begin{figure}
-\centering{}
-\includegraphics[width=0.5\textwidth]{../images/TD1_effectifs1.png}
-\caption{"Discours de la Méthode" : nombre de mots par longueur (en abscisse),
-en ordonnée l'effectif}
-\end{figure}
-
-Maintenant si on veut faire le même calcul pour l'autre texte on a
-juste à changer le nom du fichier dans l'étape 1 et à relancer toutes
-les cellules. Mais si on avait 100 textes à faire ça ne serait pas
-très pratique. Nous allons donc voir dans l'exercice suivant comment
-améliorer le code.
+Regardez a l’intérieure de la ligne 50 de l'objet \textit{train\_text\_int} pour voir que tout a bien marché et que nous pouvons passer à l’exercice 2 !
