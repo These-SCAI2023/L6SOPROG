@@ -24,4 +24,4 @@ print(dic_langues.keys())
 
 for NB_mots in [10, 20, 30, 43]:
     dic_modeles = get_model(dic_langues, NB_mots)
-    stocker_json(f"models/{liste_corpus[c]}_models_3gram_%i.json"%NB_mots,dic_modeles)
+    # stocker_json(f"models/{liste_corpus[c]}_models_3gram_%i.json"%NB_mots,dic_modeles)

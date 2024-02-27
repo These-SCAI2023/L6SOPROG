@@ -9,11 +9,24 @@ Created on Tue Feb 13 11:48:09 2024
 import glob
 import json
 import re
+import sklearn
+from sklearn.metrics import DistanceMetric 
+from sklearn.feature_extraction.text import CountVectorizer
 
 def lire_fichier(chemin):
     with open(chemin, encoding="utf-8") as f:
         chaine = f.read()
     return chaine
+
+def lire_json(chemin):
+    with open(chemin) as mon_fichier:
+        data = json.load(mon_fichier)
+    return data
+
+def stocker_json(chemin,contenu):
+    with open(chemin, "w", encoding="utf-8") as w:
+        w.write(json.dumps(contenu, indent =2,ensure_ascii=False))
+    return
 
 def lang(chemin):
         dossiers = chemin.split("/")
@@ -25,10 +38,12 @@ def get_dic_langues(liste_fichiers):
     for chemin in liste_fichiers:
         langue=lang(chemin)
         chaine = lire_fichier(chemin)
+## J'enlève les espaces pour ne pas me retrouver avec des trigrammes qui comptent un espace
         chaine=re.sub(r"\s+", "", chaine)
         if langue not in dic_langues:
             dic_langues[langue] = {}
-        for i in range(len(chaine)-3):
+##Je détermine les trigrammes sur tout le texte
+        for i in range(len(chaine)-2):
             ngram=chaine[i:i+3]
             if ngram not in dic_langues[langue]:
                 dic_langues[langue][ngram]=1
@@ -47,22 +62,13 @@ def get_model(dic_langues, n_tri):
         dic_modeles[langue]=[mot for effectif, mot in liste_tri]
     return dic_modeles
 
-
-# liste_fichiers=[]
-# c=1
-# liste_corpus=["appr","test"]
-# path=f"./corpus_multi/*/{liste_corpus[c]}/*"
-
-# for fichier in glob.glob(path):
-#     liste_fichiers.append(fichier) 
-# print("Nombre de fichiers : %i"%len(liste_fichiers))
+def distance_cos(mod1,mod2):
+    V = CountVectorizer(ngram_range=(1,4),analyzer='char')
+    X = V.fit_transform([mod1, mod2]).toarray()
+    distance_tab1=sklearn.metrics.pairwise.cosine_distances(X)                  
+    distance=float(distance_tab1[0][1])
+    return distance
 
 
-# dic_langues = get_dic_langues(liste_fichiers)
-# print(dic_langues.keys())
-
-
-# for NB_mots in [10, 20, 30, 43]:
-#     dic_modeles = get_model(dic_langues, NB_mots)
-# #     with open(f"models/{liste_corpus[c]}_models_3gram_%i.json"%NB_mots, "w", encoding="utf-8") as w:
-# #         w.write(json.dumps(dic_modeles, indent =2,ensure_ascii=False))
+    
+    
