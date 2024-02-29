@@ -1,0 +1,29 @@
+Maintenant, nous avons tous les éléments pour réaliser une prédiction selon Bayes.
+
+\subsection{Construction de la classe \textit{classifier}}
+
+\begin{enumerate}
+	\item Créez la classe \textit{classifier} avec son constructeur, le constructeur doit recevoir comme arguments les listes : \textit{logAs, Logpis, logpriors}. Notez que les noms sont en pluriels, ca veut dire que ces objets vont recevoir des listes de listes, une par classe.
+	\begin{itemize}
+		\item le constructeur devra initialiser des variables locales en utilisant les valeur reçues en argument.
+	\end{itemize}
+	\item Créez la fonction \textit{compute\_log\_likelihood()} qui reçoit trois arguments: \textit{input\_, class\_, self}.
+	\begin{itemize}
+		\item \textit{input\_} : Contiendra le texte à analyser déjà transformé en valeurs entières.
+		\item \textit{class\_} : Contiendra l'étiquette de la classe avec la quelle le texte sera comparé (0 = Poe, 1 = Frost)
+		\item \textit{self} : Pour accéder aux objets de la classe.
+		\item La fonction doit renvoyer la somme des probabilités d'apparition des bigrammes et des mots en début des phrases trouvés dans \textit{input\_}, selon l'équation suivante : $\log p(s_1...T)=\log \pi_{s1}+\sum_{t=2}^{T}\log A_{s_{t-1},s_t}$.
+		\item \textbf{Attention !} le calcul doit être effectué selon la classe donnée comme argument.
+	\end{itemize}
+	\item Créez la fonction \textit{predict()} avec deux arguments comme entrée : \textit{inputs} et \textit{self}.
+	\begin{itemize}
+		\item \textit{input} : Contiendra les textes à analyser déjà transformés en valeurs entières.
+		\item Si l'on part de l'idée que \textit{inputs} contient un poème par ligne
+		\begin{itemize}
+			\item La fonction doit renvoyer un vecteur de taille = $len(inputs)$.
+			\item Chaque position du vecteur doit contenir la classe prédite pour chaque poème donné en argument en respectant l'ordre d'apparition des poèmes.
+			\item N'oubliez pas que la classe prédite doit être celle avec la probabilité plus élevée. Rappelez l'équation suivante :\\
+			$k^* = \arg max_k \log p(poem | author = k) p(author = k)$
+		\end{itemize}
+	\end{itemize}
+\end{enumerate}

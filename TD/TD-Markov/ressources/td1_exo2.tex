@@ -1,0 +1,118 @@
+Une fois que nous avons les données prêtes, nous pouvons procéder à l'entraînement.
+
+\subsection{Étape 1 : Création des représentations matricielles}
+Pour commencer l'entraînement nous devons déclarer les objets qui nous serviront pour traiter les données et effectuer les calculs nécessaires. Rappelez qu'une façon d’illustrer une chaîne de Markov peut être au moyen d'un graphe ou d'une matrice.
+
+Créez deux matrices $A0$ et $A1$ avec une dimensions égal a $V$ où $V = $ \textit{len(word2idx)}. La matrice $A0$ servira pour gérer les probabilités de passer d'un état $t$ étant donné l'état $t-1$ issues du corpus \textit{Poe} et la matrice $A1$ pour le corpus \textit{Frost}. Créez aussi deux listes $pi0$ et $pi1$ pour gérer les probabilités d'apparition des en début de phrase.
+
+Toutes les listes doivent être initialisées en 1. Utilisez la fonction ones() de la bibliothèque \textit{Numpy} comme dans l'exemple.
+
+\begin{python}
+#Create a matrix of dimension 10 x 10 initialized by ones
+np.ones((10, 10))
+
+#Create a list or vector of 10 initialized by ones
+np.ones(10)
+\end{python}
+
+\subsection{Étape 2 : Extraction de caractéristiques stochastiques}
+
+Créez la fonction \textit{compute\_counts()}, cette fonction doit recevoir l'objet \textit{text\_as\_int} crée dans l'exercice précédent; une matrice $A$ et une liste $pi$ qui seront affectées avec les caractéristiques issues de \textit{text\_as\_int}.
+\begin{python}
+# compute counts for A and pi
+def compute_counts(text_as_int, A, pi):
+\end{python}
+
+À l’intérieure de la fonction lisez \textit{text\_as\_int} pour extraire et comptabiliser les couples ou bigrammes de mots et les affecter dans la matrice $A$. Identifiez et comptabilisez aussi les mots qui apparaissent en début de phrases et gardez le résultat dans la liste $pi$. Pas besoin de \textit{return} dans cette fonction. 
+
+\textcolor{red}{Vous pouvez vous inspirer du code suivant, attention qu'il est pas fonctionnelle; réfléchissez et corrigez le avant de l'ajouter a la fonction.}
+
+\begin{python}
+for tokens in text_as_int:
+
+ for idx in tokens:
+ if idx is First :
+  # it's the first word in a sentence
+  pi[idx] += 1
+ else:
+  # the last word exists, so count a transition
+  A[last_idx, idx] += 1
+
+\end{python}
+
+\textbf{Exercice :
+Analysez le code suivant et expliquez son fonctionnement.}
+\begin{python}
+compute_counts([t for t, y in zip(train_text_int, Ytrain)
+ if y == 0], A0, pi0)
+\end{python}
+\vspace{5cm}
+
+
+\subsection{Étape 3 : Normalisation}
+
+La normalisation va nous permettre d'arranger les valeurs dans l'intervalle [0:1]. Pour cela, nous allons employer une technique classique de distribution de probabilité. Modifiez chaque valeur de la matrice en lui divisant par la somme des valeurs de sa ligne.
+
+Pour corroborer que le processus a été bien effectué, la somme de chaque ligne de la matrice doit être égale à $1$.
+
+\begin{enumerate}
+	\item Parcourez ligne à ligne la matrice $A$.
+	\item Comptez les valeurs de la ligne et affectez le résultat dans une variable \textit{somme}, utilisez la fonction \textit{sum()}.
+	\item Parcourez la ligne et pour chaque élément remplacez sa valeur en lui divisant par \textit{somme}
+	\item Répétez le même processus pour chaque ligne.
+	\item Répétez le même processus pour chaque classe.
+\end{enumerate}
+Utilisez la même méthode pour normaliser les valeurs de $pi$.
+
+%\begin{python}
+%# normalize A and pi so they are valid probability matrices
+%# convince yourself that this is equivalent to the formulas 
+%#shown before
+%A0 /= A0.sum(axis=1, keepdims=True)
+%pi0 /= pi0.sum()
+
+%A1 /= A1.sum(axis=1, keepdims=True)
+%pi1 /= pi1.sum()
+%\end{python}
+
+\subsection{Étape 4 : propriété \textit{log}}
+
+Pour calculer le logarithme de chaque valeur de nos matrices, nous utilisons la fonction \textit{log()} de la bibliothèque \textit{numpy}.
+\begin{python}
+# log A and pi since we don't need the actual probs
+logA0 = np.log(A0)
+logpi0 = np.log(pi0)
+
+logA1 = np.log(A1)
+logpi1 = np.log(pi1)
+\end{python}
+
+\subsection{Étape 5 : \textit{priors}}
+
+Afin de pouvoir utiliser les règles bayésiennes, nous devons aussi calculer les \textit{priors} de chaque classe. Considérez le code suivant et créez votre propre méthode en utilisant les mêmes noms des objets que dans l'exemple.
+
+\begin{python}
+#Nb d'éléments annotés avec label=0
+count0 = sum(Ytrain where label==0)
+#Nb d'éléments annotés avec label=1
+count1 = sum(Ytrain where label==1)
+total = len(Ytrain)
+p0 = count0 / total
+p1 = count1 / total
+\end{python}
+
+%\begin{python}
+%	# compute priors
+%	count0 = sum(y == 0 for y in Ytrain)
+%	count1 = sum(y == 1 for y in Ytrain)
+%	total = len(Ytrain)
+%	p0 = count0 / total
+%	p1 = count1 / total
+%\end{python}
+
+Et pour être consistant, ne devons aussi calculer les logarithmes.
+
+\begin{python}
+logp0 = np.log(p0)
+logp1 = np.log(p1)
+\end{python}

@@ -1,0 +1,117 @@
+\vspace{0.5cm}
+Pour notre générateur de texte nous allons procéder à l’analyse d'un corpus. Ce corpus, connu aussi comme corpus d'entraînement sera représentée par les ouvres de \textit{Robert Frost}.
+
+\textbf{MAIS} avant de passer à l'entraînement, nous devons préparer les données afin qu'ils soient traitables pour la machine.
+
+\textbf{Ressources : }
+
+Pour cette implémentation, nous allons avoir besoin de quelques bibliothèques importantes. Considérez que ceci est juste un exemple, si vous avez une autre idée de comment aborder le problème, n’hésitez pas a le faire à votre manière.
+
+Nous allons donc charger les bibliothèques suivantes :
+
+\begin{python}
+import numpy as np
+import string
+
+np.random.seed(1234)
+\end{python}
+
+Si vous essayez de charger ces bibliothèques en local, il ne faut pas oublier de les avoir installées préalablement.
+
+\vspace{0.5cm}
+
+\subsection{Étape 1 : Téléchargement}
+
+La première étape consiste a télécharger le fichier qui contient les textes qui serviront pour entraîner notre modèle. Vous pouvez trouver le fichier dans le répertoire suivant :
+
+\begin{itemize}
+%\item \url{https://github.com/These-SCAI2023/L6SOPROG/blob/main/TD/TD-Markov/ressources/edgar_allan_poe.txt}
+\item \url{https://github.com/These-SCAI2023/L6SOPROG/blob/main/TD/TD-Markov/ressources/robert_frost.txt}
+\end{itemize}
+
+Si vous utilisez un notebook comme \textsc{Jupyter} où \textsc{Google Collabs}, vous pouvez utiliser la commande :
+`
+\begin{python}
+!wget -nc \textit{URL}
+\end{python}
+ 
+La commande \textit{wget} va télécharger le fichier dans le répertoire de base (root) de votre notebook. 
+
+Pour être certains que vous avez bien téléchargé les fichiers et qu'ils sont dans le répertoire principal testez la commande :
+
+\begin{python} 
+	!head robert_frost.txt #Afficher les 10 premières lignes
+\end{python}
+
+Observez ce qui se passe...
+
+\subsection{Étape 2 : Prétraitement de données}
+
+\subsubsection{Déclaration d'objets pour le traitement des données}
+
+\begin{itemize}
+	\item Créez trois dictionnaires :
+	\begin{enumerate}
+		\item \textit{initial}
+		\item \textit{first\_order}
+		\item \textit{second\_order}
+	\end{enumerate}
+	\item Créez la fonction \textit{remove\_punctuation()} : 
+	\begin{itemize}
+		\item Elle reçoit par argument le texte à traiter,
+		\item et renvoie le texte libre de signes de ponctuation.
+	\end{itemize}
+	\item Créez la fonction \textit{add2dict()} :
+	\begin{itemize}
+		\item Cette fonction reçoit comme arguments : 
+		\begin{itemize}
+			\item un dictionnaire (\textbf{d}) qui sera manipulé en fonction des autres deux arguments
+			\item un objet (\textbf{k}), le mot clé qu'on doit chercher dans le dictionnaire,
+			\item une objet (\textbf{v}), qui correspond à la valeur associée à \textbf{k}.
+		\end{itemize}
+		\item La fonction doit renvoyer le dictionnaire \textbf{d}, soit avec un nouvel élément -> $d[k] = [v]$; soit avec la valeur \textbf{v} rajoutée à l'élément existant \textbf{k} -> $d[k].append(v)$
+	
+	\end{itemize}
+\end{itemize}
+
+
+
+\subsubsection{Étape 3 : Lecture du corpus}
+
+Nous devons créer une stratégie afin d'extraire tous les bigrammes du texte traité. Commencez par lire le contenu de notre corpus comme dans le code suivant :
+
+\begin{python}
+#Initialization d'une boucle pour lire le corpus phrase par phrase
+for line in open('robert_frost.txt'):
+ #On transforme tous les mots en minuscule
+ tokens = remove_punctuation(line.rstrip().lower()).split()
+ 
+\end{python}
+
+Complétez le code en suivant les instructions :
+
+À l’intérieur de la boucle, définissez une deuxième boucle imbriquée afin de lire mot par mot la liste \textit{tokens} et considérez quatre situations :
+\begin{enumerate}
+	\item Si le mot est en début de phrase, rajoutez le au dictionnaire \textit{initial}. Pensez qu'à la fin le dictionnaire doit contenir les mots en \textit{key} et en \textit{value} leur nb d'occurrences.
+	\item Si le mot est au final de la phrase, vous devez utiliser la fonction \textit{add2dict} en envoyant comme argument :
+	\begin{enumerate}
+		\item le dictionnaire à affecter : \textit{second\_order},
+		\item l'élément qui sera intégré sur l'index \textit{key} : bigramme (mot précédent(-1) + mot actuel). Notez qu'au lieu de contenir qu'un mot, ce dictionnaire contiendra des bigramme de mots.
+		\item la valeur (\textit{value}) associée au bigramme indiqué précédemment : utilisez la valeur constante 'END', comme ça on saura que ce bigramme constitue la fin de la phrase.
+	\end{enumerate}
+	\item Si le mot est le second mot de la phrase, utilisez aussi la fonction \textit{add2dict} en envoyant comme argument :
+	\begin{enumerate}
+		\item Dictionnaire : \textit{first\_order},
+		\item \textit{key} : le mot actuel
+		\item \textit{value} : comme référence envoyez le mot qui précède le mot actuel (-1).
+	\end{enumerate}
+	\item Pour les mots qui ne se trouvent pas dans les cas antérieures, utilisez encore la fonction \textit{add2dict} avec les arguments :
+	\begin{enumerate}
+		\item Dictionnaire : \textit{second\_order},
+		\item \textit{key} : bigramme (mot précédent(+2) + mot précédent(-1)), le dictionnaire contiendra aussi des bigrammes des mots qui précèdent le mot actuel.
+		\item \textit{value} : comme valeur, envoyez le mot actuel.
+	\end{enumerate}
+\end{enumerate}
+
+\textbf{Exercice :}
+Décrivez l'utilité des éléments que l'on vient de créer ainsi que de leur structures.

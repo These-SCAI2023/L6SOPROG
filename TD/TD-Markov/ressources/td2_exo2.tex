@@ -1,0 +1,75 @@
+Une fois que les caractéristiques extraites du corpus sont stockées dans nos dictionnaires, nous procédons à l'étape de normalisation.
+
+\subsection{Étape 1 : Dictionnaire \textit{initial}}
+
+À l'aide d'une boucle, parcourez les éléments du dictionnaire \textit{initial}.
+Rappelez que dans l'index \textit{key} nous avons les mots qui commencent les phrases analysées, et dans \textit{value} nous avons leur nb d'occurrences, vous devez donc modifier cette dernière valeur en lui divisant par la somme de toutes les occurrences de tous les mots. Inspirez vous de l'exemple suivant :
+
+\begin{python}
+sum_occ = sum(initial.values())
+for element in initial:
+ element.value = element.value / sum_occ
+\end{python}
+
+\subsection{Étape 2 : Dictionnaires \textit{first\_order} et \textit{second\_order}}
+
+\subsubsection{fonction \textit{list2pdict()}}
+Créez la fonction \textit{list2pdict}, elle recevra comme argument une liste de mots non uniques. La fonction doit renvoyer un dictionnaire avec les mots uniques de la liste placés sur l'index \textit{key}, et en \textit{value} leur nb d'occurrences \textbf{normalisés} (réutilisez la méthode de normalisation appliquée pour le premier dictionnaire).
+\begin{python}
+def list2pdic(listeMots):
+ dictionnaire ={}
+ n = len(listeMots)
+ for mot in listeMots:
+  dictionnaire.key = mot
+  dictionnaire.value = dictionnaire.value + 1
+  
+ for element in dictionnaire:
+  element.value = element.value / n
+
+\end{python}
+
+\subsubsection{Implémentation}
+Regardez le code suivante et décrivez sa fonctionnalité :
+\begin{python}
+for t_1, ts in first_order.items():
+ # replace list with dictionary of probabilities
+ first_order[t_1] = list2pdict(ts)
+\end{python}
+\vspace{5cm}
+Réutilisez le code précédent afin de normaliser aussi le dictionnaire \textit{second\_order}.
+
+\subsection{Fonction \textit{sample\_word()}}
+Créez la fonction \textit{sample\_word()} qui devra recevoir comme argument un sous dictionnaire. Prenez le code suivant comme base et complétez la fonction pour qu'elle renvoie le mot avec une valeur cumulée supérieure à $p0$.
+
+\begin{python}
+def sample_word(d):
+ #Juste une valeur de référence random
+ p0 = np.random.random()
+ for element in d:
+  if element.value.cumulées > p0:
+   return element.key #Le mot
+\end{python}
+
+\subsection{Fonction \textit{generate()}}
+Créez la fonction \textit{generate()} qui devra recevoir comme argument le nombre de lignes qui seront générées. À l’intérieure de la fonction procédez de la manière suivante :
+
+\begin{enumerate}
+	\item Déterminez le premier mot du nouveau texte.
+	\begin{itemize}
+		\item Exécutez la fonction \textit{sample\_word()}
+		\item Envoyez comme argument le dictionnaire \textit{initial}
+	\end{itemize}
+	 
+	\item Déterminez le deuxième mot en exécutant la fonction \textit{sample\_word()}. 
+	\begin{itemize}
+		\item Envoyez comme argument le dictionnaire \textit{first\_order}.
+		\item ATTENTION ! : Envoyez pas tout le dictionnaire, rappelez que \textit{first\_order} est un dictionnaire de dictionnaires ! Alors, envoyez QUE le dictionnaire directement associé au mot précédemment déterminé.
+	\end{itemize}
+	\item À l'aide d'une boucle, déterminez le reste des mots en exécutant la fonction \textit{sample\_word()}. Envoyez comme argument le dictionnaire \textit{second\_order}.
+	\begin{itemize}
+		\item ATTENTION ! : Envoyez pas tout le dictionnaire, rappelez que \textit{second\_order} est un dictionnaire de dictionnaires ! Alors, envoyez QUE le dictionnaire directement associé au bigramme de mots précédents.
+		\item la boucle se termine quand la fonction \textit{sample\_word} détermine que le mot prochain est 'END'.
+	\end{itemize}
+\end{enumerate}
+
+La fonction \textit{generate()} doit répéter (avec une boucle) la procédure décrite précédemment le nombre de fois indiqué dans l'argument afin de créer le nombre de phrases souhaité.

@@ -69,12 +69,12 @@ Sorbonne Université
 	\begin{itemize}
 		\item Représenté comme une matrice (\textit{Matrice de confusion MC})
 		\begin{itemize}
-			\item LA MC sert pour indiqué la probabilité d'une transition d'un état à autre.
-			\item Chaque cellule contient la probabilité de passer d'un état à autre.
+			\item LA MC sert à indiquer la probabilité d'une transition d'un état à autre.
+			\item Chaque position contient la probabilité de passer d'un état à autre.
 		\end{itemize} 
 		\item ... o un graphe
 		\begin{itemize}
-			\item Avec des cercles représentant les états.
+			\item Avec des cercles représentant les états,
 			\item et des flèches représentant les possibles transition parmi les états.
 			\item Les flèches indiquent aussi la probabilité de transition.
 		\end{itemize} 
@@ -96,14 +96,14 @@ Sorbonne Université
 					\item Tous les états sont observables
 					\item \textcolor{red}{Hidden Markov Models}
 				\end{itemize}
-				\item Se déplacer à travers des états avec probabilité spécifique.
+				\item Se déplacer à travers les états avec probabilité spécifique.
 				\item En constituant donc une chaîne d'états.
 			\end{enumerate}
 		
 			\begin{alertblock}{Important !}
 				\begin{itemize}
-					\item L'état précédent aura impacté pour l'état actuel
-					\item L'état actuel impactera pour l'état prochain
+					\item L'état précédent aura impacté l'état actuel
+					\item L'état actuel impactera l'état prochain
 				\end{itemize}
 			\end{alertblock}			
 
@@ -120,7 +120,7 @@ Sorbonne Université
 
 %------------------------------------------------
 
-\begin{frame}{Chaînes de Markov, un type de modèle de Markov}
+\begin{frame}{... un type de modèle de Markov}
 	
 	
 	
@@ -170,10 +170,10 @@ Sorbonne Université
 \begin{frame}{Implémentations}
 	
 	\begin{itemize}
-		\item Prédiction de préférences des clients / Marketing.
-		\item Durabilité d'un nouveau employé / RH.
-		\item Fiabilité d'une machine dans l'industrie.
-		\item Analyse des futures prix des produits / Finance.
+		\item Préférences des clients / Marketing.
+		\item Durabilité des employés / RH.
+		\item Fiabilité des machines industrielles.
+		\item Futures prix des produits / Finances.
 		\item \textbf{TALNE} and \textbf{ML} :
 		\begin{itemize}
 			\item Génération de texte
@@ -184,8 +184,7 @@ Sorbonne Université
 		
 		\item \textbf{Santé} :
 		\begin{itemize}
-			\item Estimation durée des symptômes Covid selon ville
-			\item Minimiser les nb d'hospitalisation et des nouveaux cas
+			\item Durée des symptômes Covid selon ville
 		\end{itemize}
 		
 	\end{itemize}
@@ -232,25 +231,17 @@ Sorbonne Université
 		\end{enumerate}
 	\end{itemize}
 	
-	Quelques caractéristiques sont indépendantes des autres; mais pas toutes !
+	Quelques caractéristiques sont indépendantes; mais pas toutes !
 	
 \end{frame}
 
 %------------------------------------------------
 % Lists
-\begin{frame}{Cas d'étude}
-	Nous avons vu l'exemple de Shannon, mais voyons un exemple plus réel...
+\begin{frame}{Prédictions hypothétiques ... }
+	En considérant l'exemple du parking
 	\begin{itemize}
-		\item Pour décrire le comportement temporel
-		\begin{itemize}
-			\item Dans quel état on se trouvera après \textit{N} pas
-			\item Quelle est la probabilité de suivre le chemin \textit{p} si l'on souhaite aller de l'état \textit{A} à l'état \textit{B}
-		\end{itemize}
-		\item En considérant l'exemple du parking
-		\begin{enumerate}
-			\item Quel sera le taux d'occupation du parking dans 3 heures ?
-			\item Quelle est la probabilité que le parking soit rempli à 50 \% puis à 25 \% en 5 heures ?
-		\end{enumerate}
+		\item Quel sera le taux d'occupation du parking dans 3 heures ?
+		\item Quelle est la probabilité que le parking soit rempli à 50 \% puis à 25 \% en 5 heures ?
 	\end{itemize}
 	
 \end{frame}
@@ -280,7 +271,8 @@ Sorbonne Université
 % Lists
 \begin{frame}{Cas d'étude appliqué - Problématique}
 
-	X souhaite donc comprendre plus sur comment optimiser son entraînement en considérant sa structuration.
+	X souhaite donc comprendre plus sur comment optimiser son entraînement en considérant l'ordre de sa routine.\\
+	
 	Et cela peut se faire avec \textbf{Markov} !
 	
 	\begin{alertblock}{Markov assumption !}
@@ -292,9 +284,9 @@ Sorbonne Université
 
 %------------------------------------------------
 % Lists
-\begin{frame}{Cas d'étude appliqué - Problématiques}
+\begin{frame}{Cas d'étude appliqué - hypothèses}
 	
-	En sachant tout cela, vous pouvez poser des questions intéressantes sur votre séance d'entraînement :
+	Si vous enregistrez vos séances d'entraînement durant une période suffisante, vous pourriez prédire des comportements intéressants :
 	
 	\begin{itemize}
 		\item Si je commence la séance d'entraînement par une course, quelle est la probabilité que je fasse des pompes lors de la deuxième série ?
@@ -316,13 +308,26 @@ Sorbonne Université
 	\textcolor{red}{8 fois sur 20 X a fait une série de 15 minutes d'aviron, la série suivante était une course de 3 miles.}
 
 \end{frame}
+%------------------------------------------------
+% Lists
+\begin{frame}{Cas d'étude appliqué - Codification probabiliste}
 
+Codifier les dépendances entre les états, en utilisant des probabilités conditionnelle -> \textbf{Probabilité de transition}.
+
+\begin{figure}
+	\includegraphics[height=0.3\paperheight]{figures/entrainementLogsEnconded.png}
+\end{figure}
+
+1. Si je commence la séance d'entraînement par une course, quelle est la probabilité que je fasse des pompes lors de la deuxième série ?
+
+
+\end{frame}
 
 %------------------------------------------------
 % Lists
 \begin{frame}{Cas d'étude appliqué - Codification probabiliste}
 	
-	Codifier les dépendances entre les états, en utilisant des probabilités conditionnelle -> \textbf{Probabilité de transition}.
+	1. Si je commence la séance d'entraînement par une course, quelle est la probabilité que je fasse des pompes lors de la deuxième série ?
 
 	\begin{figure}
 		\includegraphics[height=0.3\paperheight]{figures/entrainementLogsEnconded.png}
@@ -393,7 +398,7 @@ Sorbonne Université
 \begin{frame}{Cas d'étude appliqué}
 	
 	Ensuite, calculer la probabilité totale. 
-	Combiner tous les chemins dans la chaîne de Markov, où on commence par une course suivi pas une série des pompes en deux étapes temporelles.
+	Combiner tous les chemins dans la chaîne de Markov, où on commence par une course suivi par une série des pompes en deux étapes temporelles.
 	\vspace{0.5cm}
 	\begin{enumerate}
 		\item Go for run given that you’ve just completed a run, then do a set of push-ups.
@@ -419,7 +424,7 @@ Sorbonne Université
 %------------------------------------------------
 % Lists
 \begin{frame}{Cas d'étude appliqué}
-	Si l'on considère l'ensemble de des chemins, la probabilité d'effectuer une séance d'entraînement en deux temps, où l'on commence par une course et où l'on termine par des pompes, est de 25 \%.
+	Si l'on considère l'ensemble des chemins, la probabilité d'effectuer une séance d'entraînement en deux temps, où l'on commence par une course et où l'on termine par des pompes, est de 25 \%.
 	
 	\begin{figure}
 		\includegraphics[height=0.25\paperheight]{figures/equiationiGeneral.png}
@@ -629,103 +634,110 @@ Sorbonne Université
 \makesection{TD-2 ! Génération de textes}
 
 %------------------------------------------------
-% Highlight boxes
-\begin{frame}{Blocks of Highlighted Text}
-    In this slide, some important text will be \alert{highlighted} because it's important. Please, don't abuse it.
 
-    \begin{block}{Block}
-        Sample text
-    \end{block}
+%------------------------------------------------
+% Lists
+\begin{frame}{Modèle génératif}
+	\begin{itemize}
+		\item Classification de textes : supervisé (étiquettes)
+		\begin{itemize}
+			\item Discriminatif
+			\item $p(y|x)$
+		\end{itemize}
+		\item Générateur de textes : non supervisé (pas d'étiquettes)		\begin{itemize}
+			\item Génératif
+			\item $p(x|y)$
+		\end{itemize}
+			
+	\end{itemize}		
+\end{frame}
 
-    \begin{alertblock}{Alertblock}
-        Sample text in red box
-    \end{alertblock}
 
-    \begin{examples}
-        Sample text in green box. The title of the block is ``Examples".
-    \end{examples}
+\begin{frame}{\textit{Sampling} ... }
+	\begin{itemize}
+		\item Sampling avec N(0,1) : \textit{np.random.randn()}
+		\item Sampling avec Bernouli : \textit{np.random.choice([0,1])}
+		\item Bernouli avec p(heads=0.8) (où heads = 1) :
+		\begin{itemize}
+			\item \textit{np.random.choise([0,1] , p=[0.2 , 0.8])}
+		\end{itemize} 
+	\end{itemize}
+	\vspace{0.5cm}
+	\textbf{Sampling words} - Supposons que nous avons un vocabulaire = ('cat', 'dog', 'mouse')
+	\begin{itemize}
+		\item Avec leurs probabilité d'apparition : (0.2, 0.5, 0.3)
+		\item Si l'on peut cartographier le vocabulaire  comme (1, 2, 3), ça devient facile
+		\begin{itemize}
+			\item \textit{np.random.choice(3, p=[0.2, 0.5, 0.3])}
+		\end{itemize}
+		
+	\end{itemize}		
 \end{frame}
 
 %------------------------------------------------
-% Double columns
-\begin{frame}{Multiple Columns}
-    \begin{columns}
-    \begin{column}{0.45\textwidth}
-      \colheader{Heading}
-        \begin{enumerate}
-            \item Statement
-            \item Explanation
-            \item Example
-        \end{enumerate}
-    \end{column}
-    \begin{column}{0.45\textwidth}  %%<--- here
-        \colheader{Heading}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-    \end{column}
-    \end{columns}
-\end{frame}
-%------------------------------------------------
-% Table
-\begin{frame}{Table}
-    \begin{table}
-        \begin{tabular}{l l l}
-            \toprule
-            \textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2} \\
-            \midrule
-            Treatment 1         & 0.0003262           & 0.562               \\
-            Treatment 2         & 0.0015681           & 0.910               \\
-            Treatment 3         & 0.0009271           & 0.296               \\
-            \bottomrule
-        \end{tabular}
-        \caption{Table caption}
-    \end{table}
-\end{frame}
-%------------------------------------------------
-% Section divider frame
-\makesection{Theorems and Figures}
 
+\begin{frame}{Problématique}
+	Rappelez que le mot prochain dépend uniquement du mot précédent
+	\begin{examples}
+		\begin{enumerate}
+			\item Je me suis préparé moi-même un sandwich au beurre.
+			\item Je vais aller lui rendre visite moi-même.
+		\end{enumerate}
+		\begin{itemize}
+			\item \textbf{ Je vais aller lui rendre visite moi-même un sandwich au beurre.}
+		\end{itemize}
+	\end{examples}
+
+	\begin{examples}
+		\begin{enumerate}
+			\item Je me suis préparé moi-même un sandwich au beurre.
+			\item Le beurre n'est pas une noisette
+		\end{enumerate}
+		\begin{itemize}
+			\item \textbf{ Je me suis préparé moi-même un sandwich au beurre n'est pas une noisette.}
+		\end{itemize}
+	\end{examples}
+\end{frame}
 %------------------------------------------------
-% Theoerm (in highlighted box) and Equation in text
-\begin{frame}{Theorem}
-    \begin{theorem}[Mass--energy equivalence]
-        $E = mc^2$
-    \end{theorem}
-    Equation in text
-    \begin{equation}
-        c^{2} = a^{2} + b^{2}
-    \end{equation}
+
+\begin{frame}{Prolongement du modèle de Markov}
+	
+	\begin{itemize}
+		\item Au lieu d'observer que le mot précédent : 
+		\begin{itemize}
+			\item Markov de premier ordre
+			\item $p(s_t |s_{t-1}, s_{t-2}, ...) = p(s_t | s_{t-1})$
+		\end{itemize}
+		\item ...on observe les deux mots précédent
+		\begin{itemize}
+			\item Markov de premier ordre
+			\item $p(s_t |s_{t-1}, s_{t-2}, ...) = p(s_t | s_{t-1}, s_{t-2})$
+		\end{itemize}
+		\item \textit{Afin de mieux prédire le future, il faut mieux observer le passé}
+	\end{itemize}
+
 \end{frame}
 
 %------------------------------------------------
-% Figure without wrapped text
-\begin{frame}{Figure}
-    \begin{figure}
-    \includegraphics[height=0.5\paperheight]{figures/results_fig.pdf}
-    \caption{Figure caption}
-    \end{figure}
-\end{frame}
 
-%------------------------------------------------
-% Figure with wrapped text
-\begin{frame}{Wrapped Figure}
-    \begin{wrapfigure}{r}{0.4\textwidth}
-    \centering
-    \includegraphics[width=0.4\textwidth]{figures/results_fig.pdf}
-    \caption{Figure caption}
-\end{wrapfigure}
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-\end{frame}
-%------------------------------------------------
-% Section divider frame
-\makesection{Citations and References}
+\begin{frame}{Modèle complet}
+	
+	\begin{itemize}
+		\item $ \pi_i = p(s_1 = i)$
+		
+		\item $ A^{(1)}_{ij} = p(s_2 = j | s_1 = i)$
+		
+		\item $ A^{(2)}_{ijk} = p(s_t = k | s_{t-1}, s_{t-2} = i)$
+	\end{itemize}
 
-%------------------------------------------------
-% Citations
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-    \frametitle{Citation}
-    An example of the \verb|\cite| command to cite within the presentation:\\~
-
-    This statement requires citation \cite{p1}.
+\begin{example}
+	"The quick brown fox jumps over the lazy dog" \\
+	"\textbf{The}" -> $\pi$\\
+	"\textcolor{red}{The} \textbf{quick}"-> $A^{(1)}$\\
+	"\textcolor{red}{The quick} \textbf{brown} " -> $A^{(2)}$\\
+	"The \textcolor{red}{quick brown} \textbf{fox} " -> $A^{(2)}$\\
+\end{example}
+	
 \end{frame}
 
 %------------------------------------------------
