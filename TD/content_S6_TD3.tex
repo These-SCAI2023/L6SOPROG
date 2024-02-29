@@ -30,21 +30,19 @@
 
 \textbf{Données :}
 \begin{enumerate}
-  \item Un jeu de données déjà annoté automatiquement avec spaCy
+  \item Un jeu de données déjà annoté automatiquement avec spaCy au format IOB2
 \end{enumerate}
 
 
 \textbf{Énoncé}
+Vous formerez des clusters à partir des sorties de reconnaissances d'entités nommées, pour représenter les formes les plus proches des entités, \textit{par ex.} pour réunir dans un même cluster \textit{"Morlincourt", "Morlincourtl", "Mlorlincourtl"}.
 
-\begin{enumerate}
-  \item 
-\end{enumerate}
 
 \textbf{Attendus}
 \begin{enumerate}
   \item Le programme doit être présenté selon \textit{les bonnes pratiques de programmation}
   \item Le programme doit être factorisé
-  \item Vous devez choisir des structures de données pertinente pour stocker vos données
+  \item Vous devez choisir des structures de données pertinentes pour stocker vos données
   \item Le programme doit être développé sous l'environnement spyder 
 \end{enumerate}
 
@@ -55,21 +53,64 @@
   
 \end{itemize}
 
+\vspace{0.5cm}
+\subsection{Réflexions et conception en amont}
+\vspace{0.5cm}
+\label{sec:amont}
+
+Un cluster en traitement automatique des langues naturelles est un groupe de tokens. Pour créer la matrices qui va permettent de former les groupes on peut utiliser :
+\begin{itemize}
+\item différents types de vectorisation : au grain mot ou au grain caractère (n-gram),
+\item différents type de distances permettant de déterminer les tokens les plus proches,
+\item plusieurs type d'algorithme pour grouper les tokens les tokens les plus proches.
+\end{itemize}
+
+En amont du développement de votre programme vous réfléchirez à quels types de groupes d'entités vous voulez former ?\\
+Vous Rédigerez quelques lignes précisant vos idées et proposerez un plan pour développer votre programme.
+
+\subsection{Développement du programme}
 
 
 \vspace{0.5cm}
-\subsection*{Lire les fichiers}
+\subsubsection*{Lire les fichiers}
 \vspace{0.5cm}
-Vous utiliserez les fichiers annotés automatiquement avec spaCy pour préparer une entrée adéquate pour le programme de clusterisation des entités nommées.
+Vous utiliserez les fichiers annotés automatiquement avec spaCy au format IOB2 pour préparer une entrée adéquate pour le programme de clusterisation des entités nommées. Le programme attend en entrée un ensemble (set) des tokens.
+
+\begin{python}
+Set_00 = set(liste)
+Liste_00 = list(Set_00)#on change le type du set en liste pour pouvoir le parcourir
+liste_words=[]
+        
+for l in Liste_00:
+                
+            if len(l)!=1:
+                liste_words.append(l)
+        
+            words = np.asarray(liste_words)#on créer le tableau préparant la matrice
+            for w in words:
+                liste_vecteur=[]#on initialise la liste permettant de stocker les vecteurs
+            
+                    
+                for w2 in words:#ici on va utiliser la vectorisation
+                
+\end{python}               
 %\url{}
 \vspace{0.5cm}
 
-\subsection*{Vectorisation et calcul de distances}
- \begin{python}   
+\subsubsection*{Vectorisation}
+\begin{python}   
+import sklearn
+from sklearn.feature_extraction.text import CountVectorizer
 
  \end{python}
+ 
+\subsubsection*{Calcul de distances}
+ \begin{python}   
+import distance
+from sklearn.neighbors import DistanceMetric
+ \end{python}
 
-\subsection*{Construire la matrice}
+\subsubsection*{Construire la matrice}
  \begin{python}   
 
  \end{python}
@@ -86,7 +127,7 @@ Vous utiliserez les fichiers annotés automatiquement avec spaCy pour préparer 
 
  \end{python}
  
- \subsection*{Représenter graphiquement les résultats}
+\section{Représenter graphiquement les résultats}
  \begin{python}   
 
  \end{python}
@@ -98,9 +139,12 @@ Vous utiliserez les fichiers annotés automatiquement avec spaCy pour préparer 
 \section*{Devoir}
 
 \begin{itemize}
- \item 1 script python .py
+ \item 1 ou plusieurs script(s) python .py,
+ \item 1 PDF présentant :
+ \begin{itemize}
+ \item La rédaction et le plan attendus en partie \ref{sec:amont}
  \item quelques phrases de conclusion sur les résultats (qu’est-ce qui était attendu, qu’est-ce qui est inattendu ?)
-
+\end{itemize}
 
 Vous déposerez sur Moodle une archive zip nommée NUMETU.zip (où NUMETU est votre numéro d’étudiant) et contenant :
 
