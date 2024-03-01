@@ -114,14 +114,14 @@ for subcorpus in glob.glob(path_copora):
                 
                 i=i+1
             #    print(dic_output)
-            stocker("%s/%s_cluster-cosinus-2-3_damp06.json"%(subcorpus,nom_fichier),dic_output)
+            
 
         except :        
             print("**********Non OK***********", path)
 
     
             liste_nom_fichier.append(path)
-            stocker("%s/fichier_non_cluster.json"%subcorpus, liste_nom_fichier)
+            
             
             continue 
 

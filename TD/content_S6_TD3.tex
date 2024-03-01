@@ -60,7 +60,8 @@ Vous formerez des clusters à partir des sorties de reconnaissances d'entités n
 \label{sec:amont}
 
 Un cluster en traitement automatique des langues naturelles est un groupe de tokens réunis autour d'une ressemblance soit de type mophosyntaxique (tous les tokens du cluster sont des verbes par exemple), soit parceque les tokens ont des suites de caractères en communs, etc . Les termes réunis dans un cluster le sont autour d'un terme qu'on dit centroïde. 
-Par exemple pour le cluster suivant le centroïde est "France" et le cluster comporte 10 tokens
+Par exemple pour le cluster suivant le centroïde est "France" et le cluster comporte 10 tokens.
+
 \begin{python}
 "ID 8": {
     "Centro\u00efde": "France",
@@ -111,15 +112,15 @@ Les commentaires doivent figurer dans le script.
 \subsection{Commenter le programme TD3\_VECTORIZER\_CLUSTER.py}
 
 Vous ferez tourner le programme avec les données préparées tel que dans l'étape \ref{sec:adapter_les_donnees}.
-
-Préparer un format de sortie pour les clusters, qui soit réutilisable tel qu'en section \ref{sec:representation_graphique}.
-
-Commenter les clusters que vous obtenez en sortie. Quel(s) paramètres pourriez-vous changer pour changer le contenu des clusters obtenus en sortie ? N'hésitez pas à faire des tests.
+\newline
+Préparez un format de sortie pour les clusters qui soit réutilisable tel qu'attendu en section \ref{sec:representation_graphique}.
+\newline
+Commentez les clusters que vous obtenez en sortie. Quel(s) paramètres pourriez-vous changer pour changer le contenu des clusters obtenus en sortie ? N'hésitez pas à faire des tests.
  
 \section{Représenter graphiquement les résultats}
  \label{sec:representation_graphique}
  
-Représenter graphiquement les clusters. Vous pouvez par exemple représenter les centroïdes avec des points plus ou moins gros selon que le cluster comprends plus ou moins de termes. Par exemple un centroïde dont le cluster comprends 10 tokens aura un point plus gros que celui d'un centroïde dont le cluster ne compte que 5 tokens.
+Représenter graphiquement les clusters. Vous pouvez par exemple représenter les centroïdes avec des points plus ou moins gros selon que le cluster comprend plus ou moins de termes. Par exemple un centroïde dont le cluster comprends 10 tokens aura un point plus gros que celui d'un centroïde dont le cluster ne compte que 5 tokens.
 
 \begin{center}
 
