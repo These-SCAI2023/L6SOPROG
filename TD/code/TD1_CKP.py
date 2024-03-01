@@ -12,6 +12,12 @@ import re
 import sklearn
 from sklearn.metrics import DistanceMetric 
 from sklearn.feature_extraction.text import CountVectorizer
+import pandas as pd
+import numpy 
+import pandas
+import seaborn as sns
+import matplotlib.pyplot as plt
+
 
 def lire_fichier(chemin):
     with open(chemin, encoding="utf-8") as f:

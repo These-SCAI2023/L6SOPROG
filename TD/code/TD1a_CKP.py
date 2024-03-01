@@ -5,7 +5,7 @@ Created on Fri Feb 16 10:14:00 2024
 
 @author: ceres
 """
-import glob
+
 from TD1_CKP import *
 
 liste_fichiers=[]

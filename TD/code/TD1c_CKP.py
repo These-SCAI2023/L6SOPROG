@@ -8,13 +8,8 @@ Created on Fri Feb 16 10:51:13 2024
 
 #Langue proche
 
-import glob
 from TD1_CKP import *
-import pandas as pd
-import numpy 
-import pandas
-import seaborn as sns
-import matplotlib.pyplot as plt
+
 
 def stocker_png(chemin,contenu):
     fig, ax = plt.subplots(figsize=(10,10))

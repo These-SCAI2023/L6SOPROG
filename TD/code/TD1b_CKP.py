@@ -8,14 +8,8 @@ Created on Fri Feb 16 08:43:20 2024
 
 # Diagnostiquer la langue de chaque texte
 
-import glob
-from TD1_CKP import *
-import pandas as pd
-import numpy 
-import pandas
-import seaborn as sns
-import matplotlib.pyplot as plt
 
+from TD1_CKP import *
 
 
 path_mod="./model/"
@@ -30,10 +24,10 @@ path="./corpus_multi/*"
 
 for sub_path in glob.glob(path):
     print(sub_path)
-    # liste_vp=[]
-    # liste_fp=[]
-    # liste_vn=[]
-    # liste_fn=[]
+    liste_vp=[]
+    liste_fp=[]
+    liste_vn=[]
+    liste_fn=[]
     lang_txt=[]
     
     taux_taux=[] 
@@ -58,16 +52,39 @@ for sub_path in glob.glob(path):
                 
                 ## En utilisant une distance cosinus
                 
-                # cosinus = distance_cos(str(v),str(val))*100
-                # print(cosinus)
+                taux = distance_cos(str(v),str(val))*100
+                
+                liste_taux.append(taux)
+            taux_taux.append(liste_taux)
     
     #             ## En utilisant les intersections
             
-                compare_mod=set(v).intersection(set(val))
-                taux=len(compare_mod)*10
-                liste_taux.append(taux)
+                # compare_mod=set(v).intersection(set(val))
+                # taux=len(compare_mod)*10
+                # liste_taux.append(taux)
                 # print("Cle texte : ",k,"Cle model : ",key,"Taux : ",taux)
-            taux_taux.append(liste_taux)
+            #taux_taux.append(liste_taux)
+            
+            if taux >= 20:
+                
+
+                if k==key:
+                    liste_vp.append([pth_txt,key,taux])
+                    print("VP :",pth_txt, key)
+
+                if k!=key:
+                    liste_fp.append([pth_txt,key,taux])
+                    print("FP",pth_txt, key)
+ 
+            else: 
+                if k==key:
+                    liste_fn.append([pth_txt,key,taux])
+                    print("FN",pth_txt, key)
+                    
+                    
+                if k!=key:
+                    liste_vn.append([pth_txt,key,taux])
+                    print("VN",pth_txt, key)
             
 
 ##Je fabrique la matrice carrée qui comprends le nom de chaque document, le nom de chaque langue et le score 
@@ -87,29 +104,10 @@ for sub_path in glob.glob(path):
            
                 
                 
-                ## Performances = VP,FP,VN,VN
+                # Performances = VP,FP,VN,VN
                 
                 
-                # if taux >= 20:
-                    
-
-                #     if k==key:
-                #         liste_vp.append([pth_txt,key,taux])
-                #         print("VP :",pth_txt, key)
-
-                #     if k!=key:
-                #         liste_fp.append([pth_txt,key,taux])
-                #         print("FP",pth_txt, key)
-     
-                # else: 
-                #     if k==key:
-                #         liste_fn.append([pth_txt,key,taux])
-                #         print("FN",pth_txt, key)
-                        
-                        
-                #     if k!=key:
-                #         liste_vn.append([pth_txt,key,taux])
-                #         print("VN",pth_txt, key)
+               
                         
             
         
