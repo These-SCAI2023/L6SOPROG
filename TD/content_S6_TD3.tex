@@ -1,5 +1,5 @@
 \newcommand{\numTD}{TD3}
-\newcommand{\themeTD}{Clustering avec un algorithm d'affinité de propagation}
+\newcommand{\themeTD}{Clustering avec un algorithme d'affinité de propagation}
 \newcommand{\file}{toto.tex}
 
 \input{./entete_TD_L6SOPROG}
@@ -48,8 +48,9 @@ Vous formerez des clusters à partir des sorties de reconnaissances d'entités n
 
 \textbf{Principaux outils nécessaires :}
 \begin{itemize}
+\item TD3\_VECTORIZER\_CLUSTER.py (à télécharger sur Moodle)
   \item scikit learn
-  \item Json
+  \item Matplotlib ou Seaborn
   
 \end{itemize}
 
@@ -58,79 +59,67 @@ Vous formerez des clusters à partir des sorties de reconnaissances d'entités n
 \vspace{0.5cm}
 \label{sec:amont}
 
-Un cluster en traitement automatique des langues naturelles est un groupe de tokens. Pour créer la matrices qui va permettent de former les groupes on peut utiliser :
+Un cluster en traitement automatique des langues naturelles est un groupe de tokens réunis autour d'une ressemblance soit de type mophosyntaxique (tous les tokens du cluster sont des verbes par exemple), soit parceque les tokens ont des suites de caractères en communs, etc . Les termes réunis dans un cluster le sont autour d'un terme qu'on dit centroïde. 
+Par exemple pour le cluster suivant le centroïde est "France" et le cluster comporte 10 tokens
+\begin{python}
+"ID 8": {
+    "Centro\u00efde": "France",
+    "Termes": [
+      "Blancs",
+      "Fance",
+      "Fran-",
+      "France",
+      "Franceaetuelle",
+      "Frnce",
+      "Ionce",
+      "Iranche",
+      "laFance",
+      "laFrance"
+    ]
+  },
+  
+\end{python}
+
+Pour créer la matrices qui va permettent de former les groupes on peut utiliser :
 \begin{itemize}
 \item différents types de vectorisation : au grain mot ou au grain caractère (n-gram),
 \item différents type de distances permettant de déterminer les tokens les plus proches,
-\item plusieurs type d'algorithme pour grouper les tokens les tokens les plus proches.
+\item plusieurs type d'algorithme pour grouper les tokens les plus proches.
 \end{itemize}
 
-En amont du développement de votre programme vous réfléchirez à quels types de groupes d'entités vous voulez former ?\\
+Dans ce TD nous utiliserons un algorithme d'affinité de propagation, ce qui permet de créer automatiquement des clusters sans avoir du définir au préalable un nombre de cluster attendu. 
+\newline
+En amont de la suite du TD vous réfléchirez à quels types de groupes d'entités vous voulez former ?\\
 Vous Rédigerez quelques lignes précisant vos idées et proposerez un plan pour développer votre programme.
 
-\subsection{Développement du programme}
-
-
 \vspace{0.5cm}
-\subsubsection*{Lire les fichiers}
+\subsection{Développement du programme de mise en forme des données}
 \vspace{0.5cm}
-Vous utiliserez les fichiers annotés automatiquement avec spaCy au format IOB2 pour préparer une entrée adéquate pour le programme de clusterisation des entités nommées. Le programme attend en entrée un ensemble (set) des tokens.
-
-\begin{python}
-Set_00 = set(liste)
-Liste_00 = list(Set_00)#on change le type du set en liste pour pouvoir le parcourir
-liste_words=[]
-        
-for l in Liste_00:
-                
-            if len(l)!=1:
-                liste_words.append(l)
-        
-            words = np.asarray(liste_words)#on créer le tableau préparant la matrice
-            for w in words:
-                liste_vecteur=[]#on initialise la liste permettant de stocker les vecteurs
-            
-                    
-                for w2 in words:#ici on va utiliser la vectorisation
-                
-\end{python}               
-%\url{}
-\vspace{0.5cm}
-
-\subsubsection*{Vectorisation}
-\begin{python}   
-import sklearn
-from sklearn.feature_extraction.text import CountVectorizer
-
- \end{python}
- 
-\subsubsection*{Calcul de distances}
- \begin{python}   
-import distance
-from sklearn.neighbors import DistanceMetric
- \end{python}
-
-\subsubsection*{Construire la matrice}
- \begin{python}   
-
- \end{python}
-
-\subsection*{Utiliser l'algorithme d'\textit{Affinité de propagation}}
- \begin{python}   
-
- \end{python}
+\label{sec:adapter_les_donnees}
+Vous utiliserez les fichiers annotés automatiquement avec spaCy au format IOB2, disponibles sur Moodle, pour préparer une entrée adéquate pour le programme de clusterisation des entités nommées : TD3\_VECTORIZER\_CLUSTER.py. Le programme attend en entrée un ensemble (set) des tokens.
 
 
+\subsection{Commenter le programme TD3\_VECTORIZER\_CLUSTER.py}
 
-\subsection*{Stocker les résultats}
- \begin{python}   
+Vous commenterez de manière précise et pédagogique\footnote{Comme si vous expliquiez à quelqu'un qui ne connaît rien à la programmation python)} le programme, en décrivant, par exemple, le type de données attribué pour chaque variable, la fonction des boucles, des conditions s'il y en a, l'usage des packages, etc.
+\newline
+Vous devez décrire chaque étape du programme et les expliciter.
+\newline
 
- \end{python}
+Les commentaires doivent figurer dans le script.
+
+\subsection{Commenter le programme TD3\_VECTORIZER\_CLUSTER.py}
+
+Vous ferez tourner le programme avec les données préparées tel que dans l'étape \ref{sec:adapter_les_donnees}.
+
+Préparer un format de sortie pour les clusters, qui soit réutilisable tel qu'en section \ref{sec:representation_graphique}.
+
+Commenter les clusters que vous obtenez en sortie. Quel(s) paramètres pourriez-vous changer pour changer le contenu des clusters obtenus en sortie ? N'hésitez pas à faire des tests.
  
 \section{Représenter graphiquement les résultats}
- \begin{python}   
-
- \end{python}
+ \label{sec:representation_graphique}
+ 
+Représenter graphiquement les clusters. Vous pouvez par exemple représenter les centroïdes avec des points plus ou moins gros selon que le cluster comprends plus ou moins de termes. Par exemple un centroïde dont le cluster comprends 10 tokens aura un point plus gros que celui d'un centroïde dont le cluster ne compte que 5 tokens.
 
 \begin{center}
 
@@ -139,7 +128,7 @@ from sklearn.neighbors import DistanceMetric
 \section*{Devoir}
 
 \begin{itemize}
- \item 1 ou plusieurs script(s) python .py,
+ \item 1 ou plusieurs script(s) python .py, commentés,
  \item 1 PDF présentant :
  \begin{itemize}
  \item La rédaction et le plan attendus en partie \ref{sec:amont}
