@@ -20,6 +20,14 @@ def lire_fichier (chemin):
 path_data="../ressources/DATA/*/*/*.bio"
 
 for chemin in glob.glob(path_data):
-    print(chemin)
+
     data=lire_fichier(chemin)
-    
+    liste_EN=[]
+    for d in data:
+        if len(d)>1:
+            
+            if d[1]!= "O":
+                
+                liste_EN.append(d[0])
+    print("Il y a",len(liste_EN),"d'entités nommées pour le texte",chemin)
+        

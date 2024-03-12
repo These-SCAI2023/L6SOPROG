@@ -31,19 +31,20 @@ def nomfichier(chemin):
     
  
 
-chemin_entree =
+path_copora ="../ressources/*.json"
 
 
 
 for subcorpus in glob.glob(path_copora):
 #    print("SUBCORPUS***",subcorpus)
     liste_nom_fichier =[]
-    for path in glob.glob("%s/AIMARD-TRAPPEURS_MOD/AIMARD_les-trappeurs_TesseractFra-PNG.txt_SEM_WiNER.ann_SEM.json-concat.json"%subcorpus):
-#        print("PATH*****",path)
+    liste=lire_fichier(path)
+#     for path in glob.glob():
+# #        print("PATH*****",path)
         
-        nom_fichier = nomfichier(path)
-#        print(nom_fichier)
-        liste=lire_fichier(path)
+#         nom_fichier = nomfichier(path)
+# #        print(nom_fichier)
+    
         
         
 #### FREQUENCE ########
@@ -94,10 +95,10 @@ for subcorpus in glob.glob(path_copora):
                 matrice.append(liste_vecteur)
             matrice_def=-1*np.array(matrice)
            
-                  
-            affprop = AffinityPropagation(affinity="precomputed", damping= 0.6, random_state = None) 
-    
-            affprop.fit(matrice_def)
+            # affprop = AffinityPropagation(affinity="precomputed", damping=0.6, random_state = None)
+
+            # affprop.fit(matrice_def)
+            kmeans = KMeans(n_clusters=2, random_state=0,n_init="auto").fit(matrice_def)
             for cluster_id in np.unique(affprop.labels_):
                 exemplar = words[affprop.cluster_centers_indices_[cluster_id]]
                 cluster = np.unique(words[np.nonzero(affprop.labels_==cluster_id)])

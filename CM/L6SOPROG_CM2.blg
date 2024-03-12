@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: L6SOPROG_CM2.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apalike.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Database file #1: biblioCM2.bib
+Warning--empty journal in Melancon2023
+Warning--there's a number but no volume in Melancon2023
+You've used 3 entries,
+            1935 wiz_defined-function locations,
+            493 strings with 4493 characters,
+and the built_in function-call counts, 1213 in all, are:
+= -- 109
+> -- 63
+< -- 1
++ -- 22
+- -- 22
+* -- 110
+:= -- 225
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 26
+chr.to.int$ -- 3
+cite$ -- 5
+duplicate$ -- 40
+empty$ -- 76
+format.name$ -- 25
+if$ -- 224
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 9
+pop$ -- 22
+preamble$ -- 1
+purify$ -- 26
+quote$ -- 0
+skip$ -- 32
+stack$ -- 0
+substring$ -- 69
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 18
+warning$ -- 2
+while$ -- 7
+width$ -- 0
+write$ -- 40
+(There were 2 warnings)

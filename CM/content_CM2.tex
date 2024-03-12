@@ -4,6 +4,9 @@
 
 \end{frame}
 
+\section{Cluster ou Partitionnement de données}
+\subsection{Définition}
+
 \begin{frame}
   \frametitle{Le Clustering une discipline de Machine learning}
 
@@ -14,48 +17,171 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Définition }
+  \frametitle{Définition\footnote{\url{https://fr.wikipedia.org/wiki/Cluster},Wikipédia} }
+   \begin{description}
+  \item [Général] \textit{Groupement d'un petit nombre d'objets.}
+  \item [Linguistique] \textit{groupe consonantique, il correspond à une succession d'au moins deux consonnes dans un mot. Par exemple, dans fraise ou tigre. On retrouve parfois des clusters plus complexes. }
+  \item [Informatique 1]\textit{ grappe de serveurs sur un réseau}
+  \item [Informatique 2] \textit{une base de données distribuée dans des grappes de serveurs - MySQL Cluster}
+  \item [Informatique 3] \textit{« Data clustering » désigne l'analyse de \textbf{partitionnement de données}.}
+  \end{description}
 
 
 \end{frame}
 
 \begin{frame}
-  \frametitle{Le clustering en TAL}
+  \frametitle{Le partitionnement de données\footnote{\url{https://dataanalyticspost.com/Lexique/clustering/}}}
 
 
-\end{frame}
-
-\begin{frame}
-  \frametitle{Le clustering en TAL : à quoi ça sert ?}
+ \begin{itemize}
+  \item \ding{107} Méthode de classification non supervisée, 
+  \item \ding{107} algorithmes d’apprentissage 
+  \item \ding{107} regrouper des données non étiquetées selon des propriétés similaires
+  \item \ding{107} Isoler des schémas/familles
   
+  
+ \end{itemize}
+ 
+
+
+\end{frame}
+\subsection{Limites}
+\begin{frame}
+  \frametitle{Les limites du partitionnement de données}
+
+\ding{107} Pour les mêmes données, peuvent être utilisées :
+
+\begin{itemize}
+  \item \ding{220} différentes métriques,
+  \item \ding{220} différentes représentations des données 
+ \end{itemize}
+
+\ding{220} il peut y avoir des variations/différents regroupements dans les clusters en sortie   
+
+\ding{107} Choisir la méthode dont vous partitionnez les données en considérant :
+
+ \begin{itemize}
+  \item \ding{107} les résultats attendus,
+  \item \ding{107} l’utilisation prévue des données
+ \end{itemize}
+\end{frame}
+
+\subsection{Usages}
+\begin{frame}
+  \frametitle{ à quoi ça sert ?}
+ \ding{107} En machine learning
   \begin{itemize}
-  \item Regrouper des textes
-  \item Regrouper des mots 
+  \item \ding{220} préparer l’application d’algorithmes d’apprentissage supervisé \ding{222} \textbf{KNN}.\\
+\item \ding{220} utilisé lorsqu’il est coûteux d’étiqueter le données.
+\end{itemize}
+
+ \begin{figure}
+  \includegraphics[width=7cm]{images/Clustering-example-with-intra-and-inter-clustering-illustrations.png}
+  \caption{\url{https://www.researchgate.net/figure/Clustering-example-with-intra-and-inter-clustering-illustrations_fig1_344590665}, \cite{10.1007/s00521-020-05395-4}}
+  \end{figure}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{à quoi ça sert ?}
+ \ding{107} En TAL
+ \begin{itemize}
+  \item \ding{220} Regrouper des textes
+  \item \ding{220} Regrouper des mots 
+  \end{itemize}
+  
+  \ding{229} selon :
+  \begin{itemize}
+  \item \ding{220} des caractéristiques linguistique commune (par. ex : quantité de verbes, noms, verbes etc.)
+  \item \ding{220} leur sens \ding{222} partitionnement sémantique
   \end{itemize}
 
-
 \end{frame}
 
+
+\subsection{Méthodes et Algorithmes}
 \begin{frame}
   \frametitle{Le clustering en TAL : quelles méthodes}
-
+\ding{107} Méthodes et Algorithmes :
   \begin{itemize}
-  \item Hiérarchique dendogrames
-  \item Centroïde K-mean, Affinity Propagation
-  \item A densité
+  \item \ding{220} hiérarchique : dendogrames
+  \item \ding{220} centroïde : K-mean, Affinity Propagation
+  \item \ding{220} densité : DBSCAN
+  \item \ding{220} maximisation de l’espérance (EM) : outils mathématiques probabilistes (Loi Gausse - \textit{Gaussian Mixture model}\footnote{\url{https://dridk.me/expectation-maximisation.html}})
   \end{itemize}
+  
+
   
 \end{frame}
 
 \begin{frame}
-  \frametitle{Hiérarchique dendogrames}
+  \frametitle{Regroupement hiérarchique}
+  
+ \ding{229} Méthodes de classification, « ascendantes » et « descendantes »
+\begin{description}
+\item  [descendante hiérarchique] 
+\begin{itemize}
+\item \ding{229} solution générale vers une autre plus spécifique.
+\item \ding{229} une seule classe contenant la totalité puis se divisent à chaque étape selon un critère jusqu’à l’obtention d’un ensemble de classes différentes.
+\end{itemize}
+\end{description} 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Regroupement hiérarchique}
+\ding{229} Méthodes de classification, « ascendantes » et « descendantes »  
+ \begin{description} 
+\item [ascendantes]
+\begin{itemize}
+\item \ding{229} tous les individus sont seuls dans une classe \ding{220} en classes de plus en plus grandes. 
+\item \ding{229} répartir les individus dans un certain nombre de classes.
+\item \ding{229} usage de similarités/distances.
+\end{itemize}
+\end{description} 
+ 
+\begin{figure}
+  \includegraphics[width=6cm]{images/dendrogramme_img-3.jpg}
+  \caption{\url{https://journals.openedition.org/revuehn/3683}, \cite{Melancon2023}}
+  \end{figure}
 
   
 \end{frame}
 
 \begin{frame}
   \frametitle{Centroïde}
+ \ding{107} k-moyennes. 
+  
+\begin{itemize}
+ \item \ding{192} choix de départ : k, le nombre de classes voulues.k points au hasard parmi les n individus.
+  \item \ding{193} k points = k classes;  
+  \begin{itemize}
+  \item \ding{220} On associe ensuite chacun des n-k points restants à la « classe-point » qui lui est la plus proche.
+  \item \ding{220} chaque classe est caractérisée par la moyenne des valeurs de chacun de ses individus. On a k moyennes pour k classes.
+  
+  \end{itemize}
+  \item \ding{194} La deuxième étape consiste à évaluer la distance de chaque individu à chacune des k moyennes.   
+  \begin{itemize}
+  		\item \ding{220} Certains individus peuvent ici changer de classe.
+  		\item \ding{220} A la fin de cette étape, on actualise les k moyennes.
+  		\item \ding{220} Et on réitère les étapes, jusqu’à ce qu’il y ait convergence pour obtenir nos k clusters finaux. 
+  \end{itemize}
+  % \item \ding{194}
+  \end{itemize}
+ \end{frame}
+ 
+ \begin{frame}
+  \frametitle{Centroïde}
+\ding{107}Limites
+\begin{itemize}
+  		\item \ding{220} Les classes finales dépendent beaucoup des k individus choisis pour l’initialisation. 
+  		\item \ding{220} La moyenne tient parfois trop compte des valeurs aberrantes.
+  \end{itemize}
 
+
+\ding{220} Certains algorithmes k-means font la somme des distances des individus d'une même classe pour minimiser la variance intra-classe.\\
+
+
+\ding{220} D’autres représentants que le centroïde (la moyenne) \ding{222} le médoïde l'individu le plus central du groupe.
 
   
 \end{frame}
@@ -66,3 +192,30 @@
 
   
 \end{frame}
+
+\begin{frame}
+  \frametitle{Pour aller plus loin}
+
+Il existe de nombreux algorithmes et méthodes pour partionner les données :
+\url{http://www.metz.supelec.fr/metz/personnel/vialle/course/BigData-2A-CS/slides-pdf/13-MachineLearning-Clustering-2spp.pdf}
+
+  
+\end{frame}
+
+
+\section{Github}
+\begin{frame}
+  \frametitle{créer un compte sur github}
+
+Rendez-vous sur la page : \url{https://github.com/}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{télécharger github desktop}
+
+Rendez-vous sur la page : \url{https://desktop.github.com/?ref_cta=download+desktop&ref_loc=installing+github+desktop&ref_page=docs}
+  
+\end{frame}
+
+
