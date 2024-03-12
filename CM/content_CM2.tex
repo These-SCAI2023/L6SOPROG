@@ -98,6 +98,10 @@
 
 \end{frame}
 
+\begin{frame}
+  \frametitle{Notion du plus proche voisin ou KNN}
+  
+\end{frame}
 
 \subsection{Méthodes et Algorithmes}
 \begin{frame}
@@ -106,7 +110,7 @@
   \begin{itemize}
   \item \ding{220} hiérarchique : dendogrames
   \item \ding{220} centroïde : K-mean, Affinity Propagation
-  \item \ding{220} densité : DBSCAN
+  \item \ding{220} densité : \textit{« density-based spatial clustering of applications with noise »} - DBSCAN
   \item \ding{220} maximisation de l’espérance (EM) : outils mathématiques probabilistes (Loi Gausse - \textit{Gaussian Mixture model}\footnote{\url{https://dridk.me/expectation-maximisation.html}})
   \end{itemize}
   
@@ -188,9 +192,57 @@
 
 \begin{frame}
   \frametitle{A densité}
+ Zones de densité relativement élevées, zones où beaucoup de points sont proches par rapport à d’autres.
+
+DBSCAN : Algorithme forme des classes d’individus \& repère les valeurs hors du commun/bruit. 
+
+Entrées :
+\begin{itemize}
+\item la distance maximale qui peut définir deux individus comme voisins,
+\item le nombre minimal d’individus nécessaires pour former un groupe.
+\end{itemize}
+
+En sortie sont stockés :
+\begin{itemize}
+\item les clusters successifs
+\item les individus visités au fur et à mesure.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{A densité}
+l'étape 1 :
+choisir un point parmi ceux disponibles. Les distances permettent de définir le voisinage du point initial, donc ses voisins. 
+
+Si le nombre minimal de point n'est pas atteint, point initial == bruit. \\
+\ding{220}On le stocke alors dans les individus visités.
+
+Si le nombre minimal de point est dépassé, point initial == initialiser un cluster avec le point de départ. On étudie chaque point de son voisinage initial. \\
+\end{frame}
+
+\begin{frame}
+  \frametitle{A densité}
+l'étape 2 :
+
+Vérification que le voisinage de chaque point comporte plus d'éléments que le minimum requis \ding{220} on étend le voisinage initial en le réunissant avec le voisinage du point visité.
+
+Puis on ajoute ce point dans le cluster. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{A densité}
+l'étape 3 : 
+
+Une fois que tous les points du voisinage ont été testés, ceux retenus dans le cluster sont stockés comme individus visités. Et le cluster obtenu est stocké dans la liste des clusters.
+
+Tant que tous les individus n’ont pas été visités, on réitère cette étape en commençant par choisir un individu parmi ceux qui sont encore disponibles. Et on obtient finalement notre liste de groupes d’individus ainsi que les individus correspondant à du bruit. 
+\begin{figure}
+  \includegraphics[width=6cm]{images/cluster_densite.png}
+  \caption{\url{https://larevueia.fr/clustering-les-3-methodes-a-connaitre/}.}
+  \end{figure}
 
 
-  
 \end{frame}
 
 \begin{frame}
@@ -207,14 +259,24 @@ Il existe de nombreux algorithmes et méthodes pour partionner les données :
 \begin{frame}
   \frametitle{créer un compte sur github}
 
-Rendez-vous sur la page : \url{https://github.com/}
+Rendez-vous sur la page : 
+\begin{figure}
+\caption{\url{https://github.com/.}}
+  \includegraphics[width=6cm]{images/github_inscription.png}
+  
+  \end{figure}
   
 \end{frame}
 
 \begin{frame}
   \frametitle{télécharger github desktop}
 
-Rendez-vous sur la page : \url{https://desktop.github.com/?ref_cta=download+desktop&ref_loc=installing+github+desktop&ref_page=docs}
+Rendez-vous sur la page : 
+\begin{figure}
+\caption{\url{https://desktop.github.com/?ref_cta=download+desktop&ref_loc=installing+github+desktop&ref_page=docs}}
+  \includegraphics[width=6cm]{images/github_desktop_connect.png}
+  
+  \end{figure}
   
 \end{frame}
 
