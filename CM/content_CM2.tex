@@ -45,26 +45,7 @@
 
 
 \end{frame}
-\subsection{Limites}
-\begin{frame}
-  \frametitle{Les limites du partitionnement de données}
 
-\ding{107} Pour les mêmes données, peuvent être utilisées :
-
-\begin{itemize}
-  \item \ding{220} différentes métriques,
-  \item \ding{220} différentes représentations des données 
- \end{itemize}
-
-\ding{220} il peut y avoir des variations/différents regroupements dans les clusters en sortie   
-
-\ding{107} Choisir la méthode dont vous partitionnez les données en considérant :
-
- \begin{itemize}
-  \item \ding{107} les résultats attendus,
-  \item \ding{107} l’utilisation prévue des données
- \end{itemize}
-\end{frame}
 
 \subsection{Usages}
 \begin{frame}
@@ -99,8 +80,36 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Notion du plus proche voisin ou KNN}
-  
+  \frametitle{Logique du plus proche voisin}
+  Algorithme du plus proche voisin, \textit{K-nearest neighbors} (KNN ou K-NN)\footnote{\url{https://fr.wikipedia.org/wiki/M\%C3\%A9thode_des_k_plus_proches_voisins}},\footnote{\url{https://mrmint.fr/introduction-k-nearest-neighbors}}
+  \begin{itemize}
+  \item \ding{220} méthode d’apprentissage supervisé,
+  \item \ding{220} utilisé pour la classification et la régression,
+  \item \ding{220} pas de phase d’apprentissage \ding{222} Lazy Learning. L'algo. généralise directement à partir du jeu de données.
+  \item \ding{220} Observe la similarité des K voisins les plus proches. K = nombre entier
+  \end{itemize}
+   \ding{229} \textit{"dis moi qui sont tes voisins, je te dirais qui tu es…"}
+\end{frame}
+
+\subsection{Limites}
+\begin{frame}
+  \frametitle{Les limites du partitionnement de données}
+
+\ding{107} Pour les mêmes données, peuvent être utilisées :
+
+\begin{itemize}
+  \item \ding{220} différentes métriques,
+  \item \ding{220} différentes représentations des données 
+ \end{itemize}
+
+\ding{220} il peut y avoir des variations/différents regroupements dans les clusters en sortie   
+
+\ding{107} Choisir la méthode dont vous partitionnez les données en considérant :
+
+ \begin{itemize}
+  \item \ding{107} les résultats attendus,
+  \item \ding{107} l’utilisation prévue des données
+ \end{itemize}
 \end{frame}
 
 \subsection{Méthodes et Algorithmes}
@@ -113,33 +122,30 @@
   \item \ding{220} densité : \textit{« density-based spatial clustering of applications with noise »} - DBSCAN
   \item \ding{220} maximisation de l’espérance (EM) : outils mathématiques probabilistes (Loi Gausse - \textit{Gaussian Mixture model}\footnote{\url{https://dridk.me/expectation-maximisation.html}})
   \end{itemize}
-  
-
-  
 \end{frame}
 
 \begin{frame}
   \frametitle{Regroupement hiérarchique}
   
- \ding{229} Méthodes de classification, « ascendantes » et « descendantes »
+ \ding{220} Méthodes de classification, « ascendantes » et « descendantes »
 \begin{description}
 \item  [descendante hiérarchique] 
 \begin{itemize}
-\item \ding{229} solution générale vers une autre plus spécifique.
-\item \ding{229} une seule classe contenant la totalité puis se divisent à chaque étape selon un critère jusqu’à l’obtention d’un ensemble de classes différentes.
+\item \ding{220} solution générale vers une autre plus spécifique.
+\item \ding{220} une seule classe contenant la totalité puis se divisent à chaque étape selon un critère jusqu’à l’obtention d’un ensemble de classes différentes.
 \end{itemize}
 \end{description} 
 \end{frame}
 
 \begin{frame}
   \frametitle{Regroupement hiérarchique}
-\ding{229} Méthodes de classification, « ascendantes » et « descendantes »  
+\ding{220} Méthodes de classification, « ascendantes » et « descendantes »  
  \begin{description} 
 \item [ascendantes]
 \begin{itemize}
-\item \ding{229} tous les individus sont seuls dans une classe \ding{220} en classes de plus en plus grandes. 
-\item \ding{229} répartir les individus dans un certain nombre de classes.
-\item \ding{229} usage de similarités/distances.
+\item \ding{220} tous les individus sont seuls dans une classe \ding{221} en classes de plus en plus grandes. 
+\item \ding{220} répartir les individus dans un certain nombre de classes.
+\item \ding{220} usage de similarités/distances.
 \end{itemize}
 \end{description} 
  
@@ -191,63 +197,71 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{A densité}
+  \frametitle{Densité}
  Zones de densité relativement élevées, zones où beaucoup de points sont proches par rapport à d’autres.
 
 DBSCAN : Algorithme forme des classes d’individus \& repère les valeurs hors du commun/bruit. 
 
 Entrées :
 \begin{itemize}
-\item la distance maximale qui peut définir deux individus comme voisins,
-\item le nombre minimal d’individus nécessaires pour former un groupe.
+\item \ding{220} la distance maximale qui peut définir deux individus comme voisins,
+\item \ding{220} le nombre minimal d’individus nécessaires pour former un groupe.
 \end{itemize}
 
 En sortie sont stockés :
 \begin{itemize}
-\item les clusters successifs
-\item les individus visités au fur et à mesure.
+\item \ding{220} les clusters successifs
+\item \ding{220} les individus visités au fur et à mesure.
 \end{itemize}
 
 \end{frame}
 
 \begin{frame}
   \frametitle{A densité}
-l'étape 1 :
-choisir un point parmi ceux disponibles. Les distances permettent de définir le voisinage du point initial, donc ses voisins. 
+\ding{100} Etape 1 :\\
+\ding{81} choisir un point parmi ceux disponibles. \\
+\ding{81} Les distances permettent de définir les plus proches voisins. 
 
-Si le nombre minimal de point n'est pas atteint, point initial == bruit. \\
-\ding{220}On le stocke alors dans les individus visités.
 
-Si le nombre minimal de point est dépassé, point initial == initialiser un cluster avec le point de départ. On étudie chaque point de son voisinage initial. \\
+\textcolor{red}{\ding{53}} Si le nombre minimal de point n'est pas atteint, point initial == bruit. \\
+\ding{229}On stocke le point dans les individus visités.\\
+
+\textcolor{green}{\ding{51}} Si le nombre minimal de point est dépassé, point initial == initialisation d'un cluster.
+
+ \ding{220}On étudie chaque point à partir de son voisinage initial. \\
 \end{frame}
 
 \begin{frame}
   \frametitle{A densité}
-l'étape 2 :
+\ding{100} Etape 2 :\\
 
-Vérification que le voisinage de chaque point comporte plus d'éléments que le minimum requis \ding{220} on étend le voisinage initial en le réunissant avec le voisinage du point visité.
+\ding{220} Vérification que le voisinage de chaque point comporte plus d'éléments que le minimum requis \\
+\ding{220} on étend le voisinage initial en le réunissant avec le voisinage du point visité.\\
 
-Puis on ajoute ce point dans le cluster. 
+\ding{220} Puis on ajoute ce point dans le cluster. \\
 \end{frame}
 
 \begin{frame}
   \frametitle{A densité}
-l'étape 3 : 
+\ding{100} Etape 3 : \\
 
-Une fois que tous les points du voisinage ont été testés, ceux retenus dans le cluster sont stockés comme individus visités. Et le cluster obtenu est stocké dans la liste des clusters.
-
-Tant que tous les individus n’ont pas été visités, on réitère cette étape en commençant par choisir un individu parmi ceux qui sont encore disponibles. Et on obtient finalement notre liste de groupes d’individus ainsi que les individus correspondant à du bruit. 
-\begin{figure}
-  \includegraphics[width=6cm]{images/cluster_densite.png}
-  \caption{\url{https://larevueia.fr/clustering-les-3-methodes-a-connaitre/}.}
-  \end{figure}
-
-
+\ding{220} L'opération est itérée tant que tous les individus n'ont pas été observés \\
+\ding{220} Lorsque tous les points du voisinage ont été testés, ceux retenus == stockage individus dans cluster \\
+\ding{220} A la fin on obtient :
+\begin{itemize}
+\item \ding{220} liste de groupes d’individus 
+\item \ding{220} les individus correspondant à du bruit, ils ne sont dans aucun cluster. 
+\end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Pour aller plus loin}
 
+\begin{figure}
+  \includegraphics[width=6cm]{images/cluster_densite.png}
+  \caption{\url{https://larevueia.fr/clustering-les-3-methodes-a-connaitre/}.}
+  \end{figure}
+  
 Il existe de nombreux algorithmes et méthodes pour partionner les données :
 \url{http://www.metz.supelec.fr/metz/personnel/vialle/course/BigData-2A-CS/slides-pdf/13-MachineLearning-Clustering-2spp.pdf}
 
@@ -255,29 +269,5 @@ Il existe de nombreux algorithmes et méthodes pour partionner les données :
 \end{frame}
 
 
-\section{Github}
-\begin{frame}
-  \frametitle{créer un compte sur github}
-
-Rendez-vous sur la page : 
-\begin{figure}
-\caption{\url{https://github.com/.}}
-  \includegraphics[width=6cm]{images/github_inscription.png}
-  
-  \end{figure}
-  
-\end{frame}
-
-\begin{frame}
-  \frametitle{télécharger github desktop}
-
-Rendez-vous sur la page : 
-\begin{figure}
-\caption{\url{https://desktop.github.com/?ref_cta=download+desktop&ref_loc=installing+github+desktop&ref_page=docs}}
-  \includegraphics[width=6cm]{images/github_desktop_connect.png}
-  
-  \end{figure}
-  
-\end{frame}
 
 
