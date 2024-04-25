@@ -1,0 +1,73 @@
+L'objectif de ce TD consiste à implémenter un modèle de classification pre chargé dans les bibliothèques scikit learn. Pour cet implémentation nous allons utiliser des données qu'ont été déjà pré traitées et qui sont dans le format compatible.
+
+\subsection{Importer les bibliothèques}
+
+Chargez le modèle depuis la bibliothèque sklearn. Nous allons charger aussi d'autres outil comme Pandas et Numpy pour gérer les données.
+
+\begin{python}
+from sklearn.naive_bayes import MultinomialNB
+import pandas as pd
+import numpy as np
+\end{python}
+Notez que nous avons crées des \textit{alias} pour Pandas = pd et pour Numpy = np, ceci par praticité vous pouvez donner le surnom que vous voulez.
+\subsection{Charger les données}
+
+Ensuite, téléchargez le fichier \texttt{spambase.data} du répertoire indiqué par votre enseignant. Placez le fichier dans le même répertoire de votre algorithme.
+
+À l'aide de pandas chargez le fichier téléchargé et utilisez la fonction \textit{shuffle} de Numpy pour mélanger de façon aléatoire les données.
+
+\begin{python}
+data = pd.read_csv('spambase.data').values
+np.random.shuffle(data)
+\end{python}
+
+
+\subsection{Préparation des données}
+
+\begin{enumerate}
+	\item Jetez un coup d’œil aux donnez pour regarder comment elles sont constituées.
+	\begin{itemize}
+		\item Vous allez constater qu'elles sont que de valeurs numériques
+		\item ... mais ne vous trompez pas, chaque valeur a été calculée à partir des commentaires téléchargés des différents sites web.
+		\item Chaque ligne représente un mail, et chaque colonne ses caractéristiques.
+		\item Si vous souhaitez en savoir plus, rendez-vous sur le site : \url{https://archive.ics.uci.edu/dataset/94/spambase}.
+	\end{itemize}
+	\item Maintenant séparez les caractéristiques des textes et les étiquettes.
+	\begin{itemize}
+		\item Affectez à une variable \textbf{X} toutes les lignes de toutes les colonnes sauf la dernière. Ceux seront les caractéristiques extraites que nous devrons analyser.
+		\item Affectez à une variable \textbf{Y} toutes les lignes de la dernière colonne. Cela sera les étiquettes (classe) associé à chaque mail.
+	\end{itemize}
+		\item Divisez les données pour l'entraînement et l'évaluation en. Créez les variables suivantes :
+	\begin{itemize}
+		\item \textbf{Xtrain} : Affectez à cette variable toutes les lignes de l'objet \textbf{X} sauf les 100 dernières que nous utiliserons pour l'évaluation.
+		\item \textbf{Ytrain} : Affectez à cette variable toutes les lignes de l'objet \textbf{Y} sauf les 100 dernières.
+		\item \textbf{Xtest} : Affectez à cette variable les 100 dernières lignes de l'objet \textbf{X}.
+		\item \textbf{Ytest} : Affectez à cette variable les 100 dernières lignes de l'objet \textbf{Y}.
+	\end{itemize}
+\end{enumerate}
+
+\subsection{Charger les modèles}
+
+\subsubsection{Entraînement}
+Pour charger un modèle il faut créer une instance de celui-ci à partir de la classe importée au début. Il suffit de faire :
+
+\begin{python}
+	model = MultinomialNB()
+\end{python}
+
+Et ensuite nous chargeons le modèle avec nos propres données d'entraînement, faite :
+\begin{python}
+	model.fit(Xtrain, Ytrain)
+\end{python}
+
+Et c'est fait ! votre modèle est déjà entraîné et prêt à être utilisé, par contre, pour l'instant on devra se contenter à les entraîner et les évaluer.
+\subsubsection{Évaluation}
+Utilisez les données destinées pour l'évaluation pour mesurer la précision de votre modèle entraîné à l'aide de la fonction \textit{score()} :
+
+\begin{python}
+	precision = model.score(Xtest, Ytest)
+	print("Précision pour NB:", precision)
+
+\end{python}
+
+Pour finir cette partie, répétez ce processus avec le modèle AdaBoostClassifier et comparez les résultats.

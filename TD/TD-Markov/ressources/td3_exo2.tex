@@ -1,0 +1,99 @@
+Pour cet exercice nous allons implémenter aussi un modèle de classification, mais nous allons préparer nous même les données textuelles pour la machine.
+
+\subsection{Importer les bibliothèques}
+
+Comme nous avons vu en cours, nous pouvons utiliser différentes techniques pour transformer le texte en valeur numériques interprétables pour la machine. Pour cette exercice nous allons utiliser la mesure de fréquence TF-IDF à l'aide de l'outil \textit{TfidfVectorize} installé dans la bibliothèque  \textbf{scikit learn}.
+
+Chargez donc les bibliothèques suivantes :
+\begin{python}
+import numpy as np
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import MultinomialNB
+\end{python}
+
+\subsection{Charger les données}
+Avant tout, n'oubliez pas télécharger le fichier qui contient tous les texte que doivent être classifiés. Le fichier s'appelle \textbf{spam.csv}, demandez à votre enseignant le lien de téléchargement.
+
+Ensuite, à l'aide de \texttt{Pandas} chargez les données et affectez les à la variable \textbf{df}.
+\begin{python}
+df = pd.read_csv('../large_files/spam.csv', encoding='ISO-8859-1')
+\end{python}
+
+\subsection{Traitement des données}
+Dans cette étape nous allons modifier la structure de nos données afin de faciliter sa manipulation. Explorez la structure de la variable \textbf{df} afin de remarquer les éléments plus importants.
+
+\subsubsection{Suppression de colonnes}
+
+Supprimez les colonnes que considérez comme inutiles ou pas très intéressantes. Vous pouvez effectuer la suppression des colonnes grâce à la fonction \textit{drop()} de pandas, regardez l'exemple :
+
+\begin{python}
+df = df.drop(colonne, axis=1) # OU
+df = df.drop([colonnes], axis=1)
+\end{python}
+
+\subsubsection{Modification des \textit{headers} et valeurs}
+Ceci n'est pas essentiel, mais important du même.
+\begin{itemize}
+	\item Renommez les colonnes en mettant :
+	\begin{itemize}
+		\item 'labels' comme nom de la colonne avec les étiquettes ("ham" et "spam");
+		\item et 'data' à la colonne avec le texte.
+	\end{itemize}
+	\item C'est toujours plus pratique de travailler avec des étiquettes numériques. Rajoutez la colonne ('\textbf{b\_labels}') à votre objet \textbf{df}. Dans cette colonne insérez les étiquettes de la colonne \textbf{label} en modifiant :
+	\begin{itemize}
+		\item ham : 0
+		\item spam : 1
+	\end{itemize}
+\end{itemize}
+
+\subsection{Entraînement du modèle}
+
+Avant l'entraînement, nous devons preparer les données. La première étape consiste a partitionner les données pour l'entraînement et l'évaluation. Utiliser la fonction \textit{train\_test\_split()} et indiquez avec l'argument \textbf{test\_size} le pourcentage de données souhaité pour l'évaluation. Par norme, on fait : 30\% pour évaluation et 70\% pour entraînement.
+
+\subsubsection{Extraction de caractéristiques}
+Observez le code suivant et expliquez l'utilité de chaque ligne.
+\begin{python}
+tfidf = TfidfVectorizer(decode_error='ignore')
+Xtrain = tfidf.fit_transform(df_train)
+Xtest = tfidf.transform(df_test)
+\end{python}
+
+\subsubsection{Entraînement et évaluation}
+Avec les données pre-traitées, vous pouvez passez à l'étape d'entraînement.
+\begin{enumerate}
+	\item Entraînez un modèle bayésien comme dans le premier exercice.
+	\item Mesurez la précision de votre modèle en utilisant les données. d'entraînement et d'évaluation.
+	\begin{itemize}
+		\item Observez et comparez les deux résultats obtenus.
+		\item Expliquez le résultat.
+	\end{itemize}
+	\item Effectuez le même processus avec le modèle \textbf{AdaBoost}.
+\end{enumerate}
+
+\subsection{Bonus}
+
+\subsubsection{\textit{CountVectorizer()}}
+Pour cet exercice nous avons travaillé avec TD-IDF comme mesure de fréquence pour l'extraction de caractéristiques statistiques. Maintenant répétez l’expérience mais en utilisant une méthode basée sur le calcul d'occurrences classique. Vous pouvez utiliser l'outil \textit{CountVectorizer} à la place de \textit{TfidfVectorize}. Importez :
+
+\begin{python}
+from sklearn.feature_extraction.text import CountVectorizer
+\end{python}
+
+\subsubsection{\textit{Wordcloud()}}
+Observez, implémentez et testez le code suivant :
+
+\begin{python}
+def visualize(label):
+ words = ''
+ for msg in df[df['labels'] == label]['data']:
+  msg = msg.lower()
+  words += msg + ' '
+ wordcloud = WordCloud(width=600, height=400).generate(words)
+ plt.imshow(wordcloud)
+ plt.axis('off')
+ plt.show()
+\end{python}
+
+Expliquez dans quelques lignes le résultat obtenu après avoir testé la fonction \textit{visualize()}.

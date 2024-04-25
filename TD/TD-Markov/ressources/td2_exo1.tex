@@ -22,25 +22,13 @@ Si vous essayez de charger ces bibliothèques en local, il ne faut pas oublier d
 
 \subsection{Étape 1 : Téléchargement}
 
-La première étape consiste a télécharger le fichier qui contient les textes qui serviront pour entraîner notre modèle. Vous pouvez trouver le fichier dans le répertoire suivant :
-
-\begin{itemize}
-%\item \url{https://github.com/These-SCAI2023/L6SOPROG/blob/main/TD/TD-Markov/ressources/edgar_allan_poe.txt}
-\item \url{https://github.com/These-SCAI2023/L6SOPROG/blob/main/TD/TD-Markov/ressources/robert_frost.txt}
-\end{itemize}
-
-Si vous utilisez un notebook comme \textsc{Jupyter} où \textsc{Google Collabs}, vous pouvez utiliser la commande :
-`
-\begin{python}
-!wget -nc \textit{URL}
-\end{python}
- 
-La commande \textit{wget} va télécharger le fichier dans le répertoire de base (root) de votre notebook. 
+La première étape consiste a télécharger le fichier qui contient les textes qui serviront pour entraîner notre modèle. Vous pouvez trouver le fichier dans la section 'Ressources'.
 
 Pour être certains que vous avez bien téléchargé les fichiers et qu'ils sont dans le répertoire principal testez la commande :
 
 \begin{python} 
-	!head robert_frost.txt #Afficher les 10 premières lignes
+#Afficher les 10 premières lignes
+!head robert_frost.txt 
 \end{python}
 
 Observez ce qui se passe...
