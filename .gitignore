@@ -12,7 +12,6 @@ rendus/
 *.swp
 TD/code/corpus_multi*
 *No-git*
-*.pdf
 *.zip
 *.synctex.gz
 *.xlsx
